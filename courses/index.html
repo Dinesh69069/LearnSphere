@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - Learn Sphere</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <title>Courses - LearnSphere</title>
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 
-<body>
+<body class="bg-light-bg dark:bg-dark-bg text-light-fg dark:text-dark-fg transition-colors duration-300">
+    
+    <!-- Navbar Component -->
+    <div id="navbar-container"></div>
+    
     <section class="flex justify-center flex-col items-center gap-6 mt-10">
         <div class="flex flex-col">
-            <h1 class="font-bold text-3xl bg-[hsl(220,20%,97%)] mx-auto">Explore Our Courses</h1>
-            <h5>Discover 200+ courses designed to help you master the latest technologies</h5>
-
-
+            <h1 class="font-bold text-3xl bg-[hsl(220,20%,97%)] dark:bg-gray-800 mx-auto">Explore Our Courses</h1>
+            <h5 class="text-gray-600 dark:text-gray-400">Discover 200+ courses designed to help you master the latest technologies</h5>
         </div>
-
-
-
-
     </section>
-    <section class="mt-7 ">
-         
-        
-
-    <div id="courses" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    
+    <section class="mt-7">
+        <div id="courses" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+    
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="../shared/js/navbar.js"></script>
+    <script src="./js/courses.js"></script>
 </body>
-<script src="./js/courses.js"></script>
 
 </html>
