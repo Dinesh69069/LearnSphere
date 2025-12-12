@@ -1,0 +1,548 @@
+{
+  "name": "Blockchain Developer",
+  "id": "blockchain-dev",
+  "meta": {
+    "description": "Complete blockchain development roadmap - smart contracts, DeFi, Web3",
+    "duration": "12-15 months",
+    "level": "advanced",
+    "topics": ["Blockchain", "Smart Contracts", "Solidity", "Web3", "DeFi", "NFTs"],
+    "resources": [
+      {"name": "Ethereum.org", "url": "https://ethereum.org/en/developers/"},
+      {"name": "Blockchain Roadmap", "url": "https://roadmap.sh/blockchain"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Blockchain Fundamentals",
+      "id": "blockchain-fundamentals",
+      "meta": {
+        "description": "Blockchain basics, distributed ledger, consensus",
+        "duration": "4-6 weeks",
+        "level": "beginner",
+        "topics": ["Blockchain", "Distributed Ledger", "Consensus", "Cryptography"],
+        "resources": [{"name": "Blockchain Basics", "url": "https://www.blockchain.com/learning-portal"}]
+      },
+      "children": [
+        {
+          "name": "Blockchain Structure",
+          "id": "blockchain-structure",
+          "meta": {
+            "description": "Blocks, chains, hashes, merkle trees",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["Blocks", "Hash Functions", "Merkle Trees", "Immutability"],
+            "resources": [{"name": "How Blockchain Works", "url": "https://www.blockchain.com/learning-portal/how-does-blockchain-work"}]
+          }
+        },
+        {
+          "name": "Consensus Mechanisms",
+          "id": "consensus-mechanisms",
+          "meta": {
+            "description": "Proof of Work, Proof of Stake, consensus algorithms",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["PoW", "PoS", "DPoS", "Byzantine Fault Tolerance"],
+            "resources": [{"name": "Consensus", "url": "https://ethereum.org/en/developers/docs/consensus-mechanisms/"}]
+          }
+        },
+        {
+          "name": "Cryptography Basics",
+          "id": "cryptography-blockchain",
+          "meta": {
+            "description": "Public key cryptography, digital signatures, hashing",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Public Key Crypto", "Digital Signatures", "SHA-256", "Elliptic Curves"],
+            "resources": [{"name": "Cryptography", "url": "https://cryptobook.nakov.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cryptocurrencies & Wallets",
+      "id": "cryptocurrencies",
+      "meta": {
+        "description": "Bitcoin, Ethereum, altcoins, crypto wallets",
+        "duration": "3-4 weeks",
+        "level": "beginner",
+        "topics": ["Bitcoin", "Ethereum", "Wallets", "Transactions", "Mining"],
+        "resources": [{"name": "Bitcoin Whitepaper", "url": "https://bitcoin.org/bitcoin.pdf"}]
+      },
+      "children": [
+        {
+          "name": "Bitcoin & Cryptocurrencies",
+          "id": "bitcoin",
+          "meta": {
+            "description": "Bitcoin protocol, transactions, mining",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Bitcoin", "UTXO", "Mining", "Transactions"],
+            "resources": [{"name": "Bitcoin.org", "url": "https://bitcoin.org/"}]
+          }
+        },
+        {
+          "name": "Crypto Wallets",
+          "id": "crypto-wallets",
+          "meta": {
+            "description": "Hot wallets, cold wallets, hardware wallets, seed phrases",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["MetaMask", "Ledger", "Trezor", "Seed Phrases", "Private Keys"],
+            "resources": [{"name": "MetaMask", "url": "https://metamask.io/"}]
+          }
+        },
+        {
+          "name": "Transactions & Gas",
+          "id": "transactions-gas",
+          "meta": {
+            "description": "Transaction structure, gas fees, nonce",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Transactions", "Gas", "Nonce", "Transaction Pool"],
+            "resources": [{"name": "Gas Explained", "url": "https://ethereum.org/en/developers/docs/gas/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ethereum & EVM",
+      "id": "ethereum-evm",
+      "meta": {
+        "description": "Ethereum blockchain, Ethereum Virtual Machine, accounts",
+        "duration": "4-5 weeks",
+        "level": "intermediate",
+        "topics": ["Ethereum", "EVM", "Accounts", "Gas", "State"],
+        "resources": [{"name": "Ethereum Docs", "url": "https://ethereum.org/en/developers/docs/"}]
+      },
+      "children": [
+        {
+          "name": "Ethereum Basics",
+          "id": "ethereum-basics",
+          "meta": {
+            "description": "Ethereum protocol, accounts, state transitions",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Ethereum", "EOA", "Contract Accounts", "State", "Nonce"],
+            "resources": [{"name": "Ethereum Yellow Paper", "url": "https://ethereum.github.io/yellowpaper/paper.pdf"}]
+          }
+        },
+        {
+          "name": "EVM Fundamentals",
+          "id": "evm-fundamentals",
+          "meta": {
+            "description": "EVM architecture, opcodes, execution",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["EVM", "Opcodes", "Stack", "Memory", "Storage"],
+            "resources": [{"name": "EVM Codes", "url": "https://www.evm.codes/"}]
+          }
+        },
+        {
+          "name": "EVM-Compatible Chains",
+          "id": "evm-chains",
+          "meta": {
+            "description": "Polygon, BSC, Avalanche, Fantom, Arbitrum",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Polygon", "BSC", "Avalanche", "Arbitrum", "Optimism"],
+            "resources": [{"name": "L2Beat", "url": "https://l2beat.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Smart Contract Programming",
+      "id": "smart-contract-programming",
+      "meta": {
+        "description": "Solidity, Vyper, Rust for smart contracts",
+        "duration": "10-12 weeks",
+        "level": "advanced",
+        "topics": ["Solidity", "Vyper", "Rust", "Smart Contracts"],
+        "resources": [{"name": "Solidity Docs", "url": "https://docs.soliditylang.org/"}]
+      },
+      "children": [
+        {
+          "name": "Solidity Programming",
+          "id": "solidity",
+          "meta": {
+            "description": "Solidity syntax, data types, functions, modifiers",
+            "duration": "6-8 weeks",
+            "level": "advanced",
+            "topics": ["Solidity", "Variables", "Functions", "Modifiers", "Events"],
+            "resources": [{"name": "CryptoZombies", "url": "https://cryptozombies.io/"}]
+          },
+          "children": [
+            {
+              "name": "Solidity Basics",
+              "id": "solidity-basics",
+              "meta": {
+                "description": "Data types, variables, functions, visibility",
+                "duration": "2-3 weeks",
+                "level": "intermediate",
+                "topics": ["Data Types", "Variables", "Functions", "Visibility"],
+                "resources": [{"name": "Solidity by Example", "url": "https://solidity-by-example.org/"}]
+              }
+            },
+            {
+              "name": "Advanced Solidity",
+              "id": "advanced-solidity",
+              "meta": {
+                "description": "Inheritance, interfaces, libraries, assembly",
+                "duration": "3-4 weeks",
+                "level": "advanced",
+                "topics": ["Inheritance", "Interfaces", "Libraries", "Assembly"],
+                "resources": [{"name": "Advanced Solidity", "url": "https://docs.soliditylang.org/"}]
+              }
+            },
+            {
+              "name": "Design Patterns",
+              "id": "solidity-patterns",
+              "meta": {
+                "description": "Common patterns, proxy patterns, upgradeable contracts",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Proxy Pattern", "Factory Pattern", "Upgradeable Contracts"],
+                "resources": [{"name": "Smart Contract Patterns", "url": "https://fravoll.github.io/solidity-patterns/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Vyper Programming",
+          "id": "vyper",
+          "meta": {
+            "description": "Pythonic smart contract language",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Vyper", "Python-like Syntax", "Security"],
+            "resources": [{"name": "Vyper Docs", "url": "https://vyper.readthedocs.io/"}]
+          }
+        },
+        {
+          "name": "Rust for Blockchain",
+          "id": "rust-blockchain",
+          "meta": {
+            "description": "Rust for Solana, Near, Polkadot",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Rust", "Solana", "Near", "Anchor Framework"],
+            "resources": [{"name": "Solana Cookbook", "url": "https://solanacookbook.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Smart Contract Development",
+      "id": "smart-contract-development",
+      "meta": {
+        "description": "Development tools, testing, deployment",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Hardhat", "Truffle", "Remix", "Testing", "Deployment"],
+        "resources": [{"name": "Hardhat", "url": "https://hardhat.org/"}]
+      },
+      "children": [
+        {
+          "name": "Development Frameworks",
+          "id": "dev-frameworks-blockchain",
+          "meta": {
+            "description": "Hardhat, Truffle, Foundry",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Hardhat", "Truffle", "Foundry", "Brownie"],
+            "resources": [{"name": "Hardhat Tutorial", "url": "https://hardhat.org/tutorial"}]
+          }
+        },
+        {
+          "name": "Smart Contract Testing",
+          "id": "sc-testing",
+          "meta": {
+            "description": "Unit testing, integration testing, fuzzing",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Unit Tests", "Integration Tests", "Fuzzing", "Coverage"],
+            "resources": [{"name": "Testing Guide", "url": "https://hardhat.org/hardhat-runner/docs/guides/test-contracts"}]
+          },
+          "children": [
+            {
+              "name": "Unit Testing",
+              "id": "unit-testing-sc",
+              "meta": {
+                "description": "Mocha, Chai, Waffle for contract testing",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Mocha", "Chai", "Waffle", "Jest"],
+                "resources": [{"name": "Contract Testing", "url": "https://ethereum-waffle.readthedocs.io/"}]
+              }
+            },
+            {
+              "name": "Fuzz Testing",
+              "id": "fuzz-testing",
+              "meta": {
+                "description": "Echidna, Foundry fuzzing",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Echidna", "Foundry Fuzz", "Property Testing"],
+                "resources": [{"name": "Echidna", "url": "https://github.com/crytic/echidna"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Deployment & Verification",
+          "id": "deployment-verification",
+          "meta": {
+            "description": "Contract deployment, verification on block explorers",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Deployment", "Etherscan Verification", "Mainnet", "Testnets"],
+            "resources": [{"name": "Deployment Guide", "url": "https://hardhat.org/guides/deploying.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web3 Development",
+      "id": "web3-development",
+      "meta": {
+        "description": "Web3.js, Ethers.js, frontend integration",
+        "duration": "4-6 weeks",
+        "level": "advanced",
+        "topics": ["Web3.js", "Ethers.js", "Frontend", "Wallets", "DApps"],
+        "resources": [{"name": "Ethers.js", "url": "https://docs.ethers.io/"}]
+      },
+      "children": [
+        {
+          "name": "Ethers.js",
+          "id": "ethersjs",
+          "meta": {
+            "description": "JavaScript library for Ethereum interaction",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Providers", "Signers", "Contracts", "Transactions"],
+            "resources": [{"name": "Ethers Docs", "url": "https://docs.ethers.io/v5/"}]
+          }
+        },
+        {
+          "name": "Web3.js",
+          "id": "web3js",
+          "meta": {
+            "description": "Alternative Ethereum JavaScript library",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Web3", "Providers", "Contract Interaction"],
+            "resources": [{"name": "Web3.js Docs", "url": "https://web3js.readthedocs.io/"}]
+          }
+        },
+        {
+          "name": "Wallet Integration",
+          "id": "wallet-integration",
+          "meta": {
+            "description": "MetaMask, WalletConnect, wallet connection",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["MetaMask", "WalletConnect", "Web3Modal"],
+            "resources": [{"name": "WalletConnect", "url": "https://walletconnect.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Smart Contract Security",
+      "id": "smart-contract-security",
+      "meta": {
+        "description": "Security best practices, auditing, common vulnerabilities",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Security", "Auditing", "Vulnerabilities", "Best Practices"],
+        "resources": [{"name": "Smart Contract Security", "url": "https://consensys.github.io/smart-contract-best-practices/"}]
+      },
+      "children": [
+        {
+          "name": "Common Vulnerabilities",
+          "id": "common-vulnerabilities",
+          "meta": {
+            "description": "Reentrancy, overflow, access control issues",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Reentrancy", "Integer Overflow", "Access Control", "Front-Running"],
+            "resources": [{"name": "SWC Registry", "url": "https://swcregistry.io/"}]
+          }
+        },
+        {
+          "name": "Security Tools",
+          "id": "security-tools-blockchain",
+          "meta": {
+            "description": "Slither, Mythril, MythX, Manticore",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Slither", "Mythril", "MythX", "Manticore"],
+            "resources": [{"name": "Slither", "url": "https://github.com/crytic/slither"}]
+          },
+          "children": [
+            {
+              "name": "Slither Static Analyzer",
+              "id": "slither",
+              "meta": {
+                "description": "Static analysis tool for Solidity",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Slither", "Static Analysis", "Detectors"],
+                "resources": [{"name": "Slither GitHub", "url": "https://github.com/crytic/slither"}]
+              }
+            },
+            {
+              "name": "MythX Security Platform",
+              "id": "mythx",
+              "meta": {
+                "description": "Comprehensive security analysis platform",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["MythX", "Security Scans", "Vulnerabilities"],
+                "resources": [{"name": "MythX", "url": "https://mythx.io/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Audit Process",
+          "id": "audit-process",
+          "meta": {
+            "description": "Security auditing methodology, reporting",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Auditing", "Code Review", "Threat Modeling", "Report Writing"],
+            "resources": [{"name": "Audit Checklist", "url": "https://github.com/cryptofinlabs/audit-checklist"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "DeFi Development",
+      "id": "defi-development",
+      "meta": {
+        "description": "Decentralized finance protocols and development",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["DeFi", "DEX", "Lending", "Yield Farming", "Liquidity"],
+        "resources": [{"name": "DeFi Developer Roadmap", "url": "https://github.com/OffcierCia/DeFi-Developer-Road-Map"}]
+      },
+      "children": [
+        {
+          "name": "DEX Development",
+          "id": "dex-development",
+          "meta": {
+            "description": "Uniswap, PancakeSwap, AMMs",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["AMM", "Liquidity Pools", "Swaps", "Uniswap V2/V3"],
+            "resources": [{"name": "Uniswap Docs", "url": "https://docs.uniswap.org/"}]
+          }
+        },
+        {
+          "name": "Lending Protocols",
+          "id": "lending-protocols",
+          "meta": {
+            "description": "Aave, Compound, collateralization",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Lending", "Borrowing", "Collateral", "Interest Rates"],
+            "resources": [{"name": "Aave Docs", "url": "https://docs.aave.com/"}]
+          }
+        },
+        {
+          "name": "Oracles",
+          "id": "oracles",
+          "meta": {
+            "description": "Chainlink, off-chain data integration",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Chainlink", "Price Feeds", "VRF", "Automation"],
+            "resources": [{"name": "Chainlink Docs", "url": "https://docs.chain.link/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "NFT Development",
+      "id": "nft-development",
+      "meta": {
+        "description": "ERC-721, ERC-1155, NFT marketplaces",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["ERC-721", "ERC-1155", "Metadata", "IPFS", "NFT Minting"],
+        "resources": [{"name": "OpenZeppelin ERC-721", "url": "https://docs.openzeppelin.com/contracts/4.x/erc721"}]
+      },
+      "children": [
+        {
+          "name": "ERC-721 Standard",
+          "id": "erc721",
+          "meta": {
+            "description": "Non-fungible token standard implementation",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["ERC-721", "Token ID", "Ownership", "Transfers"],
+            "resources": [{"name": "ERC-721", "url": "https://eips.ethereum.org/EIPS/eip-721"}]
+          }
+        },
+        {
+          "name": "ERC-1155 Multi-Token",
+          "id": "erc1155",
+          "meta": {
+            "description": "Multi-token standard for NFTs and fungible tokens",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["ERC-1155", "Batch Transfers", "Multi-Token"],
+            "resources": [{"name": "ERC-1155", "url": "https://eips.ethereum.org/EIPS/eip-1155"}]
+          }
+        },
+        {
+          "name": "IPFS & Metadata",
+          "id": "ipfs-metadata",
+          "meta": {
+            "description": "Decentralized storage, NFT metadata standards",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["IPFS", "Metadata", "Pinata", "NFT.Storage"],
+            "resources": [{"name": "IPFS", "url": "https://ipfs.io/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advanced Topics",
+      "id": "advanced-blockchain-topics",
+      "meta": {
+        "description": "Layer 2, cross-chain, DAOs, governance",
+        "duration": "4-6 weeks",
+        "level": "advanced",
+        "topics": ["Layer 2", "Cross-Chain", "DAOs", "Governance"],
+        "resources": [{"name": "L2Beat", "url": "https://l2beat.com/"}]
+      },
+      "children": [
+        {
+          "name": "Layer 2 Solutions",
+          "id": "layer2",
+          "meta": {
+            "description": "Optimistic rollups, ZK rollups, sidechains",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Optimistic Rollups", "ZK Rollups", "Arbitrum", "Optimism"],
+            "resources": [{"name": "Layer 2", "url": "https://ethereum.org/en/layer-2/"}]
+          }
+        },
+        {
+          "name": "DAO Development",
+          "id": "dao-development",
+          "meta": {
+            "description": "Decentralized autonomous organizations, governance",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["DAO", "Governance", "Voting", "Token Gating"],
+            "resources": [{"name": "OpenZeppelin Governor", "url": "https://docs.openzeppelin.com/contracts/4.x/governance"}]
+          }
+        }
+      ]
+    }
+  ]
+}

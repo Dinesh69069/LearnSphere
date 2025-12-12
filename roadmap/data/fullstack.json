@@ -1,0 +1,710 @@
+{
+  "name": "Full Stack Developer",
+  "id": "fullstack",
+  "meta": {
+    "description": "Complete full-stack development path - Frontend + Backend + DevOps",
+    "duration": "18-24 months",
+    "level": "beginner",
+    "topics": ["React", "Node.js", "Databases", "REST APIs", "Deployment", "TypeScript"],
+    "resources": [
+      {"name": "Full-Stack Roadmap", "url": "https://roadmap.sh/full-stack"},
+      {"name": "MDN Web Docs", "url": "https://developer.mozilla.org/"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Frontend Fundamentals",
+      "id": "frontend-fundamentals",
+      "meta": {
+        "description": "HTML, CSS, JavaScript basics",
+        "duration": "8-10 weeks",
+        "level": "beginner",
+        "topics": ["HTML", "CSS", "JavaScript", "DOM", "Responsive Design"],
+        "resources": [{"name": "Frontend Roadmap", "url": "https://roadmap.sh/frontend"}]
+      },
+      "children": [
+        {
+          "name": "HTML & Semantic Markup",
+          "id": "html-semantic",
+          "meta": {
+            "description": "HTML5, semantic tags, accessibility",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["HTML5", "Semantic HTML", "Forms", "Accessibility"],
+            "resources": [{"name": "HTML Tutorial", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"}]
+          }
+        },
+        {
+          "name": "CSS & Styling",
+          "id": "css-styling",
+          "meta": {
+            "description": "CSS fundamentals, layouts, responsive design",
+            "duration": "3-4 weeks",
+            "level": "beginner",
+            "topics": ["CSS Basics", "Flexbox", "Grid", "Responsive", "Animations"],
+            "resources": [{"name": "CSS Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"}]
+          },
+          "children": [
+            {
+              "name": "CSS Layouts",
+              "id": "css-layouts-fs",
+              "meta": {
+                "description": "Flexbox, Grid, positioning",
+                "duration": "2 weeks",
+                "level": "beginner",
+                "topics": ["Flexbox", "Grid", "Positioning", "Float"],
+                "resources": [{"name": "Flexbox Froggy", "url": "https://flexboxfroggy.com/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "JavaScript Fundamentals",
+          "id": "js-fundamentals-fs",
+          "meta": {
+            "description": "Variables, functions, DOM manipulation",
+            "duration": "4-5 weeks",
+            "level": "beginner",
+            "topics": ["Variables", "Functions", "DOM", "Events", "ES6+"],
+            "resources": [{"name": "JavaScript.info", "url": "https://javascript.info/"}]
+          },
+          "children": [
+            {
+              "name": "DOM Manipulation",
+              "id": "dom-manipulation-fs",
+              "meta": {
+                "description": "Selecting elements, events, modifying DOM",
+                "duration": "2 weeks",
+                "level": "beginner",
+                "topics": ["querySelector", "Events", "createElement", "classList"],
+                "resources": [{"name": "DOM Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"}]
+              }
+            },
+            {
+              "name": "Async JavaScript",
+              "id": "async-js-fs",
+              "meta": {
+                "description": "Promises, async/await, fetch API",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["Promises", "Async/Await", "Fetch", "Error Handling"],
+                "resources": [{"name": "Async JS", "url": "https://javascript.info/async"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Version Control (Git)",
+      "id": "git-fullstack",
+      "meta": {
+        "description": "Git basics, GitHub workflow, collaboration",
+        "duration": "2 weeks",
+        "level": "beginner",
+        "topics": ["Git", "GitHub", "Branching", "Pull Requests", "Collaboration"],
+        "resources": [{"name": "Git Documentation", "url": "https://git-scm.com/doc"}]
+      },
+      "children": [
+        {
+          "name": "Git Basics",
+          "id": "git-basics-fs",
+          "meta": {
+            "description": "Repository, commits, push/pull",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["init", "clone", "add", "commit", "push", "pull"],
+            "resources": [{"name": "Git Handbook", "url": "https://guides.github.com/introduction/git-handbook/"}]
+          }
+        },
+        {
+          "name": "Collaboration Workflow",
+          "id": "git-collaboration",
+          "meta": {
+            "description": "Branching, merging, pull requests, code review",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Branches", "Merge", "Pull Requests", "Code Review"],
+            "resources": [{"name": "GitHub Flow", "url": "https://guides.github.com/introduction/flow/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "React Framework",
+      "id": "react-framework",
+      "meta": {
+        "description": "Modern React with hooks, state management, routing",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["React", "Hooks", "State Management", "Router", "Components"],
+        "resources": [{"name": "React Documentation", "url": "https://react.dev/"}]
+      },
+      "children": [
+        {
+          "name": "React Fundamentals",
+          "id": "react-fundamentals-fs",
+          "meta": {
+            "description": "Components, JSX, props, state",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["Components", "JSX", "Props", "State", "Events"],
+            "resources": [{"name": "React Tutorial", "url": "https://react.dev/learn"}]
+          },
+          "children": [
+            {
+              "name": "Components & Props",
+              "id": "components-props",
+              "meta": {
+                "description": "Function components, props, composition",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Function Components", "Props", "Children", "Composition"],
+                "resources": [{"name": "Components", "url": "https://react.dev/learn/your-first-component"}]
+              }
+            },
+            {
+              "name": "State & Lifecycle",
+              "id": "state-lifecycle",
+              "meta": {
+                "description": "useState, component lifecycle",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["useState", "Lifecycle", "Re-rendering"],
+                "resources": [{"name": "State", "url": "https://react.dev/learn/state-a-components-memory"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "React Hooks",
+          "id": "react-hooks-fs",
+          "meta": {
+            "description": "useEffect, useContext, custom hooks",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["useEffect", "useContext", "useRef", "Custom Hooks"],
+            "resources": [{"name": "Hooks", "url": "https://react.dev/reference/react"}]
+          },
+          "children": [
+            {
+              "name": "useEffect Hook",
+              "id": "use-effect-hook",
+              "meta": {
+                "description": "Side effects, cleanup, dependencies",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Side Effects", "Cleanup", "Dependencies"],
+                "resources": [{"name": "useEffect", "url": "https://react.dev/reference/react/useEffect"}]
+              }
+            },
+            {
+              "name": "Custom Hooks",
+              "id": "custom-hooks-fs",
+              "meta": {
+                "description": "Creating reusable hooks, best practices",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Custom Hooks", "Reusability", "Patterns"],
+                "resources": [{"name": "Custom Hooks", "url": "https://react.dev/learn/reusing-logic-with-custom-hooks"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "State Management",
+          "id": "state-management-fs",
+          "meta": {
+            "description": "Context API, Redux, global state",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Context API", "Redux", "Zustand", "State Patterns"],
+            "resources": [{"name": "Redux", "url": "https://redux.js.org/"}]
+          },
+          "children": [
+            {
+              "name": "Context API",
+              "id": "context-api-fs",
+              "meta": {
+                "description": "Global state, useContext, providers",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["createContext", "useContext", "Provider"],
+                "resources": [{"name": "Context", "url": "https://react.dev/learn/passing-data-deeply-with-context"}]
+              }
+            },
+            {
+              "name": "Redux",
+              "id": "redux-fs",
+              "meta": {
+                "description": "Store, actions, reducers, middleware",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Store", "Actions", "Reducers", "Redux Toolkit"],
+                "resources": [{"name": "Redux Tutorial", "url": "https://redux.js.org/tutorials/essentials/part-1-overview-concepts"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "React Router",
+          "id": "react-router-fs",
+          "meta": {
+            "description": "Client-side routing, navigation, protected routes",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Routing", "Navigation", "Parameters", "Protected Routes"],
+            "resources": [{"name": "React Router", "url": "https://reactrouter.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "id": "typescript-fs",
+      "meta": {
+        "description": "Type-safe JavaScript, interfaces, generics",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["Types", "Interfaces", "Generics", "TypeScript with React"],
+        "resources": [{"name": "TypeScript Handbook", "url": "https://www.typescriptlang.org/docs/"}]
+      },
+      "children": [
+        {
+          "name": "TypeScript Basics",
+          "id": "typescript-basics-fs",
+          "meta": {
+            "description": "Basic types, interfaces, type annotations",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Types", "Interfaces", "Type Annotations", "Union Types"],
+            "resources": [{"name": "TS Basics", "url": "https://www.typescriptlang.org/docs/handbook/2/basic-types.html"}]
+          }
+        },
+        {
+          "name": "TypeScript with React",
+          "id": "typescript-react-fs",
+          "meta": {
+            "description": "Typing components, props, state, hooks",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Component Types", "Props Types", "Hooks Types"],
+            "resources": [{"name": "React TypeScript", "url": "https://react.dev/learn/typescript"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Backend - Node.js",
+      "id": "backend-nodejs",
+      "meta": {
+        "description": "Server-side JavaScript with Node.js and Express",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["Node.js", "Express", "REST APIs", "Middleware", "Authentication"],
+        "resources": [
+          {"name": "Node.js Docs", "url": "https://nodejs.org/docs"},
+          {"name": "Express", "url": "https://expressjs.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Node.js Fundamentals",
+          "id": "nodejs-fundamentals-fs",
+          "meta": {
+            "description": "Node runtime, modules, npm, file system",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Node Runtime", "Modules", "npm", "File System", "Async"],
+            "resources": [{"name": "Node School", "url": "https://nodeschool.io/"}]
+          },
+          "children": [
+            {
+              "name": "npm & Packages",
+              "id": "npm-packages-fs",
+              "meta": {
+                "description": "Package management, dependencies, scripts",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["npm", "package.json", "Dependencies", "Scripts"],
+                "resources": [{"name": "npm Docs", "url": "https://docs.npmjs.com/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Express.js Framework",
+          "id": "express-framework-fs",
+          "meta": {
+            "description": "Routing, middleware, request/response",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["Express", "Routing", "Middleware", "Error Handling"],
+            "resources": [{"name": "Express Guide", "url": "https://expressjs.com/en/guide/routing.html"}]
+          },
+          "children": [
+            {
+              "name": "REST API Development",
+              "id": "rest-api-fs",
+              "meta": {
+                "description": "CRUD operations, status codes, API design",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["REST", "CRUD", "HTTP Methods", "Status Codes"],
+                "resources": [{"name": "REST API Tutorial", "url": "https://restfulapi.net/"}]
+              }
+            },
+            {
+              "name": "Middleware",
+              "id": "middleware-fs",
+              "meta": {
+                "description": "Custom middleware, third-party, error handling",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Custom Middleware", "body-parser", "cors", "Error Middleware"],
+                "resources": [{"name": "Middleware", "url": "https://expressjs.com/en/guide/using-middleware.html"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Authentication & Security",
+          "id": "auth-security-fs",
+          "meta": {
+            "description": "JWT, password hashing, authorization",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["JWT", "bcrypt", "OAuth", "Security Best Practices"],
+            "resources": [{"name": "JWT.io", "url": "https://jwt.io/"}]
+          },
+          "children": [
+            {
+              "name": "JWT Authentication",
+              "id": "jwt-auth-fs",
+              "meta": {
+                "description": "Access tokens, refresh tokens, token validation",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["JWT", "Access Tokens", "Refresh Tokens"],
+                "resources": [{"name": "JWT Guide", "url": "https://jwt.io/introduction"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "id": "databases-fs",
+      "meta": {
+        "description": "SQL and NoSQL databases, ORMs",
+        "duration": "6-8 weeks",
+        "level": "intermediate",
+        "topics": ["PostgreSQL", "MongoDB", "Prisma", "SQL", "NoSQL"],
+        "resources": [
+          {"name": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/"},
+          {"name": "MongoDB University", "url": "https://university.mongodb.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "SQL Databases",
+          "id": "sql-databases-fs",
+          "meta": {
+            "description": "PostgreSQL/MySQL, SQL queries, relationships",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["SQL", "PostgreSQL", "Queries", "Joins", "Transactions"],
+            "resources": [{"name": "SQL Tutorial", "url": "https://www.sqltutorial.org/"}]
+          },
+          "children": [
+            {
+              "name": "SQL Fundamentals",
+              "id": "sql-fundamentals",
+              "meta": {
+                "description": "SELECT, INSERT, UPDATE, DELETE, WHERE",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["SELECT", "INSERT", "UPDATE", "DELETE", "WHERE", "ORDER BY"],
+                "resources": [{"name": "SQL Zoo", "url": "https://sqlzoo.net/"}]
+              }
+            },
+            {
+              "name": "Advanced SQL",
+              "id": "advanced-sql-fs",
+              "meta": {
+                "description": "JOINs, subqueries, indexes, transactions",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["JOINS", "Subqueries", "Indexes", "Transactions"],
+                "resources": [{"name": "Advanced SQL", "url": "https://mode.com/sql-tutorial/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "NoSQL Databases",
+          "id": "nosql-databases-fs",
+          "meta": {
+            "description": "MongoDB - document-based database",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["MongoDB", "Documents", "Collections", "Aggregation"],
+            "resources": [{"name": "MongoDB Manual", "url": "https://docs.mongodb.com/manual/"}]
+          },
+          "children": [
+            {
+              "name": "MongoDB Basics",
+              "id": "mongodb-basics-fs",
+              "meta": {
+                "description": "CRUD operations, queries, indexing",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["CRUD", "Queries", "Indexes", "Schema Design"],
+                "resources": [{"name": "MongoDB CRUD", "url": "https://docs.mongodb.com/manual/crud/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Prisma ORM",
+          "id": "prisma-orm-fs",
+          "meta": {
+            "description": "Type-safe database client, migrations",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Prisma", "Schema", "Migrations", "Queries"],
+            "resources": [{"name": "Prisma Docs", "url": "https://www.prisma.io/docs"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "API Integration",
+      "id": "api-integration",
+      "meta": {
+        "description": "Connecting frontend to backend, REST APIs, error handling",
+        "duration": "2-3 weeks",
+        "level": "intermediate",
+        "topics": ["Axios", "Fetch", "Error Handling", "Loading States", "CORS"],
+        "resources": [{"name": "Axios", "url": "https://axios-http.com/docs/intro"}]
+      },
+      "children": [
+        {
+          "name": "Fetch & Axios",
+          "id": "fetch-axios",
+          "meta": {
+            "description": "Making HTTP requests, handling responses",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["fetch", "Axios", "HTTP Requests", "Responses"],
+            "resources": [{"name": "Fetch API", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"}]
+          }
+        },
+        {
+          "name": "Error Handling & Loading States",
+          "id": "error-handling-loading",
+          "meta": {
+            "description": "Try-catch, error boundaries, loading indicators",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Error Handling", "Loading States", "Error Boundaries"],
+            "resources": [{"name": "Error Handling", "url": "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "id": "testing-fs",
+      "meta": {
+        "description": "Unit tests, integration tests, E2E tests",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Jest", "React Testing Library", "Supertest", "E2E Testing"],
+        "resources": [
+          {"name": "Jest", "url": "https://jestjs.io/"},
+          {"name": "Testing Library", "url": "https://testing-library.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Frontend Testing",
+          "id": "frontend-testing-fs",
+          "meta": {
+            "description": "Component testing, React Testing Library",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Jest", "React Testing Library", "Component Tests"],
+            "resources": [{"name": "RTL Tutorial", "url": "https://testing-library.com/docs/react-testing-library/intro/"}]
+          }
+        },
+        {
+          "name": "Backend Testing",
+          "id": "backend-testing-fs",
+          "meta": {
+            "description": "API testing, Supertest, integration tests",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Supertest", "API Testing", "Integration Tests"],
+            "resources": [{"name": "Supertest", "url": "https://github.com/visionmedia/supertest"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Deployment & DevOps",
+      "id": "deployment-devops",
+      "meta": {
+        "description": "Docker, CI/CD, cloud deployment",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["Docker", "GitHub Actions", "AWS", "Vercel", "Environment Variables"],
+        "resources": [
+          {"name": "Docker Docs", "url": "https://docs.docker.com/"},
+          {"name": "Vercel", "url": "https://vercel.com/docs"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Docker Basics",
+          "id": "docker-basics-fs",
+          "meta": {
+            "description": "Containerization, Dockerfile, Docker Compose",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Docker", "Dockerfile", "Images", "Containers", "Docker Compose"],
+            "resources": [{"name": "Docker Tutorial", "url": "https://docker-curriculum.com/"}]
+          }
+        },
+        {
+          "name": "CI/CD Pipeline",
+          "id": "cicd-pipeline",
+          "meta": {
+            "description": "GitHub Actions, automated testing, deployment",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["GitHub Actions", "Workflows", "Automated Testing", "Deployment"],
+            "resources": [{"name": "GitHub Actions", "url": "https://docs.github.com/en/actions"}]
+          }
+        },
+        {
+          "name": "Cloud Deployment",
+          "id": "cloud-deployment-fs",
+          "meta": {
+            "description": "Deploying to Vercel, AWS, environment configuration",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Vercel", "AWS", "Environment Variables", "DNS"],
+            "resources": [{"name": "Vercel Deployment", "url": "https://vercel.com/docs/deployments/overview"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Performance Optimization",
+      "id": "performance-optimization-fs",
+      "meta": {
+        "description": "Code splitting, lazy loading, caching, CDN",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Code Splitting", "Lazy Loading", "Caching", "Performance Metrics"],
+        "resources": [{"name": "Web Vitals", "url": "https://web.dev/vitals/"}]
+      },
+      "children": [
+        {
+          "name": "Frontend Performance",
+          "id": "frontend-performance-fs",
+          "meta": {
+            "description": "Code splitting, lazy loading, React optimization",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Code Splitting", "Lazy Loading", "Memoization", "useMemo"],
+            "resources": [{"name": "React Performance", "url": "https://react.dev/learn/render-and-commit"}]
+          }
+        },
+        {
+          "name": "Backend Performance",
+          "id": "backend-performance-fs",
+          "meta": {
+            "description": "Caching, database optimization, Redis",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Redis", "Caching", "Database Indexing", "Query Optimization"],
+            "resources": [{"name": "Redis", "url": "https://redis.io/documentation"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web Security",
+      "id": "web-security-fs",
+      "meta": {
+        "description": "CORS, XSS, CSRF, authentication security",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["CORS", "XSS", "CSRF", "Security Headers", "Input Validation"],
+        "resources": [{"name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"}]
+      },
+      "children": [
+        {
+          "name": "Common Vulnerabilities",
+          "id": "common-vulnerabilities-fs",
+          "meta": {
+            "description": "XSS, CSRF, SQL Injection, security best practices",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["XSS", "CSRF", "SQL Injection", "Input Sanitization"],
+            "resources": [{"name": "Web Security", "url": "https://developer.mozilla.org/en-US/docs/Web/Security"}]
+          }
+        },
+        {
+          "name": "CORS & Security Headers",
+          "id": "cors-security-headers",
+          "meta": {
+            "description": "CORS configuration, security headers, CSP",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["CORS", "CSP", "Security Headers", "HTTPS"],
+            "resources": [{"name": "CORS", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Next.js (Optional)",
+      "id": "nextjs-optional",
+      "meta": {
+        "description": "Server-side rendering, static generation, full-stack framework",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["Next.js", "SSR", "SSG", "API Routes", "App Router"],
+        "resources": [{"name": "Next.js Docs", "url": "https://nextjs.org/docs"}]
+      },
+      "children": [
+        {
+          "name": "Next.js Fundamentals",
+          "id": "nextjs-fundamentals",
+          "meta": {
+            "description": "Pages, routing, data fetching",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Pages", "Routing", "Data Fetching", "getServerSideProps"],
+            "resources": [{"name": "Next.js Tutorial", "url": "https://nextjs.org/learn"}]
+          }
+        },
+        {
+          "name": "App Router & Server Components",
+          "id": "app-router",
+          "meta": {
+            "description": "React Server Components, layouts, streaming",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["App Router", "Server Components", "Layouts", "Streaming"],
+            "resources": [{"name": "App Router", "url": "https://nextjs.org/docs/app"}]
+          }
+        }
+      ]
+    }
+  ]
+}

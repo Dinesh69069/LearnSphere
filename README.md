@@ -186,6 +186,35 @@ Learn-Sphere/
   - Classes: `PascalCase`
 - ✅ Test responsiveness on mobile, tablet, desktop
 
+## 🎨 Color Theme
+
+### Light Mode
+- **Background**: Light gray `hsl(220 20% 97%)`
+- **Foreground**: Dark navy `hsl(220 25% 10%)`
+- **Primary (Cyan)**: `hsl(190 95% 45%)` - Electric teal/cyan
+- **Accent (Violet)**: `hsl(270 80% 60%)` - Purple accent
+- **Cards**: Pure white with subtle shadows
+
+### Dark Mode
+- **Background**: Deep navy `hsl(220 40% 8%)`
+- **Foreground**: Light gray `hsl(220 15% 95%)`
+- **Primary (Cyan)**: `hsl(190 95% 50%)` - Brighter cyan
+- **Accent (Violet)**: `hsl(270 75% 65%)` - Softer purple
+
+### Custom Brand Colors
+- **Navy**: `hsl(220 40% 13%)` - Hero backgrounds
+- **Cyan Glow**: `hsl(190 100% 50%)` - Glow effects
+- **Violet Light**: `hsl(270 70% 70%)` - Lighter purple
+
+### Gradients
+- **Hero**: Navy to lighter navy diagonal
+- **Accent**: Cyan to violet gradient
+- **Button**: Cyan gradient with hover glow
+
+The palette is tech-forward with cyan/teal as the energetic primary and violet as a complementary accent, set against navy darks and clean whites.
+
+---
+
 ## 🎨 Pages Overview
 
 ### 1. **Home Page** (`index.html`)

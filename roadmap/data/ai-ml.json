@@ -1,0 +1,470 @@
+{
+  "name": "AI/ML Engineer",
+  "id": "ai-ml",
+  "meta": {
+    "description": "Comprehensive AI/ML roadmap - Deep learning, NLP, computer vision, MLOps",
+    "duration": "18-24 months",
+    "level": "advanced",
+    "topics": ["Python", "Machine Learning", "Deep Learning", "NLP", "Computer Vision", "MLOps", "TensorFlow", "PyTorch"],
+    "resources": [
+      {"name": "Deep Learning Specialization", "url": "https://www.coursera.org/specializations/deep-learning"},
+      {"name": "Fast.ai", "url": "https://www.fast.ai/"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Python & Math Foundations",
+      "id": "python-math-foundations",
+      "meta": {
+        "description": "Python programming, linear algebra, calculus, statistics",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["Python", "NumPy", "Linear Algebra", "Calculus", "Statistics"],
+        "resources": [{"name": "3Blue1Brown", "url": "https://www.3blue1brown.com/"}]
+      },
+      "children": [
+        {
+          "name": "Python for AI",
+          "id": "python-ai",
+          "meta": {
+            "description": "Python, NumPy, Pandas, Matplotlib",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["Python", "NumPy", "Pandas", "Matplotlib"],
+            "resources": [{"name": "Python Data Science Handbook", "url": "https://jakevdp.github.io/PythonDataScienceHandbook/"}]
+          }
+        },
+        {
+          "name": "Mathematics for ML",
+          "id": "math-ml",
+          "meta": {
+            "description": "Linear algebra, calculus, probability",
+            "duration": "4-6 weeks",
+            "level": "intermediate",
+            "topics": ["Linear Algebra", "Calculus", "Probability", "Optimization"],
+            "resources": [{"name": "Mathematics for Machine Learning", "url": "https://mml-book.github.io/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Fundamentals",
+      "id": "ml-fundamentals-ai",
+      "meta": {
+        "description": "Supervised/unsupervised learning, model evaluation, scikit-learn",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["Supervised Learning", "Unsupervised Learning", "Model Evaluation", "Scikit-learn"],
+        "resources": [{"name": "Scikit-learn", "url": "https://scikit-learn.org/"}]
+      },
+      "children": [
+        {
+          "name": "Supervised Learning Algorithms",
+          "id": "supervised-ml",
+          "meta": {
+            "description": "Regression, classification, tree models",
+            "duration": "4-5 weeks",
+            "level": "advanced",
+            "topics": ["Linear/Logistic Regression", "Decision Trees", "Random Forests", "SVM", "XGBoost"],
+            "resources": [{"name": "Supervised Learning", "url": "https://scikit-learn.org/stable/supervised_learning.html"}]
+          }
+        },
+        {
+          "name": "Unsupervised Learning",
+          "id": "unsupervised-ml",
+          "meta": {
+            "description": "Clustering, dimensionality reduction",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["K-Means", "DBSCAN", "PCA", "t-SNE"],
+            "resources": [{"name": "Unsupervised Learning", "url": "https://scikit-learn.org/stable/unsupervised_learning.html"}]
+          }
+        },
+        {
+          "name": "Model Evaluation & Tuning",
+          "id": "model-eval-tuning",
+          "meta": {
+            "description": "Cross-validation, metrics, hyperparameter tuning",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Cross-Validation", "Metrics", "Grid Search", "Random Search"],
+            "resources": [{"name": "Model Selection", "url": "https://scikit-learn.org/stable/model_selection.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "id": "deep-learning-ai",
+      "meta": {
+        "description": "Neural networks, TensorFlow, PyTorch, CNNs, RNNs, transformers",
+        "duration": "10-12 weeks",
+        "level": "advanced",
+        "topics": ["Neural Networks", "TensorFlow", "PyTorch", "CNNs", "RNNs", "Transformers"],
+        "resources": [
+          {"name": "Deep Learning Specialization", "url": "https://www.coursera.org/specializations/deep-learning"},
+          {"name": "PyTorch Tutorials", "url": "https://pytorch.org/tutorials/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Neural Network Fundamentals",
+          "id": "nn-fundamentals",
+          "meta": {
+            "description": "Perceptrons, activation functions, backpropagation",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Perceptrons", "Activations", "Backpropagation", "Gradient Descent"],
+            "resources": [{"name": "Neural Networks and Deep Learning", "url": "http://neuralnetworksanddeeplearning.com/"}]
+          }
+        },
+        {
+          "name": "TensorFlow & Keras",
+          "id": "tensorflow-keras",
+          "meta": {
+            "description": "Building models, training, optimization",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["TensorFlow", "Keras", "Sequential API", "Functional API"],
+            "resources": [{"name": "TensorFlow Tutorials", "url": "https://www.tensorflow.org/tutorials"}]
+          },
+          "children": [
+            {
+              "name": "Model Building",
+              "id": "model-building-tf",
+              "meta": {
+                "description": "Sequential, Functional API, custom layers",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Sequential", "Functional API", "Custom Layers"],
+                "resources": [{"name": "Keras API", "url": "https://www.tensorflow.org/guide/keras"}]
+              }
+            },
+            {
+              "name": "Training & Optimization",
+              "id": "training-optimization",
+              "meta": {
+                "description": "Optimizers, learning rate schedules, callbacks",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Optimizers", "Learning Rate", "Callbacks", "Early Stopping"],
+                "resources": [{"name": "Training", "url": "https://www.tensorflow.org/guide/keras/training_with_built_in_methods"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "PyTorch",
+          "id": "pytorch",
+          "meta": {
+            "description": "Tensors, autograd, neural network modules",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Tensors", "Autograd", "nn.Module", "DataLoaders"],
+            "resources": [{"name": "PyTorch Tutorials", "url": "https://pytorch.org/tutorials/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Computer Vision",
+      "id": "computer-vision",
+      "meta": {
+        "description": "CNNs, object detection, image segmentation, GANs",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["CNNs", "Object Detection", "Image Segmentation", "GANs", "Transfer Learning"],
+        "resources": [{"name": "CS231n", "url": "http://cs231n.stanford.edu/"}]
+      },
+      "children": [
+        {
+          "name": "Convolutional Neural Networks",
+          "id": "cnns-cv",
+          "meta": {
+            "description": "Conv layers, pooling, architectures (VGG, ResNet)",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Convolution", "Pooling", "VGG", "ResNet", "Inception"],
+            "resources": [{"name": "CNN Tutorial", "url": "https://cs231n.github.io/"}]
+          },
+          "children": [
+            {
+              "name": "CNN Architectures",
+              "id": "cnn-architectures",
+              "meta": {
+                "description": "VGG, ResNet, Inception, EfficientNet",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["VGG", "ResNet", "Inception", "EfficientNet"],
+                "resources": [{"name": "Architectures", "url": "https://www.tensorflow.org/api_docs/python/tf/keras/applications"}]
+              }
+            },
+            {
+              "name": "Transfer Learning",
+              "id": "transfer-learning-cv",
+              "meta": {
+                "description": "Fine-tuning pre-trained models, feature extraction",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Transfer Learning", "Fine-tuning", "Feature Extraction"],
+                "resources": [{"name": "Transfer Learning", "url": "https://www.tensorflow.org/tutorials/images/transfer_learning"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Object Detection",
+          "id": "object-detection",
+          "meta": {
+            "description": "YOLO, R-CNN, bounding boxes, localization",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["YOLO", "R-CNN", "Faster R-CNN", "SSD"],
+            "resources": [{"name": "Object Detection", "url": "https://www.tensorflow.org/lite/examples/object_detection/overview"}]
+          }
+        },
+        {
+          "name": "Image Segmentation",
+          "id": "image-segmentation",
+          "meta": {
+            "description": "Semantic segmentation, U-Net, Mask R-CNN",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Semantic Segmentation", "U-Net", "Mask R-CNN"],
+            "resources": [{"name": "Segmentation", "url": "https://www.tensorflow.org/tutorials/images/segmentation"}]
+          }
+        },
+        {
+          "name": "Generative Models",
+          "id": "generative-models-cv",
+          "meta": {
+            "description": "GANs, VAEs, image generation",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["GANs", "VAEs", "StyleGAN", "Image Generation"],
+            "resources": [{"name": "GANs", "url": "https://www.tensorflow.org/tutorials/generative/dcgan"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "id": "nlp-ai",
+      "meta": {
+        "description": "Text processing, transformers, BERT, GPT, LLMs",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["NLP", "Transformers", "BERT", "GPT", "LLMs", "Hugging Face"],
+        "resources": [{"name": "Hugging Face Course", "url": "https://huggingface.co/learn/nlp-course"}]
+      },
+      "children": [
+        {
+          "name": "Text Preprocessing",
+          "id": "text-preprocessing-nlp",
+          "meta": {
+            "description": "Tokenization, embeddings, word2vec",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Tokenization", "Word2Vec", "GloVe", "Embeddings"],
+            "resources": [{"name": "NLTK", "url": "https://www.nltk.org/"}]
+          }
+        },
+        {
+          "name": "Transformers & Attention",
+          "id": "transformers-attention",
+          "meta": {
+            "description": "Attention mechanism, transformer architecture",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Attention", "Transformers", "Self-Attention", "Multi-Head Attention"],
+            "resources": [{"name": "Illustrated Transformer", "url": "http://jalammar.github.io/illustrated-transformer/"}]
+          },
+          "children": [
+            {
+              "name": "BERT & Variants",
+              "id": "bert-variants",
+              "meta": {
+                "description": "BERT, RoBERTa, DistilBERT, fine-tuning",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["BERT", "RoBERTa", "DistilBERT", "Fine-tuning"],
+                "resources": [{"name": "BERT", "url": "https://huggingface.co/docs/transformers/model_doc/bert"}]
+              }
+            },
+            {
+              "name": "GPT & Generative Models",
+              "id": "gpt-generative",
+              "meta": {
+                "description": "GPT, text generation, prompt engineering",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["GPT", "Text Generation", "Prompt Engineering"],
+                "resources": [{"name": "GPT", "url": "https://platform.openai.com/docs/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Hugging Face Ecosystem",
+          "id": "huggingface",
+          "meta": {
+            "description": "Transformers library, datasets, model hub",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Transformers Library", "Datasets", "Model Hub", "Pipeline API"],
+            "resources": [{"name": "Hugging Face Docs", "url": "https://huggingface.co/docs"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "id": "llms",
+      "meta": {
+        "description": "LLMs, fine-tuning, RAG, prompt engineering",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["LLMs", "Fine-tuning", "RAG", "Prompt Engineering", "PEFT", "LoRA"],
+        "resources": [{"name": "OpenAI Cookbook", "url": "https://cookbook.openai.com/"}]
+      },
+      "children": [
+        {
+          "name": "Prompt Engineering",
+          "id": "prompt-engineering-llm",
+          "meta": {
+            "description": "Few-shot learning, chain-of-thought, prompt optimization",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Few-Shot", "Chain-of-Thought", "Prompt Optimization"],
+            "resources": [{"name": "Prompt Engineering Guide", "url": "https://www.promptingguide.ai/"}]
+          }
+        },
+        {
+          "name": "Fine-Tuning LLMs",
+          "id": "finetuning-llms",
+          "meta": {
+            "description": "Full fine-tuning, PEFT, LoRA, QLoRA",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Fine-tuning", "PEFT", "LoRA", "QLoRA"],
+            "resources": [{"name": "PEFT", "url": "https://huggingface.co/docs/peft"}]
+          }
+        },
+        {
+          "name": "RAG (Retrieval-Augmented Generation)",
+          "id": "rag",
+          "meta": {
+            "description": "Vector databases, embeddings, retrieval",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["RAG", "Vector Databases", "Embeddings", "LangChain"],
+            "resources": [{"name": "LangChain", "url": "https://python.langchain.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "MLOps & Deployment",
+      "id": "mlops-ai",
+      "meta": {
+        "description": "Model deployment, monitoring, CI/CD for ML",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["MLflow", "Docker", "Model Serving", "Monitoring", "CI/CD"],
+        "resources": [{"name": "MLflow", "url": "https://mlflow.org/"}]
+      },
+      "children": [
+        {
+          "name": "Model Deployment",
+          "id": "model-deployment-mlops",
+          "meta": {
+            "description": "FastAPI, Flask, TorchServe, TensorFlow Serving",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["FastAPI", "Flask", "TorchServe", "TensorFlow Serving"],
+            "resources": [{"name": "FastAPI", "url": "https://fastapi.tiangolo.com/"}]
+          }
+        },
+        {
+          "name": "Experiment Tracking & Versioning",
+          "id": "experiment-tracking-mlops",
+          "meta": {
+            "description": "MLflow, Weights & Biases, model versioning",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["MLflow", "W&B", "Model Registry", "Experiment Tracking"],
+            "resources": [{"name": "W&B", "url": "https://wandb.ai/site"}]
+          }
+        },
+        {
+          "name": "Model Monitoring",
+          "id": "model-monitoring",
+          "meta": {
+            "description": "Performance monitoring, drift detection",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Monitoring", "Drift Detection", "Model Performance"],
+            "resources": [{"name": "Evidently AI", "url": "https://www.evidentlyai.com/"}]
+          }
+        },
+        {
+          "name": "Containerization & Orchestration",
+          "id": "containerization-mlops",
+          "meta": {
+            "description": "Docker, Kubernetes, model serving",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Docker", "Kubernetes", "Container Registry"],
+            "resources": [{"name": "Docker", "url": "https://docs.docker.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reinforcement Learning (Optional)",
+      "id": "reinforcement-learning",
+      "meta": {
+        "description": "Q-learning, policy gradients, deep RL",
+        "duration": "4-6 weeks",
+        "level": "advanced",
+        "topics": ["Q-Learning", "Policy Gradients", "Deep RL", "OpenAI Gym"],
+        "resources": [{"name": "Spinning Up in Deep RL", "url": "https://spinningup.openai.com/"}]
+      },
+      "children": [
+        {
+          "name": "RL Fundamentals",
+          "id": "rl-fundamentals",
+          "meta": {
+            "description": "MDP, Q-learning, value functions",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["MDP", "Q-Learning", "Value Functions", "Bellman Equation"],
+            "resources": [{"name": "RL Introduction", "url": "http://incompleteideas.net/book/the-book-2nd.html"}]
+          }
+        },
+        {
+          "name": "Deep RL",
+          "id": "deep-rl",
+          "meta": {
+            "description": "DQN, A3C, PPO, policy gradients",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["DQN", "A3C", "PPO", "Policy Gradients"],
+            "resources": [{"name": "Deep RL", "url": "https://spinningup.openai.com/en/latest/spinningup/rl_intro.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "AI Ethics & Responsible AI",
+      "id": "ai-ethics",
+      "meta": {
+        "description": "Bias, fairness, explainability, privacy",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["AI Ethics", "Bias", "Fairness", "Explainability", "Privacy"],
+        "resources": [{"name": "Responsible AI Practices", "url": "https://ai.google/responsibilities/responsible-ai-practices/"}]
+      }
+    }
+  ]
+}

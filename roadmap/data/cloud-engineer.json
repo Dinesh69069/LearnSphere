@@ -1,0 +1,526 @@
+{
+  "name": "Cloud Engineer",
+  "id": "cloud-engineer",
+  "meta": {
+    "description": "Complete cloud engineering roadmap - AWS, Azure, GCP, infrastructure, automation",
+    "duration": "15-18 months",
+    "level": "intermediate",
+    "topics": ["AWS", "Azure", "GCP", "Infrastructure as Code", "Cloud Security", "Networking", "Monitoring"],
+    "resources": [
+      {"name": "AWS Documentation", "url": "https://docs.aws.amazon.com/"},
+      {"name": "Cloud Guru", "url": "https://acloudguru.com/"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Cloud Fundamentals",
+      "id": "cloud-fundamentals",
+      "meta": {
+        "description": "Cloud computing basics, service models, deployment models",
+        "duration": "4-6 weeks",
+        "level": "beginner",
+        "topics": ["IaaS", "PaaS", "SaaS", "Public Cloud", "Private Cloud", "Hybrid Cloud"],
+        "resources": [{"name": "Cloud Computing Basics", "url": "https://aws.amazon.com/what-is-cloud-computing/"}]
+      },
+      "children": [
+        {
+          "name": "Cloud Service Models",
+          "id": "cloud-service-models",
+          "meta": {
+            "description": "IaaS, PaaS, SaaS explained",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["IaaS", "PaaS", "SaaS", "FaaS", "Serverless"],
+            "resources": [{"name": "Service Models", "url": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-paas/"}]
+          }
+        },
+        {
+          "name": "Cloud Deployment Models",
+          "id": "deployment-models",
+          "meta": {
+            "description": "Public, private, hybrid, multi-cloud",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Public Cloud", "Private Cloud", "Hybrid Cloud", "Multi-Cloud"],
+            "resources": [{"name": "Deployment Models", "url": "https://cloud.google.com/learn/what-is-hybrid-cloud"}]
+          }
+        },
+        {
+          "name": "Cloud Economics",
+          "id": "cloud-economics",
+          "meta": {
+            "description": "Cost models, TCO, pricing, optimization",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["Pay-as-you-go", "Reserved Instances", "Spot Instances", "Cost Optimization"],
+            "resources": [{"name": "AWS Pricing", "url": "https://aws.amazon.com/pricing/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "id": "aws-platform",
+      "meta": {
+        "description": "Comprehensive AWS services and architecture",
+        "duration": "10-12 weeks",
+        "level": "intermediate",
+        "topics": ["EC2", "S3", "VPC", "RDS", "Lambda", "CloudFormation", "IAM"],
+        "resources": [{"name": "AWS Training", "url": "https://aws.amazon.com/training/"}]
+      },
+      "children": [
+        {
+          "name": "AWS Compute Services",
+          "id": "aws-compute",
+          "meta": {
+            "description": "EC2, Lambda, ECS, EKS, Fargate",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["EC2", "Lambda", "ECS", "EKS", "Elastic Beanstalk"],
+            "resources": [{"name": "AWS Compute", "url": "https://aws.amazon.com/products/compute/"}]
+          },
+          "children": [
+            {
+              "name": "EC2 Virtual Machines",
+              "id": "aws-ec2",
+              "meta": {
+                "description": "Instances, AMIs, Auto Scaling, Load Balancing",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["EC2 Instances", "AMI", "Auto Scaling", "ELB", "ALB"],
+                "resources": [{"name": "EC2 User Guide", "url": "https://docs.aws.amazon.com/ec2/"}]
+              }
+            },
+            {
+              "name": "AWS Lambda Serverless",
+              "id": "aws-lambda-platform",
+              "meta": {
+                "description": "Functions, triggers, layers, deployment",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Lambda Functions", "Triggers", "Layers", "API Gateway"],
+                "resources": [{"name": "Lambda Guide", "url": "https://docs.aws.amazon.com/lambda/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "AWS Storage Services",
+          "id": "aws-storage",
+          "meta": {
+            "description": "S3, EBS, EFS, Storage Gateway",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["S3", "EBS", "EFS", "Glacier", "Storage Classes"],
+            "resources": [{"name": "AWS Storage", "url": "https://aws.amazon.com/products/storage/"}]
+          },
+          "children": [
+            {
+              "name": "S3 Object Storage",
+              "id": "aws-s3-storage",
+              "meta": {
+                "description": "Buckets, objects, lifecycle policies, versioning",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Buckets", "Objects", "Versioning", "Lifecycle", "Replication"],
+                "resources": [{"name": "S3 User Guide", "url": "https://docs.aws.amazon.com/s3/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "AWS Networking",
+          "id": "aws-networking",
+          "meta": {
+            "description": "VPC, subnets, routing, security groups",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["VPC", "Subnets", "Route Tables", "Security Groups", "NAT Gateway"],
+            "resources": [{"name": "VPC User Guide", "url": "https://docs.aws.amazon.com/vpc/"}]
+          },
+          "children": [
+            {
+              "name": "VPC & Subnets",
+              "id": "aws-vpc-subnets",
+              "meta": {
+                "description": "Virtual networks, CIDR, public/private subnets",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["VPC", "Subnets", "CIDR", "Internet Gateway", "NAT"],
+                "resources": [{"name": "VPC Basics", "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"}]
+              }
+            },
+            {
+              "name": "Network Security",
+              "id": "aws-network-security",
+              "meta": {
+                "description": "Security groups, NACLs, WAF",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Security Groups", "NACLs", "WAF", "Shield"],
+                "resources": [{"name": "Network Security", "url": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "AWS Databases",
+          "id": "aws-databases-platform",
+          "meta": {
+            "description": "RDS, DynamoDB, Aurora, Redshift",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["RDS", "DynamoDB", "Aurora", "ElastiCache", "Redshift"],
+            "resources": [{"name": "AWS Databases", "url": "https://aws.amazon.com/products/databases/"}]
+          }
+        },
+        {
+          "name": "AWS Security & IAM",
+          "id": "aws-security-iam",
+          "meta": {
+            "description": "Identity and Access Management, KMS, Secrets Manager",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["IAM", "KMS", "Secrets Manager", "CloudTrail", "Config"],
+            "resources": [{"name": "IAM User Guide", "url": "https://docs.aws.amazon.com/iam/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Microsoft Azure",
+      "id": "azure-platform",
+      "meta": {
+        "description": "Azure cloud platform and services",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["Azure VMs", "App Service", "Azure Functions", "AKS", "Azure DevOps"],
+        "resources": [{"name": "Azure Documentation", "url": "https://docs.microsoft.com/azure/"}]
+      },
+      "children": [
+        {
+          "name": "Azure Compute",
+          "id": "azure-compute",
+          "meta": {
+            "description": "Virtual Machines, App Service, Container Instances",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Azure VMs", "App Service", "Container Instances", "AKS"],
+            "resources": [{"name": "Azure Compute", "url": "https://azure.microsoft.com/en-us/products/category/compute/"}]
+          }
+        },
+        {
+          "name": "Azure Storage",
+          "id": "azure-storage",
+          "meta": {
+            "description": "Blob Storage, File Storage, Queue Storage",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Blob Storage", "File Storage", "Queue Storage", "Table Storage"],
+            "resources": [{"name": "Azure Storage", "url": "https://azure.microsoft.com/en-us/products/category/storage/"}]
+          }
+        },
+        {
+          "name": "Azure Networking",
+          "id": "azure-networking",
+          "meta": {
+            "description": "VNet, Load Balancer, Application Gateway",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Virtual Network", "Load Balancer", "VPN Gateway", "ExpressRoute"],
+            "resources": [{"name": "Azure Networking", "url": "https://azure.microsoft.com/en-us/products/category/networking/"}]
+          }
+        },
+        {
+          "name": "Azure Identity",
+          "id": "azure-identity",
+          "meta": {
+            "description": "Azure Active Directory, RBAC, managed identities",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Azure AD", "RBAC", "Managed Identities", "Key Vault"],
+            "resources": [{"name": "Azure AD", "url": "https://docs.microsoft.com/azure/active-directory/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Google Cloud Platform (GCP)",
+      "id": "gcp-platform",
+      "meta": {
+        "description": "GCP services and architecture",
+        "duration": "6-8 weeks",
+        "level": "intermediate",
+        "topics": ["Compute Engine", "Cloud Functions", "GKE", "Cloud Storage", "BigQuery"],
+        "resources": [{"name": "GCP Documentation", "url": "https://cloud.google.com/docs"}]
+      },
+      "children": [
+        {
+          "name": "GCP Compute",
+          "id": "gcp-compute",
+          "meta": {
+            "description": "Compute Engine, Cloud Run, Cloud Functions",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Compute Engine", "Cloud Run", "Cloud Functions", "GKE"],
+            "resources": [{"name": "GCP Compute", "url": "https://cloud.google.com/products/compute"}]
+          }
+        },
+        {
+          "name": "GCP Storage & Databases",
+          "id": "gcp-storage",
+          "meta": {
+            "description": "Cloud Storage, Cloud SQL, Firestore, BigQuery",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Cloud Storage", "Cloud SQL", "Firestore", "BigQuery", "Spanner"],
+            "resources": [{"name": "GCP Storage", "url": "https://cloud.google.com/products/storage"}]
+          }
+        },
+        {
+          "name": "GCP Networking",
+          "id": "gcp-networking",
+          "meta": {
+            "description": "VPC, Load Balancing, Cloud CDN",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["VPC", "Cloud Load Balancing", "Cloud CDN", "Cloud Armor"],
+            "resources": [{"name": "GCP Networking", "url": "https://cloud.google.com/products/networking"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure as Code",
+      "id": "infrastructure-as-code-cloud",
+      "meta": {
+        "description": "Terraform, CloudFormation, ARM templates",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Terraform", "CloudFormation", "ARM Templates", "Pulumi", "CDK"],
+        "resources": [{"name": "Terraform Docs", "url": "https://www.terraform.io/docs"}]
+      },
+      "children": [
+        {
+          "name": "Terraform",
+          "id": "terraform-cloud",
+          "meta": {
+            "description": "HCL, providers, modules, state management",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["HCL", "Providers", "Modules", "State", "Workspaces"],
+            "resources": [{"name": "Terraform Tutorial", "url": "https://learn.hashicorp.com/terraform"}]
+          },
+          "children": [
+            {
+              "name": "Terraform Fundamentals",
+              "id": "terraform-fundamentals-cloud",
+              "meta": {
+                "description": "Configuration, providers, resources",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["Configuration", "Providers", "Resources", "Variables"],
+                "resources": [{"name": "Getting Started", "url": "https://learn.hashicorp.com/collections/terraform/aws-get-started"}]
+              }
+            },
+            {
+              "name": "Terraform Advanced",
+              "id": "terraform-advanced-cloud",
+              "meta": {
+                "description": "Modules, state, backends, workspaces",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Modules", "Remote State", "Backends", "Workspaces"],
+                "resources": [{"name": "Advanced Topics", "url": "https://www.terraform.io/docs/language/modules/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CloudFormation",
+          "id": "cloudformation",
+          "meta": {
+            "description": "AWS infrastructure as code",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Templates", "Stacks", "Nested Stacks", "Change Sets"],
+            "resources": [{"name": "CloudFormation", "url": "https://docs.aws.amazon.com/cloudformation/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Containerization",
+      "id": "containerization-cloud",
+      "meta": {
+        "description": "Docker, Kubernetes, container orchestration",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Docker", "Kubernetes", "ECS", "AKS", "GKE"],
+        "resources": [{"name": "Docker Docs", "url": "https://docs.docker.com/"}]
+      },
+      "children": [
+        {
+          "name": "Docker",
+          "id": "docker-cloud",
+          "meta": {
+            "description": "Containers, images, Docker Compose",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Dockerfile", "Images", "Containers", "Docker Compose"],
+            "resources": [{"name": "Docker Tutorial", "url": "https://docs.docker.com/get-started/"}]
+          }
+        },
+        {
+          "name": "Kubernetes",
+          "id": "kubernetes-cloud",
+          "meta": {
+            "description": "Container orchestration, pods, deployments",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Pods", "Deployments", "Services", "Ingress", "ConfigMaps"],
+            "resources": [{"name": "Kubernetes Docs", "url": "https://kubernetes.io/docs/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud Monitoring & Logging",
+      "id": "cloud-monitoring",
+      "meta": {
+        "description": "CloudWatch, Azure Monitor, Stackdriver, logging",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["CloudWatch", "Azure Monitor", "Cloud Logging", "Metrics", "Alerts"],
+        "resources": [{"name": "CloudWatch", "url": "https://docs.aws.amazon.com/cloudwatch/"}]
+      },
+      "children": [
+        {
+          "name": "AWS CloudWatch",
+          "id": "aws-cloudwatch",
+          "meta": {
+            "description": "Metrics, logs, alarms, dashboards",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Metrics", "Logs", "Alarms", "Dashboards", "Insights"],
+            "resources": [{"name": "CloudWatch User Guide", "url": "https://docs.aws.amazon.com/cloudwatch/"}]
+          }
+        },
+        {
+          "name": "Distributed Tracing",
+          "id": "distributed-tracing",
+          "meta": {
+            "description": "X-Ray, Application Insights, Cloud Trace",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["AWS X-Ray", "Azure App Insights", "Cloud Trace"],
+            "resources": [{"name": "AWS X-Ray", "url": "https://docs.aws.amazon.com/xray/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud Security",
+      "id": "cloud-security-platform",
+      "meta": {
+        "description": "Security best practices, compliance, threat detection",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["Security Best Practices", "Compliance", "Encryption", "Threat Detection"],
+        "resources": [{"name": "AWS Security", "url": "https://aws.amazon.com/security/"}]
+      },
+      "children": [
+        {
+          "name": "Identity & Access Management",
+          "id": "iam-cloud",
+          "meta": {
+            "description": "IAM, RBAC, least privilege, MFA",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["IAM", "RBAC", "Least Privilege", "MFA", "Service Accounts"],
+            "resources": [{"name": "IAM Best Practices", "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"}]
+          }
+        },
+        {
+          "name": "Data Security",
+          "id": "data-security-cloud",
+          "meta": {
+            "description": "Encryption at rest, in transit, key management",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Encryption", "KMS", "TLS/SSL", "Data Classification"],
+            "resources": [{"name": "Data Encryption", "url": "https://docs.aws.amazon.com/kms/"}]
+          }
+        },
+        {
+          "name": "Compliance & Governance",
+          "id": "compliance-governance",
+          "meta": {
+            "description": "Compliance frameworks, auditing, governance",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Compliance", "Auditing", "Governance", "Policies"],
+            "resources": [{"name": "AWS Compliance", "url": "https://aws.amazon.com/compliance/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "CI/CD in Cloud",
+      "id": "cicd-cloud",
+      "meta": {
+        "description": "Cloud-native CI/CD pipelines",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["CodePipeline", "Azure DevOps", "Cloud Build", "GitHub Actions"],
+        "resources": [{"name": "AWS CodePipeline", "url": "https://docs.aws.amazon.com/codepipeline/"}]
+      },
+      "children": [
+        {
+          "name": "AWS CI/CD Services",
+          "id": "aws-cicd",
+          "meta": {
+            "description": "CodeCommit, CodeBuild, CodeDeploy, CodePipeline",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["CodeCommit", "CodeBuild", "CodeDeploy", "CodePipeline"],
+            "resources": [{"name": "AWS DevOps", "url": "https://aws.amazon.com/devops/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud Cost Optimization",
+      "id": "cost-optimization",
+      "meta": {
+        "description": "Cost analysis, rightsizing, reserved instances",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Cost Explorer", "Budgets", "Reserved Instances", "Savings Plans", "Spot Instances"],
+        "resources": [{"name": "AWS Cost Management", "url": "https://aws.amazon.com/aws-cost-management/"}]
+      }
+    },
+    {
+      "name": "Disaster Recovery & Backup",
+      "id": "disaster-recovery",
+      "meta": {
+        "description": "Backup strategies, disaster recovery, high availability",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Backup", "Disaster Recovery", "High Availability", "Multi-Region"],
+        "resources": [{"name": "AWS Disaster Recovery", "url": "https://aws.amazon.com/disaster-recovery/"}]
+      }
+    },
+    {
+      "name": "Cloud Certifications",
+      "id": "cloud-certifications",
+      "meta": {
+        "description": "AWS, Azure, GCP certifications",
+        "duration": "Ongoing",
+        "level": "advanced",
+        "topics": ["AWS Certified Solutions Architect", "Azure Administrator", "GCP Associate Cloud Engineer"],
+        "resources": [{"name": "AWS Certification", "url": "https://aws.amazon.com/certification/"}]
+      }
+    }
+  ]
+}

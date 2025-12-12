@@ -1,0 +1,835 @@
+{
+  "name": "Backend Developer",
+  "id": "backend",
+  "meta": {
+    "description": "Complete backend development roadmap - APIs, databases, authentication, deployment",
+    "duration": "12-18 months",
+    "level": "beginner",
+    "topics": ["Node.js", "Databases", "APIs", "Authentication", "Security", "DevOps"],
+    "resources": [
+      {"name": "Backend Roadmap", "url": "https://roadmap.sh/backend"},
+      {"name": "Node.js Docs", "url": "https://nodejs.org/docs"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Internet & Protocols",
+      "id": "internet-protocols",
+      "meta": {
+        "description": "How internet works, HTTP, DNS, protocols",
+        "duration": "2-3 weeks",
+        "level": "beginner",
+        "topics": ["HTTP/HTTPS", "DNS", "TCP/IP", "REST"],
+        "resources": [{"name": "How Internet Works", "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"}]
+      },
+      "children": [
+        {
+          "name": "HTTP & HTTPS",
+          "id": "http-https-backend",
+          "meta": {
+            "description": "HTTP methods, status codes, headers, SSL/TLS",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["GET/POST/PUT/DELETE", "Status Codes", "Headers", "HTTPS"],
+            "resources": [{"name": "HTTP Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP"}]
+          }
+        },
+        {
+          "name": "DNS & Domain Names",
+          "id": "dns-backend",
+          "meta": {
+            "description": "How DNS works, domain registration",
+            "duration": "3-4 days",
+            "level": "beginner",
+            "topics": ["DNS Resolution", "A Records", "CNAME", "NS Records"],
+            "resources": [{"name": "How DNS Works", "url": "https://howdns.works/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Programming Language",
+      "id": "programming-language",
+      "meta": {
+        "description": "Master JavaScript/Node.js for backend development",
+        "duration": "8-10 weeks",
+        "level": "beginner",
+        "topics": ["JavaScript", "Node.js", "npm", "Async Programming"],
+        "resources": [
+          {"name": "JavaScript.info", "url": "https://javascript.info/"},
+          {"name": "Node.js Guide", "url": "https://nodejs.org/en/docs/guides/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "JavaScript Fundamentals",
+          "id": "js-fundamentals-backend",
+          "meta": {
+            "description": "Variables, functions, objects, arrays, ES6+",
+            "duration": "3-4 weeks",
+            "level": "beginner",
+            "topics": ["Variables", "Functions", "Objects", "Arrays", "ES6+"],
+            "resources": [{"name": "Eloquent JavaScript", "url": "https://eloquentjavascript.net/"}]
+          },
+          "children": [
+            {
+              "name": "Data Structures",
+              "id": "data-structures",
+              "meta": {
+                "description": "Arrays, objects, sets, maps, linked lists",
+                "duration": "1-2 weeks",
+                "level": "beginner",
+                "topics": ["Arrays", "Objects", "Sets", "Maps", "WeakMap"],
+                "resources": [{"name": "Data Structures", "url": "https://javascript.info/data-types"}]
+              }
+            },
+            {
+              "name": "Async JavaScript",
+              "id": "async-js-backend",
+              "meta": {
+                "description": "Callbacks, promises, async/await",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["Promises", "Async/Await", "Event Loop", "Callbacks"],
+                "resources": [{"name": "Async JS", "url": "https://javascript.info/async"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Node.js Basics",
+          "id": "nodejs-basics",
+          "meta": {
+            "description": "Runtime, modules, npm, file system",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["Node Runtime", "Modules", "npm", "File System", "Streams"],
+            "resources": [{"name": "Node School", "url": "https://nodeschool.io/"}]
+          },
+          "children": [
+            {
+              "name": "Node Modules System",
+              "id": "node-modules",
+              "meta": {
+                "description": "CommonJS, ES modules, require, import/export",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["require()", "module.exports", "ES Modules"],
+                "resources": [{"name": "Modules", "url": "https://nodejs.org/api/modules.html"}]
+              }
+            },
+            {
+              "name": "File System & Streams",
+              "id": "fs-streams",
+              "meta": {
+                "description": "Reading/writing files, streams, buffers",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["fs module", "Streams", "Buffers", "Pipes"],
+                "resources": [{"name": "File System", "url": "https://nodejs.org/api/fs.html"}]
+              }
+            },
+            {
+              "name": "npm & Package Management",
+              "id": "npm-backend",
+              "meta": {
+                "description": "Installing packages, package.json, scripts",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["npm install", "package.json", "Scripts", "Versioning"],
+                "resources": [{"name": "npm Docs", "url": "https://docs.npmjs.com/"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Version Control (Git)",
+      "id": "git-backend",
+      "meta": {
+        "description": "Git basics, branching, collaboration",
+        "duration": "2 weeks",
+        "level": "beginner",
+        "topics": ["Git", "GitHub", "Branching", "Pull Requests"],
+        "resources": [{"name": "Git Documentation", "url": "https://git-scm.com/doc"}]
+      },
+      "children": [
+        {
+          "name": "Git Basics",
+          "id": "git-basics-backend",
+          "meta": {
+            "description": "init, clone, add, commit, push, pull",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Repository", "Commits", "Push/Pull", "Remote"],
+            "resources": [{"name": "Git Handbook", "url": "https://guides.github.com/introduction/git-handbook/"}]
+          }
+        },
+        {
+          "name": "Branching & Collaboration",
+          "id": "git-branching-backend",
+          "meta": {
+            "description": "Branches, merging, pull requests, code review",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Branches", "Merge", "Pull Requests", "Conflicts"],
+            "resources": [{"name": "Learn Git Branching", "url": "https://learngitbranching.js.org/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web Frameworks",
+      "id": "web-frameworks",
+      "meta": {
+        "description": "Express.js - Build RESTful APIs and web servers",
+        "duration": "6-8 weeks",
+        "level": "intermediate",
+        "topics": ["Express.js", "Middleware", "Routing", "Error Handling"],
+        "resources": [
+          {"name": "Express Documentation", "url": "https://expressjs.com/"},
+          {"name": "Express Guide", "url": "https://expressjs.com/en/guide/routing.html"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Express.js Fundamentals",
+          "id": "express-fundamentals",
+          "meta": {
+            "description": "Routing, middleware, request/response",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Routing", "Middleware", "req/res", "Static Files"],
+            "resources": [{"name": "Express Tutorial", "url": "https://expressjs.com/en/starter/installing.html"}]
+          },
+          "children": [
+            {
+              "name": "Routing",
+              "id": "routing",
+              "meta": {
+                "description": "Route parameters, query strings, route handlers",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Route Params", "Query Strings", "HTTP Methods"],
+                "resources": [{"name": "Routing", "url": "https://expressjs.com/en/guide/routing.html"}]
+              }
+            },
+            {
+              "name": "Middleware",
+              "id": "middleware",
+              "meta": {
+                "description": "Custom middleware, third-party middleware, error handling",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Custom Middleware", "body-parser", "cors", "Error Middleware"],
+                "resources": [{"name": "Middleware", "url": "https://expressjs.com/en/guide/using-middleware.html"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "RESTful APIs",
+          "id": "restful-apis",
+          "meta": {
+            "description": "REST principles, CRUD operations, API design",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["REST", "CRUD", "API Design", "Status Codes", "Versioning"],
+            "resources": [{"name": "REST API Tutorial", "url": "https://restfulapi.net/"}]
+          },
+          "children": [
+            {
+              "name": "REST Principles",
+              "id": "rest-principles",
+              "meta": {
+                "description": "Resources, HTTP methods, statelessness",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Resources", "HTTP Methods", "Stateless", "Idempotency"],
+                "resources": [{"name": "REST Principles", "url": "https://restfulapi.net/rest-architectural-constraints/"}]
+              }
+            },
+            {
+              "name": "CRUD Operations",
+              "id": "crud-operations",
+              "meta": {
+                "description": "Create, Read, Update, Delete endpoints",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["POST", "GET", "PUT/PATCH", "DELETE"],
+                "resources": [{"name": "Building REST APIs", "url": "https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "API Documentation",
+          "id": "api-documentation",
+          "meta": {
+            "description": "OpenAPI/Swagger, API documentation best practices",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Swagger", "OpenAPI", "API Docs"],
+            "resources": [{"name": "OpenAPI Spec", "url": "https://swagger.io/specification/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "id": "databases",
+      "meta": {
+        "description": "SQL and NoSQL databases",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["PostgreSQL", "MongoDB", "SQL", "ORMs", "Migrations"],
+        "resources": [
+          {"name": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/"},
+          {"name": "MongoDB University", "url": "https://university.mongodb.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Relational Databases (SQL)",
+          "id": "relational-databases",
+          "meta": {
+            "description": "PostgreSQL/MySQL, SQL queries, relationships",
+            "duration": "4-5 weeks",
+            "level": "intermediate",
+            "topics": ["SQL", "Tables", "Relationships", "Joins", "Transactions"],
+            "resources": [{"name": "SQL Tutorial", "url": "https://www.sqltutorial.org/"}]
+          },
+          "children": [
+            {
+              "name": "SQL Basics",
+              "id": "sql-basics",
+              "meta": {
+                "description": "SELECT, INSERT, UPDATE, DELETE, WHERE, ORDER BY",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["SELECT", "INSERT", "UPDATE", "DELETE", "WHERE"],
+                "resources": [{"name": "SQL Zoo", "url": "https://sqlzoo.net/"}]
+              }
+            },
+            {
+              "name": "Advanced SQL",
+              "id": "advanced-sql",
+              "meta": {
+                "description": "JOINs, subqueries, indexes, transactions",
+                "duration": "2-3 weeks",
+                "level": "advanced",
+                "topics": ["JOINS", "Subqueries", "Indexes", "Transactions", "Views"],
+                "resources": [{"name": "Advanced SQL", "url": "https://mode.com/sql-tutorial/"}]
+              }
+            },
+            {
+              "name": "Database Design",
+              "id": "database-design",
+              "meta": {
+                "description": "Normalization, relationships, schema design",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Normalization", "Foreign Keys", "Constraints", "ERD"],
+                "resources": [{"name": "Database Design", "url": "https://www.guru99.com/database-design.html"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "NoSQL Databases",
+          "id": "nosql-databases",
+          "meta": {
+            "description": "MongoDB - document-based database",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["MongoDB", "Documents", "Collections", "Queries", "Aggregation"],
+            "resources": [{"name": "MongoDB Manual", "url": "https://docs.mongodb.com/manual/"}]
+          },
+          "children": [
+            {
+              "name": "MongoDB Basics",
+              "id": "mongodb-basics",
+              "meta": {
+                "description": "Collections, documents, CRUD operations",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Collections", "Documents", "insertOne", "find", "updateOne"],
+                "resources": [{"name": "MongoDB CRUD", "url": "https://docs.mongodb.com/manual/crud/"}]
+              }
+            },
+            {
+              "name": "MongoDB Advanced",
+              "id": "mongodb-advanced",
+              "meta": {
+                "description": "Aggregation pipeline, indexing, performance",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Aggregation", "Indexes", "Performance", "Replication"],
+                "resources": [{"name": "Aggregation", "url": "https://docs.mongodb.com/manual/aggregation/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ORMs",
+          "id": "orms",
+          "meta": {
+            "description": "Prisma/Sequelize/Mongoose - Object-Relational Mapping",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Prisma", "Mongoose", "Migrations", "Schema"],
+            "resources": [{"name": "Prisma Docs", "url": "https://www.prisma.io/docs"}]
+          },
+          "children": [
+            {
+              "name": "Prisma",
+              "id": "prisma",
+              "meta": {
+                "description": "Type-safe database client, migrations, schema",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Prisma Schema", "Migrations", "Queries", "Relations"],
+                "resources": [{"name": "Prisma Tutorial", "url": "https://www.prisma.io/docs/getting-started"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Authentication & Authorization",
+      "id": "authentication",
+      "meta": {
+        "description": "JWT, OAuth, sessions, security best practices",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["JWT", "OAuth 2.0", "Sessions", "Passport.js", "bcrypt"],
+        "resources": [
+          {"name": "JWT.io", "url": "https://jwt.io/"},
+          {"name": "OAuth 2.0", "url": "https://oauth.net/2/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Password Hashing",
+          "id": "password-hashing",
+          "meta": {
+            "description": "bcrypt, argon2, secure password storage",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["bcrypt", "Salt", "Hashing", "Security"],
+            "resources": [{"name": "Password Hashing", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"}]
+          }
+        },
+        {
+          "name": "JWT Authentication",
+          "id": "jwt-auth",
+          "meta": {
+            "description": "JSON Web Tokens, access/refresh tokens",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["JWT", "Access Tokens", "Refresh Tokens", "Token Expiry"],
+            "resources": [{"name": "JWT Guide", "url": "https://jwt.io/introduction"}]
+          }
+        },
+        {
+          "name": "OAuth 2.0 & Social Login",
+          "id": "oauth",
+          "meta": {
+            "description": "OAuth flow, Google/GitHub login, Passport.js",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["OAuth 2.0", "Passport.js", "Social Login", "Scopes"],
+            "resources": [{"name": "Passport.js", "url": "http://www.passportjs.org/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "API Security",
+      "id": "api-security",
+      "meta": {
+        "description": "CORS, rate limiting, input validation, OWASP",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["CORS", "Rate Limiting", "Input Validation", "SQL Injection", "XSS"],
+        "resources": [
+          {"name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "CORS",
+          "id": "cors-backend",
+          "meta": {
+            "description": "Cross-Origin Resource Sharing configuration",
+            "duration": "3-4 days",
+            "level": "advanced",
+            "topics": ["CORS Headers", "Preflight", "Credentials"],
+            "resources": [{"name": "CORS", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"}]
+          }
+        },
+        {
+          "name": "Rate Limiting",
+          "id": "rate-limiting",
+          "meta": {
+            "description": "API rate limiting, DDoS protection",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Rate Limits", "express-rate-limit", "Redis"],
+            "resources": [{"name": "Rate Limiting", "url": "https://www.npmjs.com/package/express-rate-limit"}]
+          }
+        },
+        {
+          "name": "Input Validation & Sanitization",
+          "id": "input-validation",
+          "meta": {
+            "description": "Joi, validator.js, preventing injection attacks",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Joi", "Validation", "Sanitization", "SQL Injection", "XSS"],
+            "resources": [{"name": "Joi", "url": "https://joi.dev/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "id": "testing-backend",
+      "meta": {
+        "description": "Unit tests, integration tests, API testing",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Jest", "Supertest", "Integration Tests", "Mocking"],
+        "resources": [
+          {"name": "Jest Documentation", "url": "https://jestjs.io/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Unit Testing",
+          "id": "unit-testing-backend",
+          "meta": {
+            "description": "Jest, testing functions and modules",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Jest", "Mocking", "Test Coverage", "Assertions"],
+            "resources": [{"name": "Jest Tutorial", "url": "https://jestjs.io/docs/getting-started"}]
+          }
+        },
+        {
+          "name": "Integration Testing",
+          "id": "integration-testing",
+          "meta": {
+            "description": "Supertest, testing API endpoints",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Supertest", "API Testing", "Database Testing"],
+            "resources": [{"name": "Supertest", "url": "https://github.com/visionmedia/supertest"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Caching",
+      "id": "caching",
+      "meta": {
+        "description": "Redis - In-memory data store for caching",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Redis", "Cache Strategies", "Session Storage", "Performance"],
+        "resources": [
+          {"name": "Redis Documentation", "url": "https://redis.io/documentation"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Redis Basics",
+          "id": "redis-basics",
+          "meta": {
+            "description": "Key-value store, data types, commands",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Strings", "Lists", "Sets", "Hashes", "TTL"],
+            "resources": [{"name": "Redis Tutorial", "url": "https://redis.io/docs/getting-started/"}]
+          }
+        },
+        {
+          "name": "Caching Strategies",
+          "id": "caching-strategies",
+          "meta": {
+            "description": "Cache-aside, write-through, cache invalidation",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Cache-aside", "Write-through", "Invalidation", "TTL"],
+            "resources": [{"name": "Caching Best Practices", "url": "https://redis.com/blog/cache-strategies/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Message Queues",
+      "id": "message-queues",
+      "meta": {
+        "description": "RabbitMQ, background jobs, async processing",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["RabbitMQ", "Bull", "Background Jobs", "Pub/Sub"],
+        "resources": [
+          {"name": "RabbitMQ Tutorial", "url": "https://www.rabbitmq.com/getstarted.html"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Background Jobs",
+          "id": "background-jobs",
+          "meta": {
+            "description": "Bull queue, job processing, retries",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Bull", "Job Queues", "Workers", "Retry Logic"],
+            "resources": [{"name": "Bull Documentation", "url": "https://github.com/OptimalBits/bull"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web Servers",
+      "id": "web-servers",
+      "meta": {
+        "description": "Nginx, reverse proxy, load balancing",
+        "duration": "2 weeks",
+        "level": "advanced",
+        "topics": ["Nginx", "Reverse Proxy", "Load Balancing", "SSL"],
+        "resources": [
+          {"name": "Nginx Documentation", "url": "https://nginx.org/en/docs/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Nginx Basics",
+          "id": "nginx-basics",
+          "meta": {
+            "description": "Configuration, reverse proxy, static files",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Configuration", "Reverse Proxy", "Static Files"],
+            "resources": [{"name": "Nginx Beginner Guide", "url": "https://nginx.org/en/docs/beginners_guide.html"}]
+          }
+        },
+        {
+          "name": "Load Balancing",
+          "id": "load-balancing",
+          "meta": {
+            "description": "Distributing traffic, health checks",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Round Robin", "Least Connections", "Health Checks"],
+            "resources": [{"name": "Load Balancing", "url": "https://nginx.org/en/docs/http/load_balancing.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Containerization",
+      "id": "containerization",
+      "meta": {
+        "description": "Docker - Containerize applications",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Docker", "Containers", "Docker Compose", "Images"],
+        "resources": [
+          {"name": "Docker Documentation", "url": "https://docs.docker.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Docker Basics",
+          "id": "docker-basics",
+          "meta": {
+            "description": "Images, containers, Dockerfile",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Dockerfile", "Images", "Containers", "Volumes"],
+            "resources": [{"name": "Docker Tutorial", "url": "https://docker-curriculum.com/"}]
+          }
+        },
+        {
+          "name": "Docker Compose",
+          "id": "docker-compose",
+          "meta": {
+            "description": "Multi-container applications, orchestration",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["docker-compose.yml", "Services", "Networks", "Volumes"],
+            "resources": [{"name": "Docker Compose", "url": "https://docs.docker.com/compose/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "id": "cicd",
+      "meta": {
+        "description": "Continuous Integration and Deployment",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["GitHub Actions", "Automated Testing", "Deployment"],
+        "resources": [
+          {"name": "GitHub Actions", "url": "https://docs.github.com/en/actions"}
+        ]
+      },
+      "children": [
+        {
+          "name": "GitHub Actions",
+          "id": "github-actions",
+          "meta": {
+            "description": "Workflows, automated testing, deployment pipelines",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Workflows", "Actions", "Secrets", "Deployment"],
+            "resources": [{"name": "Actions Tutorial", "url": "https://docs.github.com/en/actions/quickstart"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud & Deployment",
+      "id": "cloud-deployment",
+      "meta": {
+        "description": "AWS, Heroku, deployment strategies",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["AWS", "Heroku", "Environment Variables", "Scaling"],
+        "resources": [
+          {"name": "AWS Documentation", "url": "https://docs.aws.amazon.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Cloud Basics (AWS)",
+          "id": "aws-basics",
+          "meta": {
+            "description": "EC2, S3, RDS, basic AWS services",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["EC2", "S3", "RDS", "IAM", "VPC"],
+            "resources": [{"name": "AWS Getting Started", "url": "https://aws.amazon.com/getting-started/"}]
+          }
+        },
+        {
+          "name": "Deployment Strategies",
+          "id": "deployment-strategies",
+          "meta": {
+            "description": "Blue-green, rolling updates, zero-downtime",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Blue-Green", "Rolling Updates", "Health Checks"],
+            "resources": [{"name": "Deployment Patterns", "url": "https://martinfowler.com/bliki/BlueGreenDeployment.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Monitoring & Logging",
+      "id": "monitoring-logging",
+      "meta": {
+        "description": "Application monitoring, logging, error tracking",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Logging", "Monitoring", "Error Tracking", "Performance"],
+        "resources": [
+          {"name": "Winston Logger", "url": "https://github.com/winstonjs/winston"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Logging",
+          "id": "logging",
+          "meta": {
+            "description": "Winston, Morgan, structured logging",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Winston", "Morgan", "Log Levels", "Transports"],
+            "resources": [{"name": "Winston Docs", "url": "https://github.com/winstonjs/winston#readme"}]
+          }
+        },
+        {
+          "name": "Application Monitoring",
+          "id": "app-monitoring",
+          "meta": {
+            "description": "Performance monitoring, metrics, alerts",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Metrics", "APM", "Alerts", "Dashboards"],
+            "resources": [{"name": "Monitoring Best Practices", "url": "https://www.datadoghq.com/blog/monitoring-101-collecting-data/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GraphQL (Optional)",
+      "id": "graphql",
+      "meta": {
+        "description": "Alternative to REST APIs",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["GraphQL", "Schemas", "Resolvers", "Apollo Server"],
+        "resources": [
+          {"name": "GraphQL", "url": "https://graphql.org/learn/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "GraphQL Basics",
+          "id": "graphql-basics",
+          "meta": {
+            "description": "Schemas, types, queries, mutations",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Schema", "Queries", "Mutations", "Types"],
+            "resources": [{"name": "GraphQL Tutorial", "url": "https://graphql.org/learn/"}]
+          }
+        },
+        {
+          "name": "Apollo Server",
+          "id": "apollo-server",
+          "meta": {
+            "description": "Building GraphQL servers with Apollo",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Apollo Server", "Resolvers", "Data Sources"],
+            "resources": [{"name": "Apollo Docs", "url": "https://www.apollographql.com/docs/apollo-server/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Microservices (Optional)",
+      "id": "microservices",
+      "meta": {
+        "description": "Microservices architecture patterns",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["Microservices", "Service Mesh", "API Gateway", "Event-Driven"],
+        "resources": [
+          {"name": "Microservices.io", "url": "https://microservices.io/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Microservices Patterns",
+          "id": "microservices-patterns",
+          "meta": {
+            "description": "Service decomposition, communication patterns",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Decomposition", "Communication", "Data Management"],
+            "resources": [{"name": "Microservices Patterns", "url": "https://microservices.io/patterns/index.html"}]
+          }
+        }
+      ]
+    }
+  ]
+}

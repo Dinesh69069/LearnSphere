@@ -1,0 +1,522 @@
+{
+  "name": "Cybersecurity Specialist",
+  "id": "cybersecurity",
+  "meta": {
+    "description": "Complete cybersecurity roadmap - network security, ethical hacking, penetration testing",
+    "duration": "18-24 months",
+    "level": "advanced",
+    "topics": ["Network Security", "Ethical Hacking", "Penetration Testing", "Security Tools", "Certifications"],
+    "resources": [
+      {"name": "OWASP", "url": "https://owasp.org/"},
+      {"name": "Cybersecurity Roadmap", "url": "https://roadmap.sh/cyber-security"}
+    ]
+  },
+  "children": [
+    {
+      "name": "IT Fundamentals",
+      "id": "it-fundamentals",
+      "meta": {
+        "description": "Core IT knowledge - hardware, software, troubleshooting",
+        "duration": "2-3 weeks",
+        "level": "beginner",
+        "topics": ["Computer Hardware", "Software", "Troubleshooting", "IT Support"],
+        "resources": [{"name": "IT Basics", "url": "https://www.comptia.org/certifications/a"}]
+      },
+      "children": [
+        {
+          "name": "Computer Hardware",
+          "id": "computer-hardware",
+          "meta": {
+            "description": "CPU, RAM, storage, motherboards, peripherals",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["CPU", "RAM", "Hard Drives", "SSDs", "Motherboards"],
+            "resources": [{"name": "Hardware Guide", "url": "https://www.comptia.org/"}]
+          }
+        },
+        {
+          "name": "IT Troubleshooting",
+          "id": "it-troubleshooting",
+          "meta": {
+            "description": "Problem solving, diagnostics, repair techniques",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Diagnostics", "Problem Solving", "Repair", "Maintenance"],
+            "resources": [{"name": "Troubleshooting Guide", "url": "https://www.comptia.org/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "id": "operating-systems-security",
+      "meta": {
+        "description": "Windows, Linux, macOS administration and security",
+        "duration": "6-8 weeks",
+        "level": "beginner",
+        "topics": ["Windows", "Linux", "macOS", "Command Line", "Permissions"],
+        "resources": [{"name": "Linux Essentials", "url": "https://www.lpi.org/"}]
+      },
+      "children": [
+        {
+          "name": "Windows Administration",
+          "id": "windows-admin",
+          "meta": {
+            "description": "Windows OS, PowerShell, Active Directory",
+            "duration": "2-3 weeks",
+            "level": "beginner",
+            "topics": ["Windows 10/11", "PowerShell", "Active Directory", "Group Policy"],
+            "resources": [{"name": "Windows Server", "url": "https://docs.microsoft.com/windows-server/"}]
+          },
+          "children": [
+            {
+              "name": "PowerShell Scripting",
+              "id": "powershell-scripting",
+              "meta": {
+                "description": "Automation, scripting, administration",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["PowerShell", "Scripting", "Automation", "Cmdlets"],
+                "resources": [{"name": "PowerShell Docs", "url": "https://docs.microsoft.com/powershell/"}]
+              }
+            },
+            {
+              "name": "Active Directory",
+              "id": "active-directory",
+              "meta": {
+                "description": "User management, domain services, group policy",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["AD", "Domains", "GPO", "Users", "Groups"],
+                "resources": [{"name": "AD Guide", "url": "https://docs.microsoft.com/windows-server/identity/ad-ds/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Linux Administration",
+          "id": "linux-admin-security",
+          "meta": {
+            "description": "Linux distributions, CLI, shell scripting, permissions",
+            "duration": "3-4 weeks",
+            "level": "beginner",
+            "topics": ["Ubuntu", "CentOS", "Bash", "File Permissions", "Process Management"],
+            "resources": [{"name": "Linux Journey", "url": "https://linuxjourney.com/"}]
+          },
+          "children": [
+            {
+              "name": "Linux Command Line",
+              "id": "linux-cli",
+              "meta": {
+                "description": "Terminal, Bash commands, file system navigation",
+                "duration": "1-2 weeks",
+                "level": "beginner",
+                "topics": ["Terminal", "Bash", "File System", "Commands"],
+                "resources": [{"name": "Linux CLI", "url": "https://ubuntu.com/tutorials/command-line-for-beginners"}]
+              }
+            },
+            {
+              "name": "Bash Scripting",
+              "id": "bash-scripting",
+              "meta": {
+                "description": "Shell scripts, automation, system administration",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Bash Scripts", "Automation", "Variables", "Loops"],
+                "resources": [{"name": "Bash Guide", "url": "https://mywiki.wooledge.org/BashGuide"}]
+              }
+            },
+            {
+              "name": "Linux Permissions",
+              "id": "linux-permissions",
+              "meta": {
+                "description": "File permissions, ownership, sudo, ACLs",
+                "duration": "1 week",
+                "level": "beginner",
+                "topics": ["chmod", "chown", "sudo", "ACLs"],
+                "resources": [{"name": "Permissions Guide", "url": "https://linuxjourney.com/lesson/file-permissions"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "macOS Administration",
+          "id": "macos-admin",
+          "meta": {
+            "description": "macOS system administration and security",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["macOS", "Terminal", "System Preferences", "Security"],
+            "resources": [{"name": "macOS Guide", "url": "https://support.apple.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Networking Fundamentals",
+      "id": "networking-fundamentals-security",
+      "meta": {
+        "description": "OSI model, TCP/IP, protocols, network architecture",
+        "duration": "4-6 weeks",
+        "level": "intermediate",
+        "topics": ["OSI Model", "TCP/IP", "DNS", "HTTP", "Network Protocols"],
+        "resources": [{"name": "Network+", "url": "https://www.comptia.org/certifications/network"}]
+      },
+      "children": [
+        {
+          "name": "OSI Model & TCP/IP",
+          "id": "osi-tcpip",
+          "meta": {
+            "description": "7 layers, protocol stack, encapsulation",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["OSI Model", "TCP/IP", "Layers", "Protocols"],
+            "resources": [{"name": "OSI Model", "url": "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/"}]
+          }
+        },
+        {
+          "name": "Common Protocols",
+          "id": "common-protocols",
+          "meta": {
+            "description": "HTTP, HTTPS, FTP, SSH, DNS, SMTP",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["HTTP", "HTTPS", "FTP", "SSH", "DNS", "SMTP"],
+            "resources": [{"name": "Protocol Guide", "url": "https://www.cloudflare.com/learning/"}]
+          }
+        },
+        {
+          "name": "Common Ports",
+          "id": "common-ports",
+          "meta": {
+            "description": "Port numbers, services, well-known ports",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Port 80", "Port 443", "Port 22", "Port 21", "Port 25"],
+            "resources": [{"name": "Port List", "url": "https://www.iana.org/assignments/service-names-port-numbers/"}]
+          }
+        },
+        {
+          "name": "SSL/TLS & Certificates",
+          "id": "ssl-tls",
+          "meta": {
+            "description": "Encryption, certificates, handshake, PKI",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["SSL", "TLS", "Certificates", "PKI", "Encryption"],
+            "resources": [{"name": "SSL/TLS", "url": "https://www.cloudflare.com/learning/ssl/what-is-ssl/"}]
+          }
+        },
+        {
+          "name": "Subnetting & IP Addressing",
+          "id": "subnetting",
+          "meta": {
+            "description": "IPv4, IPv6, CIDR, subnet masks",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["IPv4", "IPv6", "CIDR", "Subnetting", "Netmask"],
+            "resources": [{"name": "Subnetting Guide", "url": "https://www.subnet-calculator.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Security Fundamentals",
+      "id": "security-fundamentals",
+      "meta": {
+        "description": "CIA triad, threats, vulnerabilities, risk management",
+        "duration": "4-6 weeks",
+        "level": "intermediate",
+        "topics": ["CIA Triad", "Threats", "Vulnerabilities", "Risk", "Compliance"],
+        "resources": [{"name": "Security+", "url": "https://www.comptia.org/certifications/security"}]
+      },
+      "children": [
+        {
+          "name": "CIA Triad",
+          "id": "cia-triad",
+          "meta": {
+            "description": "Confidentiality, Integrity, Availability",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Confidentiality", "Integrity", "Availability"],
+            "resources": [{"name": "CIA Triad", "url": "https://www.fortinet.com/resources/cyberglossary/cia-triad"}]
+          }
+        },
+        {
+          "name": "Threats & Vulnerabilities",
+          "id": "threats-vulnerabilities",
+          "meta": {
+            "description": "Malware, phishing, social engineering, exploits",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Malware", "Phishing", "Social Engineering", "Exploits"],
+            "resources": [{"name": "Threat Landscape", "url": "https://owasp.org/"}]
+          }
+        },
+        {
+          "name": "Risk Management",
+          "id": "risk-management",
+          "meta": {
+            "description": "Risk assessment, mitigation, compliance",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Risk Assessment", "Mitigation", "Compliance", "Frameworks"],
+            "resources": [{"name": "Risk Management", "url": "https://www.nist.gov/cyberframework"}]
+          }
+        },
+        {
+          "name": "Authentication & Access Control",
+          "id": "auth-access-control",
+          "meta": {
+            "description": "MFA, RBAC, least privilege, identity management",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["MFA", "RBAC", "Least Privilege", "IAM"],
+            "resources": [{"name": "Access Control", "url": "https://csrc.nist.gov/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Security Tools & Technologies",
+      "id": "security-tools",
+      "meta": {
+        "description": "Firewalls, IDS/IPS, SIEM, antivirus, encryption",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Firewalls", "IDS/IPS", "SIEM", "Antivirus", "VPN"],
+        "resources": [{"name": "Security Tools", "url": "https://www.kali.org/"}]
+      },
+      "children": [
+        {
+          "name": "Firewalls",
+          "id": "firewalls",
+          "meta": {
+            "description": "Network firewalls, host firewalls, rules, policies",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["iptables", "pfSense", "Firewall Rules", "NAT"],
+            "resources": [{"name": "Firewall Guide", "url": "https://www.pfsense.org/"}]
+          }
+        },
+        {
+          "name": "IDS/IPS Systems",
+          "id": "ids-ips",
+          "meta": {
+            "description": "Intrusion detection, intrusion prevention, Snort, Suricata",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Snort", "Suricata", "IDS", "IPS", "Signatures"],
+            "resources": [{"name": "Snort", "url": "https://www.snort.org/"}]
+          }
+        },
+        {
+          "name": "SIEM Solutions",
+          "id": "siem",
+          "meta": {
+            "description": "Security information and event management, log analysis",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Splunk", "ELK Stack", "Log Analysis", "Correlation"],
+            "resources": [{"name": "Splunk", "url": "https://www.splunk.com/"}]
+          }
+        },
+        {
+          "name": "VPN Technologies",
+          "id": "vpn",
+          "meta": {
+            "description": "Virtual private networks, tunneling, encryption",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["OpenVPN", "IPSec", "WireGuard", "SSL VPN"],
+            "resources": [{"name": "OpenVPN", "url": "https://openvpn.net/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ethical Hacking & Penetration Testing",
+      "id": "ethical-hacking",
+      "meta": {
+        "description": "Pentesting methodology, exploitation, reporting",
+        "duration": "8-12 weeks",
+        "level": "advanced",
+        "topics": ["Reconnaissance", "Scanning", "Exploitation", "Post-Exploitation", "Reporting"],
+        "resources": [{"name": "CEH", "url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"}]
+      },
+      "children": [
+        {
+          "name": "Reconnaissance",
+          "id": "reconnaissance",
+          "meta": {
+            "description": "Information gathering, OSINT, footprinting",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["OSINT", "Google Dorking", "Shodan", "Maltego"],
+            "resources": [{"name": "OSINT Framework", "url": "https://osintframework.com/"}]
+          }
+        },
+        {
+          "name": "Scanning & Enumeration",
+          "id": "scanning-enumeration",
+          "meta": {
+            "description": "Nmap, vulnerability scanning, service enumeration",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Nmap", "Nessus", "OpenVAS", "Service Enumeration"],
+            "resources": [{"name": "Nmap", "url": "https://nmap.org/"}]
+          }
+        },
+        {
+          "name": "Exploitation Techniques",
+          "id": "exploitation",
+          "meta": {
+            "description": "Metasploit, exploits, payloads, buffer overflows",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Metasploit", "Exploits", "Payloads", "Buffer Overflow"],
+            "resources": [{"name": "Metasploit", "url": "https://www.metasploit.com/"}]
+          },
+          "children": [
+            {
+              "name": "Metasploit Framework",
+              "id": "metasploit",
+              "meta": {
+                "description": "Modules, exploits, payloads, meterpreter",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["Metasploit", "Meterpreter", "Exploits", "Payloads"],
+                "resources": [{"name": "Metasploit Unleashed", "url": "https://www.offensive-security.com/metasploit-unleashed/"}]
+              }
+            },
+            {
+              "name": "Web Application Attacks",
+              "id": "web-app-attacks",
+              "meta": {
+                "description": "SQL injection, XSS, CSRF, OWASP Top 10",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["SQL Injection", "XSS", "CSRF", "OWASP Top 10"],
+                "resources": [{"name": "OWASP", "url": "https://owasp.org/www-project-top-ten/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Post-Exploitation",
+          "id": "post-exploitation",
+          "meta": {
+            "description": "Privilege escalation, lateral movement, persistence",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Privilege Escalation", "Lateral Movement", "Persistence"],
+            "resources": [{"name": "Post-Exploitation", "url": "https://attack.mitre.org/"}]
+          }
+        },
+        {
+          "name": "Reporting & Documentation",
+          "id": "reporting",
+          "meta": {
+            "description": "Pentest reports, findings, remediation recommendations",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Report Writing", "Findings", "Remediation", "Executive Summary"],
+            "resources": [{"name": "Report Templates", "url": "https://github.com/hmaverickadams/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Security Certifications",
+      "id": "security-certifications",
+      "meta": {
+        "description": "Industry-recognized certifications for cybersecurity",
+        "duration": "Ongoing",
+        "level": "advanced",
+        "topics": ["CompTIA", "CEH", "OSCP", "CISSP"],
+        "resources": [{"name": "Certification Paths", "url": "https://pauljerimy.com/security-certification-roadmap/"}]
+      },
+      "children": [
+        {
+          "name": "CompTIA Security+",
+          "id": "security-plus",
+          "meta": {
+            "description": "Entry-level security certification",
+            "duration": "8-12 weeks",
+            "level": "beginner",
+            "topics": ["Security Fundamentals", "Threats", "Cryptography", "Network Security"],
+            "resources": [{"name": "Security+", "url": "https://www.comptia.org/certifications/security"}]
+          }
+        },
+        {
+          "name": "Certified Ethical Hacker (CEH)",
+          "id": "ceh",
+          "meta": {
+            "description": "Ethical hacking and penetration testing certification",
+            "duration": "8-12 weeks",
+            "level": "intermediate",
+            "topics": ["Ethical Hacking", "Penetration Testing", "Exploitation"],
+            "resources": [{"name": "CEH", "url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"}]
+          }
+        },
+        {
+          "name": "Offensive Security Certified Professional (OSCP)",
+          "id": "oscp",
+          "meta": {
+            "description": "Hands-on penetration testing certification",
+            "duration": "12-16 weeks",
+            "level": "advanced",
+            "topics": ["Penetration Testing", "Buffer Overflow", "Privilege Escalation"],
+            "resources": [{"name": "OSCP", "url": "https://www.offensive-security.com/pwk-oscp/"}]
+          }
+        },
+        {
+          "name": "CISSP",
+          "id": "cissp",
+          "meta": {
+            "description": "Advanced security management certification",
+            "duration": "16-20 weeks",
+            "level": "advanced",
+            "topics": ["Security Management", "Governance", "Risk Management", "Architecture"],
+            "resources": [{"name": "CISSP", "url": "https://www.isc2.org/Certifications/CISSP"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Practical Skills & CTFs",
+      "id": "practical-skills",
+      "meta": {
+        "description": "Hands-on practice, CTF platforms, bug bounties",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["CTFs", "HackTheBox", "TryHackMe", "Bug Bounty"],
+        "resources": [{"name": "HackTheBox", "url": "https://www.hackthebox.com/"}]
+      },
+      "children": [
+        {
+          "name": "CTF Platforms",
+          "id": "ctf-platforms",
+          "meta": {
+            "description": "Capture The Flag competitions and practice",
+            "duration": "Ongoing",
+            "level": "advanced",
+            "topics": ["HackTheBox", "TryHackMe", "PicoCTF", "OverTheWire"],
+            "resources": [{"name": "CTF List", "url": "https://ctftime.org/"}]
+          }
+        },
+        {
+          "name": "Bug Bounty Programs",
+          "id": "bug-bounty",
+          "meta": {
+            "description": "Responsible disclosure, vulnerability reporting",
+            "duration": "Ongoing",
+            "level": "advanced",
+            "topics": ["HackerOne", "Bugcrowd", "Responsible Disclosure"],
+            "resources": [{"name": "HackerOne", "url": "https://www.hackerone.com/"}]
+          }
+        }
+      ]
+    }
+  ]
+}
