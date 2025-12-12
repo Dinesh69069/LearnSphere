@@ -1,0 +1,631 @@
+{
+  "name": "UI/UX Designer",
+  "id": "uiux-designer",
+  "meta": {
+    "description": "Complete UI/UX design roadmap - user research, wireframing, prototyping, design systems",
+    "duration": "10-12 months",
+    "level": "beginner",
+    "topics": ["User Research", "Wireframing", "Prototyping", "Design Systems", "Interaction Design"],
+    "resources": [
+      {"name": "UX Roadmap", "url": "https://roadmap.sh/ux-design"},
+      {"name": "Nielsen Norman Group", "url": "https://www.nngroup.com/"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Design Thinking & Psychology",
+      "id": "design-thinking",
+      "meta": {
+        "description": "Human-centered design, behavioral psychology, decision making",
+        "duration": "4-5 weeks",
+        "level": "beginner",
+        "topics": ["Design Thinking", "User Psychology", "Behavioral Science"],
+        "resources": [{"name": "Design Thinking", "url": "https://www.interaction-design.org/literature/topics/design-thinking"}]
+      },
+      "children": [
+        {
+          "name": "Behavioral Science",
+          "id": "behavioral-science",
+          "meta": {
+            "description": "Behavioral economics, cognitive biases, decision making",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["Behavioral Economics", "Cognitive Biases", "Decision Making"],
+            "resources": [{"name": "Behavioral Design", "url": "https://www.behavioraleconomics.com/"}]
+          },
+          "children": [
+            {
+              "name": "Human Decision Making",
+              "id": "human-decision-making",
+              "meta": {
+                "description": "Dual process theory, System 1 and 2",
+                "duration": "1 week",
+                "level": "beginner",
+                "topics": ["System 1", "System 2", "Heuristics"],
+                "resources": [{"name": "Thinking Fast and Slow", "url": "https://www.nngroup.com/"}]
+              }
+            },
+            {
+              "name": "Nudge Theory",
+              "id": "nudge-theory",
+              "meta": {
+                "description": "Behavioral nudges, choice architecture",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Nudge", "Choice Architecture", "Defaults"],
+                "resources": [{"name": "Nudge", "url": "https://www.behavioraleconomics.com/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Behavior Change Strategies",
+          "id": "behavior-change",
+          "meta": {
+            "description": "BJ Fogg model, Hook model, habit formation",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Fogg Behavior Model", "Hook Model", "Habits"],
+            "resources": [{"name": "Hooked", "url": "https://www.nirandfar.com/"}]
+          },
+          "children": [
+            {
+              "name": "BJ Fogg Behavior Model",
+              "id": "fogg-model",
+              "meta": {
+                "description": "Motivation, ability, prompts",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Motivation", "Ability", "Prompts"],
+                "resources": [{"name": "Fogg Model", "url": "https://behaviormodel.org/"}]
+              }
+            },
+            {
+              "name": "Persuasive Technology",
+              "id": "persuasive-tech",
+              "meta": {
+                "description": "Captology, persuasion principles",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Persuasion", "Captology", "Influence"],
+                "resources": [{"name": "Persuasive Tech", "url": "https://captology.stanford.edu/"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "User Research",
+      "id": "user-research",
+      "meta": {
+        "description": "User interviews, surveys, usability testing, personas",
+        "duration": "5-6 weeks",
+        "level": "beginner",
+        "topics": ["User Interviews", "Surveys", "Usability Testing", "Personas"],
+        "resources": [{"name": "User Research", "url": "https://www.nngroup.com/topic/user-research/"}]
+      },
+      "children": [
+        {
+          "name": "Research Methods",
+          "id": "research-methods",
+          "meta": {
+            "description": "Qualitative and quantitative research",
+            "duration": "2-3 weeks",
+            "level": "beginner",
+            "topics": ["Qualitative", "Quantitative", "Mixed Methods"],
+            "resources": [{"name": "Research Methods", "url": "https://www.nngroup.com/articles/which-ux-research-methods/"}]
+          },
+          "children": [
+            {
+              "name": "User Interviews",
+              "id": "user-interviews",
+              "meta": {
+                "description": "Conducting effective interviews, asking questions",
+                "duration": "1 week",
+                "level": "beginner",
+                "topics": ["Interviewing", "Questions", "Insights"],
+                "resources": [{"name": "Interview Guide", "url": "https://www.nngroup.com/articles/user-interviews/"}]
+              }
+            },
+            {
+              "name": "Surveys & Questionnaires",
+              "id": "surveys",
+              "meta": {
+                "description": "Survey design, question types, analysis",
+                "duration": "1 week",
+                "level": "beginner",
+                "topics": ["Surveys", "Questionnaires", "Likert Scale"],
+                "resources": [{"name": "Survey Design", "url": "https://www.nngroup.com/articles/surveys/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "User Personas",
+          "id": "personas",
+          "meta": {
+            "description": "Creating personas, user archetypes",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Personas", "User Archetypes", "Empathy Maps"],
+            "resources": [{"name": "Personas", "url": "https://www.nngroup.com/articles/persona/"}]
+          }
+        },
+        {
+          "name": "Usability Testing",
+          "id": "usability-testing",
+          "meta": {
+            "description": "Moderated and unmoderated testing",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Usability Tests", "Think Aloud", "Task Analysis"],
+            "resources": [{"name": "Usability Testing", "url": "https://www.nngroup.com/articles/usability-testing-101/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product Understanding",
+      "id": "product-understanding",
+      "meta": {
+        "description": "Business models, value propositions, competitive analysis",
+        "duration": "3-4 weeks",
+        "level": "beginner",
+        "topics": ["Business Model Canvas", "Value Proposition", "Competitor Analysis"],
+        "resources": [{"name": "Business Model Canvas", "url": "https://www.strategyzer.com/"}]
+      },
+      "children": [
+        {
+          "name": "Business Model Canvas",
+          "id": "business-model-canvas",
+          "meta": {
+            "description": "Value proposition, customer segments, channels",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["BMC", "Value Proposition", "Customer Segments"],
+            "resources": [{"name": "BMC Guide", "url": "https://www.strategyzer.com/canvas/business-model-canvas"}]
+          }
+        },
+        {
+          "name": "Competitive Analysis",
+          "id": "competitive-analysis",
+          "meta": {
+            "description": "SWOT analysis, competitor research",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["SWOT", "Competitor Analysis", "Market Research"],
+            "resources": [{"name": "Competitive Analysis", "url": "https://www.nngroup.com/articles/competitive-usability-evaluations/"}]
+          }
+        },
+        {
+          "name": "User Stories & Jobs to be Done",
+          "id": "user-stories",
+          "meta": {
+            "description": "Writing user stories, jobs to be done framework",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["User Stories", "JTBD", "Scenarios"],
+            "resources": [{"name": "User Stories", "url": "https://www.interaction-design.org/literature/topics/user-stories"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Information Architecture",
+      "id": "information-architecture",
+      "meta": {
+        "description": "Site maps, card sorting, navigation design",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["Site Maps", "Card Sorting", "Navigation", "IA Principles"],
+        "resources": [{"name": "IA Basics", "url": "https://www.nngroup.com/articles/information-architecture-101/"}]
+      },
+      "children": [
+        {
+          "name": "Site Maps & User Flows",
+          "id": "sitemaps-userflows",
+          "meta": {
+            "description": "Creating site maps and user flow diagrams",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Site Maps", "User Flows", "Task Flows"],
+            "resources": [{"name": "User Flows", "url": "https://www.nngroup.com/articles/user-flow/"}]
+          }
+        },
+        {
+          "name": "Card Sorting",
+          "id": "card-sorting",
+          "meta": {
+            "description": "Open and closed card sorting",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Card Sorting", "Information Grouping"],
+            "resources": [{"name": "Card Sorting", "url": "https://www.nngroup.com/articles/card-sorting-definition/"}]
+          }
+        },
+        {
+          "name": "Navigation Design",
+          "id": "navigation-design",
+          "meta": {
+            "description": "Navigation patterns, breadcrumbs, menus",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Navigation", "Menus", "Breadcrumbs"],
+            "resources": [{"name": "Navigation", "url": "https://www.nngroup.com/articles/navigation-ia-tests/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wireframing & Prototyping",
+      "id": "wireframing-prototyping",
+      "meta": {
+        "description": "Low-fidelity to high-fidelity prototypes",
+        "duration": "6-8 weeks",
+        "level": "beginner",
+        "topics": ["Wireframes", "Mockups", "Prototypes", "Figma", "Adobe XD"],
+        "resources": [{"name": "Wireframing", "url": "https://www.nngroup.com/articles/wireflows/"}]
+      },
+      "children": [
+        {
+          "name": "Low-Fidelity Wireframes",
+          "id": "low-fi-wireframes",
+          "meta": {
+            "description": "Sketching, paper prototypes, basic wireframes",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["Sketching", "Paper Prototypes", "Lo-Fi Wireframes"],
+            "resources": [{"name": "Sketching", "url": "https://www.nngroup.com/articles/ux-sketching/"}]
+          }
+        },
+        {
+          "name": "High-Fidelity Mockups",
+          "id": "hi-fi-mockups",
+          "meta": {
+            "description": "Detailed visual designs, UI mockups",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Mockups", "Visual Design", "Hi-Fi Designs"],
+            "resources": [{"name": "Mockups", "url": "https://www.nngroup.com/articles/wireframe-prototype-mockup/"}]
+          }
+        },
+        {
+          "name": "Interactive Prototypes",
+          "id": "interactive-prototypes",
+          "meta": {
+            "description": "Clickable prototypes, interactions, animations",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Prototyping", "Interactions", "Animations"],
+            "resources": [{"name": "Prototyping", "url": "https://www.nngroup.com/articles/ux-prototype/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Visual Design",
+      "id": "visual-design",
+      "meta": {
+        "description": "Typography, color theory, layout, visual hierarchy",
+        "duration": "6-8 weeks",
+        "level": "intermediate",
+        "topics": ["Typography", "Color", "Layout", "Visual Hierarchy"],
+        "resources": [{"name": "Visual Design", "url": "https://www.interaction-design.org/literature/topics/visual-design"}]
+      },
+      "children": [
+        {
+          "name": "Typography",
+          "id": "typography",
+          "meta": {
+            "description": "Font selection, hierarchy, readability",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Fonts", "Type Hierarchy", "Readability"],
+            "resources": [{"name": "Typography", "url": "https://www.interaction-design.org/literature/topics/typography"}]
+          }
+        },
+        {
+          "name": "Color Theory",
+          "id": "color-theory",
+          "meta": {
+            "description": "Color psychology, palettes, accessibility",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Color", "Palettes", "Contrast", "Accessibility"],
+            "resources": [{"name": "Color Theory", "url": "https://www.interaction-design.org/literature/topics/color-theory"}]
+          }
+        },
+        {
+          "name": "Layout & Composition",
+          "id": "layout-composition",
+          "meta": {
+            "description": "Grid systems, spacing, alignment",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Grid", "Spacing", "Alignment", "White Space"],
+            "resources": [{"name": "Layout Design", "url": "https://www.interaction-design.org/literature/topics/layout"}]
+          }
+        },
+        {
+          "name": "Visual Hierarchy",
+          "id": "visual-hierarchy",
+          "meta": {
+            "description": "Emphasis, contrast, grouping",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Hierarchy", "Emphasis", "Gestalt Principles"],
+            "resources": [{"name": "Visual Hierarchy", "url": "https://www.interaction-design.org/literature/article/visual-hierarchy-organizing-content-to-follow-natural-eye-movement-patterns"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Interaction Design",
+      "id": "interaction-design",
+      "meta": {
+        "description": "Micro-interactions, animations, transitions, feedback",
+        "duration": "4-5 weeks",
+        "level": "intermediate",
+        "topics": ["Micro-interactions", "Animations", "Feedback", "Affordances"],
+        "resources": [{"name": "Interaction Design", "url": "https://www.interaction-design.org/literature/topics/interaction-design"}]
+      },
+      "children": [
+        {
+          "name": "Micro-interactions",
+          "id": "micro-interactions",
+          "meta": {
+            "description": "Triggers, rules, feedback, loops",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Micro-interactions", "Feedback", "Delighters"],
+            "resources": [{"name": "Micro-interactions", "url": "https://www.nngroup.com/articles/microinteractions/"}]
+          }
+        },
+        {
+          "name": "Animation & Motion",
+          "id": "animation-motion",
+          "meta": {
+            "description": "Transitions, easing, motion principles",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Animation", "Transitions", "Easing"],
+            "resources": [{"name": "Motion Design", "url": "https://www.interaction-design.org/literature/topics/motion-design"}]
+          }
+        },
+        {
+          "name": "Affordances & Signifiers",
+          "id": "affordances",
+          "meta": {
+            "description": "Perceived and actual affordances, signifiers",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Affordances", "Signifiers", "Discoverability"],
+            "resources": [{"name": "Affordances", "url": "https://www.interaction-design.org/literature/topics/affordances"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tools",
+      "id": "design-tools",
+      "meta": {
+        "description": "Figma, Adobe XD, Sketch, prototyping tools",
+        "duration": "6-8 weeks",
+        "level": "beginner",
+        "topics": ["Figma", "Adobe XD", "Sketch", "Prototyping"],
+        "resources": [{"name": "Figma", "url": "https://www.figma.com/"}]
+      },
+      "children": [
+        {
+          "name": "Figma",
+          "id": "figma-tool",
+          "meta": {
+            "description": "Components, auto-layout, prototyping in Figma",
+            "duration": "3-4 weeks",
+            "level": "beginner",
+            "topics": ["Figma", "Components", "Auto Layout", "Prototyping"],
+            "resources": [{"name": "Figma Learn", "url": "https://www.figma.com/resources/learn-design/"}]
+          },
+          "children": [
+            {
+              "name": "Figma Basics",
+              "id": "figma-basics",
+              "meta": {
+                "description": "Interface, tools, layers, frames",
+                "duration": "1-2 weeks",
+                "level": "beginner",
+                "topics": ["Interface", "Tools", "Frames", "Layers"],
+                "resources": [{"name": "Figma Basics", "url": "https://help.figma.com/"}]
+              }
+            },
+            {
+              "name": "Components & Variants",
+              "id": "figma-components",
+              "meta": {
+                "description": "Reusable components, variants, instances",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Components", "Variants", "Instances"],
+                "resources": [{"name": "Components", "url": "https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Adobe XD",
+          "id": "adobe-xd",
+          "meta": {
+            "description": "XD prototyping, repeat grids, design systems",
+            "duration": "2-3 weeks",
+            "level": "beginner",
+            "topics": ["Adobe XD", "Prototyping", "Repeat Grid"],
+            "resources": [{"name": "Adobe XD", "url": "https://www.adobe.com/products/xd.html"}]
+          }
+        },
+        {
+          "name": "Sketch",
+          "id": "sketch",
+          "meta": {
+            "description": "Sketch symbols, plugins, libraries",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Sketch", "Symbols", "Libraries"],
+            "resources": [{"name": "Sketch", "url": "https://www.sketch.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Systems",
+      "id": "design-systems",
+      "meta": {
+        "description": "Component libraries, style guides, design tokens",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["Design Systems", "Component Libraries", "Style Guides"],
+        "resources": [{"name": "Design Systems", "url": "https://www.designsystems.com/"}]
+      },
+      "children": [
+        {
+          "name": "Component Libraries",
+          "id": "component-libraries",
+          "meta": {
+            "description": "Building reusable component libraries",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Components", "Libraries", "Reusability"],
+            "resources": [{"name": "Material Design", "url": "https://m3.material.io/"}]
+          }
+        },
+        {
+          "name": "Design Tokens",
+          "id": "design-tokens",
+          "meta": {
+            "description": "Variables, theming, design tokens",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Design Tokens", "Variables", "Theming"],
+            "resources": [{"name": "Design Tokens", "url": "https://spectrum.adobe.com/page/design-tokens/"}]
+          }
+        },
+        {
+          "name": "Documentation",
+          "id": "design-documentation",
+          "meta": {
+            "description": "Style guides, pattern libraries, documentation",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Style Guide", "Documentation", "Guidelines"],
+            "resources": [{"name": "Storybook", "url": "https://storybook.js.org/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Accessibility & Inclusive Design",
+      "id": "accessibility",
+      "meta": {
+        "description": "WCAG, screen readers, inclusive design principles",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["WCAG", "Accessibility", "Inclusive Design", "Screen Readers"],
+        "resources": [{"name": "A11y", "url": "https://www.w3.org/WAI/"}]
+      },
+      "children": [
+        {
+          "name": "WCAG Standards",
+          "id": "wcag",
+          "meta": {
+            "description": "Web Content Accessibility Guidelines",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["WCAG", "A11y", "Compliance"],
+            "resources": [{"name": "WCAG", "url": "https://www.w3.org/WAI/WCAG21/quickref/"}]
+          }
+        },
+        {
+          "name": "Inclusive Design",
+          "id": "inclusive-design",
+          "meta": {
+            "description": "Designing for diverse users, disabilities",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Inclusive Design", "Diversity", "Equity"],
+            "resources": [{"name": "Inclusive Design", "url": "https://www.microsoft.com/design/inclusive/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Responsive & Mobile Design",
+      "id": "responsive-design",
+      "meta": {
+        "description": "Mobile-first design, responsive layouts, breakpoints",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["Responsive Design", "Mobile-First", "Breakpoints"],
+        "resources": [{"name": "Responsive Design", "url": "https://www.interaction-design.org/literature/topics/responsive-design"}]
+      },
+      "children": [
+        {
+          "name": "Mobile-First Design",
+          "id": "mobile-first",
+          "meta": {
+            "description": "Designing for mobile devices first",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Mobile-First", "Touch Targets", "Mobile UX"],
+            "resources": [{"name": "Mobile UX", "url": "https://www.nngroup.com/articles/mobile-ux/"}]
+          }
+        },
+        {
+          "name": "Responsive Layouts",
+          "id": "responsive-layouts",
+          "meta": {
+            "description": "Breakpoints, fluid grids, flexible images",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Breakpoints", "Fluid Grids", "Responsive"],
+            "resources": [{"name": "Responsive Web Design", "url": "https://alistapart.com/article/responsive-web-design/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Collaboration & Handoff",
+      "id": "collaboration-handoff",
+      "meta": {
+        "description": "Working with developers, design handoff, version control",
+        "duration": "2-3 weeks",
+        "level": "intermediate",
+        "topics": ["Collaboration", "Handoff", "Zeplin", "Developer Tools"],
+        "resources": [{"name": "Design Handoff", "url": "https://www.nngroup.com/articles/developer-handoff/"}]
+      },
+      "children": [
+        {
+          "name": "Design Handoff Tools",
+          "id": "handoff-tools",
+          "meta": {
+            "description": "Zeplin, Figma Inspect, design specs",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Zeplin", "Figma Inspect", "Specs"],
+            "resources": [{"name": "Zeplin", "url": "https://zeplin.io/"}]
+          }
+        },
+        {
+          "name": "Design QA",
+          "id": "design-qa",
+          "meta": {
+            "description": "Review implementations, design consistency",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Design QA", "Implementation Review"],
+            "resources": [{"name": "Design QA", "url": "https://www.nngroup.com/articles/design-qa/"}]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "name": "Data Scientist",
+  "id": "data-science",
+  "meta": {
+    "description": "Complete data science roadmap - Statistics, ML, data visualization, experimentation",
+    "duration": "15-20 months",
+    "level": "intermediate",
+    "topics": ["Python", "Statistics", "Machine Learning", "Data Visualization", "SQL", "Deep Learning"],
+    "resources": [
+      {"name": "Data Science Roadmap", "url": "https://roadmap.sh/ai-data-scientist"},
+      {"name": "Coursera ML", "url": "https://www.coursera.org/learn/machine-learning"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Mathematics & Statistics",
+      "id": "math-stats",
+      "meta": {
+        "description": "Linear algebra, calculus, probability, statistics",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["Linear Algebra", "Calculus", "Probability", "Statistics", "Hypothesis Testing"],
+        "resources": [{"name": "Khan Academy", "url": "https://www.khanacademy.org/math/statistics-probability"}]
+      },
+      "children": [
+        {
+          "name": "Descriptive Statistics",
+          "id": "descriptive-stats",
+          "meta": {
+            "description": "Mean, median, mode, variance, standard deviation",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["Mean", "Median", "Mode", "Variance", "Standard Deviation"],
+            "resources": [{"name": "Statistics", "url": "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data"}]
+          }
+        },
+        {
+          "name": "Inferential Statistics",
+          "id": "inferential-stats",
+          "meta": {
+            "description": "Hypothesis testing, confidence intervals, p-values",
+            "duration": "3 weeks",
+            "level": "intermediate",
+            "topics": ["Hypothesis Testing", "Confidence Intervals", "p-values", "T-tests", "ANOVA"],
+            "resources": [{"name": "Inferential Stats", "url": "https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample"}]
+          }
+        },
+        {
+          "name": "Probability Theory",
+          "id": "probability",
+          "meta": {
+            "description": "Probability distributions, Bayes theorem",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Probability", "Distributions", "Bayes Theorem", "Conditional Probability"],
+            "resources": [{"name": "Probability", "url": "https://www.khanacademy.org/math/statistics-probability/probability-library"}]
+          }
+        },
+        {
+          "name": "Linear Algebra",
+          "id": "linear-algebra",
+          "meta": {
+            "description": "Vectors, matrices, eigenvalues, transformations",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Vectors", "Matrices", "Eigenvalues", "Transformations"],
+            "resources": [{"name": "3Blue1Brown Linear Algebra", "url": "https://www.3blue1brown.com/topics/linear-algebra"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Python Programming",
+      "id": "python-programming",
+      "meta": {
+        "description": "Python fundamentals, NumPy, Pandas, data manipulation",
+        "duration": "6-8 weeks",
+        "level": "beginner",
+        "topics": ["Python", "NumPy", "Pandas", "Data Structures", "Functions"],
+        "resources": [{"name": "Python.org Tutorial", "url": "https://docs.python.org/3/tutorial/"}]
+      },
+      "children": [
+        {
+          "name": "Python Basics",
+          "id": "python-basics",
+          "meta": {
+            "description": "Variables, functions, loops, data structures",
+            "duration": "2-3 weeks",
+            "level": "beginner",
+            "topics": ["Variables", "Functions", "Lists", "Dictionaries", "Loops"],
+            "resources": [{"name": "Python Tutorial", "url": "https://docs.python.org/3/tutorial/"}]
+          }
+        },
+        {
+          "name": "NumPy",
+          "id": "numpy",
+          "meta": {
+            "description": "Arrays, vectorization, mathematical operations",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Arrays", "Vectorization", "Broadcasting", "Mathematical Operations"],
+            "resources": [{"name": "NumPy Docs", "url": "https://numpy.org/doc/stable/user/"}]
+          }
+        },
+        {
+          "name": "Pandas",
+          "id": "pandas",
+          "meta": {
+            "description": "DataFrames, data manipulation, cleaning",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["DataFrames", "Series", "Data Cleaning", "Grouping", "Merging"],
+            "resources": [{"name": "Pandas Docs", "url": "https://pandas.pydata.org/docs/user_guide/"}]
+          },
+          "children": [
+            {
+              "name": "Data Cleaning",
+              "id": "data-cleaning",
+              "meta": {
+                "description": "Handling missing data, duplicates, data types",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Missing Data", "Duplicates", "Data Types", "Outliers"],
+                "resources": [{"name": "Data Cleaning", "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html"}]
+              }
+            },
+            {
+              "name": "Data Transformation",
+              "id": "data-transformation",
+              "meta": {
+                "description": "Groupby, pivot tables, aggregations",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Groupby", "Pivot Tables", "Aggregations", "Apply"],
+                "resources": [{"name": "Grouping", "url": "https://pandas.pydata.org/docs/user_guide/groupby.html"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data Visualization",
+      "id": "data-visualization",
+      "meta": {
+        "description": "Matplotlib, Seaborn, Plotly - Visual analytics",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["Matplotlib", "Seaborn", "Plotly", "Charts", "Dashboards"],
+        "resources": [
+          {"name": "Matplotlib", "url": "https://matplotlib.org/"},
+          {"name": "Seaborn", "url": "https://seaborn.pydata.org/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Matplotlib Basics",
+          "id": "matplotlib",
+          "meta": {
+            "description": "Plots, charts, customization",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Line Plots", "Scatter Plots", "Bar Charts", "Histograms"],
+            "resources": [{"name": "Matplotlib Tutorial", "url": "https://matplotlib.org/stable/tutorials/index.html"}]
+          }
+        },
+        {
+          "name": "Seaborn",
+          "id": "seaborn",
+          "meta": {
+            "description": "Statistical visualizations, aesthetics",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Statistical Plots", "Heatmaps", "Pair Plots", "Distribution Plots"],
+            "resources": [{"name": "Seaborn Tutorial", "url": "https://seaborn.pydata.org/tutorial.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "SQL & Databases",
+      "id": "sql-databases",
+      "meta": {
+        "description": "SQL for data analysis, querying databases",
+        "duration": "4-5 weeks",
+        "level": "intermediate",
+        "topics": ["SQL", "Queries", "Joins", "Aggregations", "Window Functions"],
+        "resources": [{"name": "SQL Tutorial", "url": "https://www.sqltutorial.org/"}]
+      },
+      "children": [
+        {
+          "name": "SQL Basics",
+          "id": "sql-basics-ds",
+          "meta": {
+            "description": "SELECT, WHERE, GROUP BY, ORDER BY",
+            "duration": "2 weeks",
+            "level": "beginner",
+            "topics": ["SELECT", "WHERE", "GROUP BY", "ORDER BY", "HAVING"],
+            "resources": [{"name": "SQL Zoo", "url": "https://sqlzoo.net/"}]
+          }
+        },
+        {
+          "name": "Advanced SQL",
+          "id": "advanced-sql-ds",
+          "meta": {
+            "description": "JOINs, subqueries, window functions, CTEs",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["JOINS", "Subqueries", "Window Functions", "CTEs"],
+            "resources": [{"name": "Advanced SQL", "url": "https://mode.com/sql-tutorial/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Fundamentals",
+      "id": "ml-fundamentals",
+      "meta": {
+        "description": "Supervised learning, unsupervised learning, model evaluation",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["Supervised Learning", "Unsupervised Learning", "Model Evaluation", "Scikit-learn"],
+        "resources": [{"name": "Scikit-learn Docs", "url": "https://scikit-learn.org/stable/"}]
+      },
+      "children": [
+        {
+          "name": "Supervised Learning",
+          "id": "supervised-learning",
+          "meta": {
+            "description": "Linear regression, logistic regression, decision trees",
+            "duration": "4-5 weeks",
+            "level": "advanced",
+            "topics": ["Linear Regression", "Logistic Regression", "Decision Trees", "Random Forests"],
+            "resources": [{"name": "Supervised Learning", "url": "https://scikit-learn.org/stable/supervised_learning.html"}]
+          },
+          "children": [
+            {
+              "name": "Linear & Logistic Regression",
+              "id": "regression",
+              "meta": {
+                "description": "Linear models, classification, regularization",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["Linear Regression", "Logistic Regression", "Ridge", "Lasso"],
+                "resources": [{"name": "Linear Models", "url": "https://scikit-learn.org/stable/modules/linear_model.html"}]
+              }
+            },
+            {
+              "name": "Tree-Based Models",
+              "id": "tree-models",
+              "meta": {
+                "description": "Decision trees, random forests, gradient boosting",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["Decision Trees", "Random Forests", "XGBoost", "LightGBM"],
+                "resources": [{"name": "Tree Models", "url": "https://scikit-learn.org/stable/modules/tree.html"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Unsupervised Learning",
+          "id": "unsupervised-learning",
+          "meta": {
+            "description": "Clustering, dimensionality reduction, PCA",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["K-Means", "Hierarchical Clustering", "PCA", "t-SNE"],
+            "resources": [{"name": "Unsupervised Learning", "url": "https://scikit-learn.org/stable/unsupervised_learning.html"}]
+          },
+          "children": [
+            {
+              "name": "Clustering",
+              "id": "clustering",
+              "meta": {
+                "description": "K-Means, DBSCAN, hierarchical clustering",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["K-Means", "DBSCAN", "Hierarchical Clustering"],
+                "resources": [{"name": "Clustering", "url": "https://scikit-learn.org/stable/modules/clustering.html"}]
+              }
+            },
+            {
+              "name": "Dimensionality Reduction",
+              "id": "dimensionality-reduction",
+              "meta": {
+                "description": "PCA, t-SNE, feature selection",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["PCA", "t-SNE", "Feature Selection"],
+                "resources": [{"name": "Dimensionality Reduction", "url": "https://scikit-learn.org/stable/modules/decomposition.html"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Model Evaluation",
+          "id": "model-evaluation",
+          "meta": {
+            "description": "Cross-validation, metrics, hyperparameter tuning",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Cross-Validation", "Accuracy", "Precision", "Recall", "F1-Score", "ROC-AUC"],
+            "resources": [{"name": "Model Evaluation", "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"}]
+          },
+          "children": [
+            {
+              "name": "Hyperparameter Tuning",
+              "id": "hyperparameter-tuning",
+              "meta": {
+                "description": "Grid search, random search, cross-validation",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Grid Search", "Random Search", "Cross-Validation"],
+                "resources": [{"name": "Hyperparameter Tuning", "url": "https://scikit-learn.org/stable/modules/grid_search.html"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "id": "deep-learning",
+      "meta": {
+        "description": "Neural networks, TensorFlow, PyTorch, CNNs, RNNs",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["Neural Networks", "TensorFlow", "PyTorch", "CNNs", "RNNs", "Transfer Learning"],
+        "resources": [
+          {"name": "TensorFlow Docs", "url": "https://www.tensorflow.org/"},
+          {"name": "PyTorch Tutorials", "url": "https://pytorch.org/tutorials/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Neural Network Basics",
+          "id": "neural-networks",
+          "meta": {
+            "description": "Perceptrons, activation functions, backpropagation",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Perceptrons", "Activation Functions", "Backpropagation", "Gradient Descent"],
+            "resources": [{"name": "Neural Networks", "url": "http://neuralnetworksanddeeplearning.com/"}]
+          }
+        },
+        {
+          "name": "Convolutional Neural Networks",
+          "id": "cnns",
+          "meta": {
+            "description": "Image classification, object detection, CNNs",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["CNNs", "Image Classification", "Object Detection", "Transfer Learning"],
+            "resources": [{"name": "CNN Tutorial", "url": "https://cs231n.github.io/"}]
+          }
+        },
+        {
+          "name": "Recurrent Neural Networks",
+          "id": "rnns",
+          "meta": {
+            "description": "Sequence models, LSTM, GRU, NLP",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["RNNs", "LSTM", "GRU", "Sequence Models"],
+            "resources": [{"name": "RNN Tutorial", "url": "https://www.tensorflow.org/guide/keras/rnn"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "id": "nlp",
+      "meta": {
+        "description": "Text processing, sentiment analysis, transformers",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["NLP", "Text Processing", "Sentiment Analysis", "BERT", "Transformers"],
+        "resources": [{"name": "Hugging Face", "url": "https://huggingface.co/learn/nlp-course"}]
+      },
+      "children": [
+        {
+          "name": "Text Preprocessing",
+          "id": "text-preprocessing",
+          "meta": {
+            "description": "Tokenization, stemming, lemmatization",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Tokenization", "Stemming", "Lemmatization", "Stop Words"],
+            "resources": [{"name": "NLTK", "url": "https://www.nltk.org/"}]
+          }
+        },
+        {
+          "name": "Transformers & BERT",
+          "id": "transformers",
+          "meta": {
+            "description": "Attention mechanism, BERT, GPT, fine-tuning",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Transformers", "BERT", "GPT", "Attention", "Fine-tuning"],
+            "resources": [{"name": "Transformers Course", "url": "https://huggingface.co/learn/nlp-course"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Feature Engineering",
+      "id": "feature-engineering",
+      "meta": {
+        "description": "Feature selection, extraction, encoding",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Feature Selection", "Feature Extraction", "Encoding", "Scaling"],
+        "resources": [{"name": "Feature Engineering", "url": "https://scikit-learn.org/stable/modules/preprocessing.html"}]
+      },
+      "children": [
+        {
+          "name": "Feature Scaling & Encoding",
+          "id": "scaling-encoding",
+          "meta": {
+            "description": "Normalization, standardization, one-hot encoding",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Normalization", "Standardization", "One-Hot Encoding", "Label Encoding"],
+            "resources": [{"name": "Preprocessing", "url": "https://scikit-learn.org/stable/modules/preprocessing.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Big Data Tools",
+      "id": "big-data",
+      "meta": {
+        "description": "Spark, distributed computing, big data processing",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["Apache Spark", "PySpark", "Distributed Computing", "Big Data"],
+        "resources": [{"name": "Spark Documentation", "url": "https://spark.apache.org/docs/latest/"}]
+      },
+      "children": [
+        {
+          "name": "PySpark",
+          "id": "pyspark",
+          "meta": {
+            "description": "Spark DataFrames, RDDs, transformations",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["DataFrames", "RDDs", "Transformations", "Actions"],
+            "resources": [{"name": "PySpark Tutorial", "url": "https://spark.apache.org/docs/latest/api/python/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "MLOps & Deployment",
+      "id": "mlops",
+      "meta": {
+        "description": "Model deployment, monitoring, MLflow, Docker",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["MLflow", "Model Deployment", "Docker", "API Deployment", "Monitoring"],
+        "resources": [{"name": "MLflow", "url": "https://mlflow.org/docs/latest/index.html"}]
+      },
+      "children": [
+        {
+          "name": "Model Deployment",
+          "id": "model-deployment",
+          "meta": {
+            "description": "Flask APIs, FastAPI, model serving",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Flask", "FastAPI", "Model Serving", "REST APIs"],
+            "resources": [{"name": "FastAPI", "url": "https://fastapi.tiangolo.com/"}]
+          }
+        },
+        {
+          "name": "Experiment Tracking",
+          "id": "experiment-tracking",
+          "meta": {
+            "description": "MLflow, experiment tracking, versioning",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["MLflow", "Experiment Tracking", "Model Registry"],
+            "resources": [{"name": "MLflow Tracking", "url": "https://mlflow.org/docs/latest/tracking.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "A/B Testing & Experimentation",
+      "id": "ab-testing",
+      "meta": {
+        "description": "Hypothesis testing, A/B tests, experimental design",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["A/B Testing", "Hypothesis Testing", "Statistical Significance", "Experimental Design"],
+        "resources": [{"name": "A/B Testing Guide", "url": "https://www.optimizely.com/optimization-glossary/ab-testing/"}]
+      }
+    }
+  ]
+}

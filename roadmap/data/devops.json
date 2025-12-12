@@ -1,0 +1,546 @@
+{
+  "name": "DevOps Engineer",
+  "id": "devops",
+  "meta": {
+    "description": "Complete DevOps roadmap - Infrastructure, CI/CD, containers, cloud, monitoring",
+    "duration": "15-20 months",
+    "level": "intermediate",
+    "topics": ["Linux", "Docker", "Kubernetes", "AWS", "CI/CD", "Terraform", "Monitoring"],
+    "resources": [
+      {"name": "DevOps Roadmap", "url": "https://roadmap.sh/devops"},
+      {"name": "DevOps Guide", "url": "https://roadmap.sh/devops"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Linux Fundamentals",
+      "id": "linux-fundamentals",
+      "meta": {
+        "description": "Linux OS, command line, shell scripting",
+        "duration": "6-8 weeks",
+        "level": "intermediate",
+        "topics": ["Linux", "Bash", "File System", "Permissions", "Networking"],
+        "resources": [{"name": "Linux Journey", "url": "https://linuxjourney.com/"}]
+      },
+      "children": [
+        {
+          "name": "Command Line Basics",
+          "id": "cli-basics",
+          "meta": {
+            "description": "Navigation, file operations, text processing",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["cd", "ls", "grep", "awk", "sed", "pipes"],
+            "resources": [{"name": "Linux Commands", "url": "https://www.linuxcommand.org/"}]
+          }
+        },
+        {
+          "name": "File Permissions & Ownership",
+          "id": "file-permissions",
+          "meta": {
+            "description": "chmod, chown, users, groups",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["chmod", "chown", "users", "groups", "sudo"],
+            "resources": [{"name": "Linux Permissions", "url": "https://www.linux.com/training-tutorials/understanding-linux-file-permissions/"}]
+          }
+        },
+        {
+          "name": "Bash Scripting",
+          "id": "bash-scripting",
+          "meta": {
+            "description": "Shell scripts, automation, variables, loops",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Bash Scripts", "Variables", "Loops", "Functions", "Cron Jobs"],
+            "resources": [{"name": "Bash Scripting Guide", "url": "https://www.shellscript.sh/"}]
+          }
+        },
+        {
+          "name": "Networking Basics",
+          "id": "networking-basics",
+          "meta": {
+            "description": "TCP/IP, DNS, SSH, networking tools",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["TCP/IP", "DNS", "SSH", "netstat", "curl"],
+            "resources": [{"name": "Networking Basics", "url": "https://www.cloudflare.com/learning/network-layer/what-is-a-computer-network/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Version Control (Git)",
+      "id": "git-devops",
+      "meta": {
+        "description": "Git, GitHub, version control workflows",
+        "duration": "2 weeks",
+        "level": "intermediate",
+        "topics": ["Git", "GitHub", "Branching", "Merge Strategies"],
+        "resources": [{"name": "Git Documentation", "url": "https://git-scm.com/doc"}]
+      },
+      "children": [
+        {
+          "name": "Git Advanced",
+          "id": "git-advanced",
+          "meta": {
+            "description": "Rebasing, cherry-pick, conflict resolution",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Rebase", "Cherry-pick", "Conflict Resolution", "Git Hooks"],
+            "resources": [{"name": "Git Advanced", "url": "https://www.atlassian.com/git/tutorials/advanced-overview"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Containerization (Docker)",
+      "id": "containerization-docker",
+      "meta": {
+        "description": "Docker - Build, ship, and run applications in containers",
+        "duration": "5-6 weeks",
+        "level": "intermediate",
+        "topics": ["Docker", "Containers", "Images", "Volumes", "Networks", "Docker Compose"],
+        "resources": [{"name": "Docker Documentation", "url": "https://docs.docker.com/"}]
+      },
+      "children": [
+        {
+          "name": "Docker Fundamentals",
+          "id": "docker-fundamentals",
+          "meta": {
+            "description": "Images, containers, Dockerfile, volumes",
+            "duration": "3 weeks",
+            "level": "intermediate",
+            "topics": ["Images", "Containers", "Dockerfile", "Volumes", "Networks"],
+            "resources": [{"name": "Docker Tutorial", "url": "https://docker-curriculum.com/"}]
+          },
+          "children": [
+            {
+              "name": "Dockerfile Best Practices",
+              "id": "dockerfile-best-practices",
+              "meta": {
+                "description": "Multi-stage builds, layer caching, optimization",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Multi-stage Builds", "Layer Caching", "Security"],
+                "resources": [{"name": "Dockerfile Best Practices", "url": "https://docs.docker.com/develop/dev-best-practices/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Docker Compose",
+          "id": "docker-compose-devops",
+          "meta": {
+            "description": "Multi-container applications, orchestration",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["docker-compose.yml", "Services", "Networks", "Volumes", "Dependencies"],
+            "resources": [{"name": "Docker Compose", "url": "https://docs.docker.com/compose/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Container Orchestration (Kubernetes)",
+      "id": "kubernetes",
+      "meta": {
+        "description": "Kubernetes - Deploy, scale, manage containerized applications",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["Kubernetes", "Pods", "Services", "Deployments", "ConfigMaps", "Ingress"],
+        "resources": [{"name": "Kubernetes Docs", "url": "https://kubernetes.io/docs/"}]
+      },
+      "children": [
+        {
+          "name": "Kubernetes Basics",
+          "id": "k8s-basics",
+          "meta": {
+            "description": "Pods, deployments, services, kubectl",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Pods", "Deployments", "Services", "kubectl", "Namespaces"],
+            "resources": [{"name": "Kubernetes Tutorial", "url": "https://kubernetes.io/docs/tutorials/"}]
+          },
+          "children": [
+            {
+              "name": "Pods & Deployments",
+              "id": "pods-deployments",
+              "meta": {
+                "description": "Creating pods, deployments, replica sets",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["Pods", "Deployments", "ReplicaSets", "Rolling Updates"],
+                "resources": [{"name": "Pods", "url": "https://kubernetes.io/docs/concepts/workloads/pods/"}]
+              }
+            },
+            {
+              "name": "Services & Networking",
+              "id": "k8s-services",
+              "meta": {
+                "description": "ClusterIP, NodePort, LoadBalancer, Ingress",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Services", "ClusterIP", "LoadBalancer", "Ingress"],
+                "resources": [{"name": "Services", "url": "https://kubernetes.io/docs/concepts/services-networking/service/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Configuration & Secrets",
+          "id": "k8s-config",
+          "meta": {
+            "description": "ConfigMaps, Secrets, environment variables",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["ConfigMaps", "Secrets", "Environment Variables"],
+            "resources": [{"name": "ConfigMaps", "url": "https://kubernetes.io/docs/concepts/configuration/configmap/"}]
+          }
+        },
+        {
+          "name": "Persistent Storage",
+          "id": "k8s-storage",
+          "meta": {
+            "description": "Volumes, PersistentVolumes, PersistentVolumeClaims",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Volumes", "PersistentVolumes", "Storage Classes"],
+            "resources": [{"name": "Storage", "url": "https://kubernetes.io/docs/concepts/storage/"}]
+          }
+        },
+        {
+          "name": "Helm Package Manager",
+          "id": "helm",
+          "meta": {
+            "description": "Helm charts, package management, templating",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Helm", "Charts", "Templates", "Values"],
+            "resources": [{"name": "Helm Docs", "url": "https://helm.sh/docs/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud Providers (AWS)",
+      "id": "cloud-aws",
+      "meta": {
+        "description": "Amazon Web Services - Cloud computing platform",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["EC2", "S3", "RDS", "VPC", "IAM", "Lambda", "CloudFormation"],
+        "resources": [{"name": "AWS Documentation", "url": "https://docs.aws.amazon.com/"}]
+      },
+      "children": [
+        {
+          "name": "AWS Core Services",
+          "id": "aws-core",
+          "meta": {
+            "description": "EC2, S3, VPC, IAM fundamentals",
+            "duration": "4-5 weeks",
+            "level": "advanced",
+            "topics": ["EC2", "S3", "VPC", "IAM", "Security Groups"],
+            "resources": [{"name": "AWS Getting Started", "url": "https://aws.amazon.com/getting-started/"}]
+          },
+          "children": [
+            {
+              "name": "EC2 Compute",
+              "id": "aws-ec2",
+              "meta": {
+                "description": "Virtual servers, instances, AMIs, auto-scaling",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["EC2 Instances", "AMI", "Auto Scaling", "Load Balancers"],
+                "resources": [{"name": "EC2 User Guide", "url": "https://docs.aws.amazon.com/ec2/"}]
+              }
+            },
+            {
+              "name": "S3 Storage",
+              "id": "aws-s3",
+              "meta": {
+                "description": "Object storage, buckets, policies, versioning",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Buckets", "Objects", "Policies", "Versioning"],
+                "resources": [{"name": "S3 User Guide", "url": "https://docs.aws.amazon.com/s3/"}]
+              }
+            },
+            {
+              "name": "IAM Security",
+              "id": "aws-iam",
+              "meta": {
+                "description": "Users, groups, roles, policies, permissions",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Users", "Groups", "Roles", "Policies", "MFA"],
+                "resources": [{"name": "IAM User Guide", "url": "https://docs.aws.amazon.com/iam/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Databases & Storage",
+          "id": "aws-databases",
+          "meta": {
+            "description": "RDS, DynamoDB, ElastiCache",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["RDS", "DynamoDB", "ElastiCache", "Aurora"],
+            "resources": [{"name": "RDS User Guide", "url": "https://docs.aws.amazon.com/rds/"}]
+          }
+        },
+        {
+          "name": "Serverless & Lambda",
+          "id": "aws-lambda",
+          "meta": {
+            "description": "Lambda functions, API Gateway, serverless",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Lambda", "API Gateway", "Serverless", "Event-Driven"],
+            "resources": [{"name": "Lambda Developer Guide", "url": "https://docs.aws.amazon.com/lambda/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure as Code (IaC)",
+      "id": "infrastructure-as-code",
+      "meta": {
+        "description": "Terraform, CloudFormation - Manage infrastructure with code",
+        "duration": "5-6 weeks",
+        "level": "advanced",
+        "topics": ["Terraform", "CloudFormation", "IaC", "State Management"],
+        "resources": [{"name": "Terraform Docs", "url": "https://www.terraform.io/docs"}]
+      },
+      "children": [
+        {
+          "name": "Terraform Fundamentals",
+          "id": "terraform-fundamentals",
+          "meta": {
+            "description": "HCL, providers, resources, state",
+            "duration": "3 weeks",
+            "level": "advanced",
+            "topics": ["HCL", "Providers", "Resources", "State", "Variables"],
+            "resources": [{"name": "Terraform Tutorial", "url": "https://learn.hashicorp.com/terraform"}]
+          },
+          "children": [
+            {
+              "name": "Terraform State Management",
+              "id": "terraform-state",
+              "meta": {
+                "description": "Remote state, backends, state locking",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["State", "Backends", "Remote State", "Locking"],
+                "resources": [{"name": "State", "url": "https://www.terraform.io/docs/language/state/"}]
+              }
+            },
+            {
+              "name": "Terraform Modules",
+              "id": "terraform-modules",
+              "meta": {
+                "description": "Reusable modules, module registry",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Modules", "Module Registry", "Best Practices"],
+                "resources": [{"name": "Modules", "url": "https://www.terraform.io/docs/language/modules/"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CI/CD Pipelines",
+      "id": "cicd-pipelines",
+      "meta": {
+        "description": "GitHub Actions, Jenkins, GitLab CI - Automation",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["GitHub Actions", "Jenkins", "CI/CD", "Automated Testing", "Deployment"],
+        "resources": [{"name": "GitHub Actions", "url": "https://docs.github.com/en/actions"}]
+      },
+      "children": [
+        {
+          "name": "GitHub Actions",
+          "id": "github-actions-devops",
+          "meta": {
+            "description": "Workflows, actions, runners, secrets",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Workflows", "Actions", "Runners", "Secrets", "Matrix"],
+            "resources": [{"name": "Actions Tutorial", "url": "https://docs.github.com/en/actions/quickstart"}]
+          },
+          "children": [
+            {
+              "name": "CI Workflows",
+              "id": "ci-workflows",
+              "meta": {
+                "description": "Build, test, code quality automation",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Build", "Test", "Linting", "Code Quality"],
+                "resources": [{"name": "CI Best Practices", "url": "https://docs.github.com/en/actions/automating-builds-and-tests"}]
+              }
+            },
+            {
+              "name": "CD Workflows",
+              "id": "cd-workflows",
+              "meta": {
+                "description": "Deployment automation, environments, approvals",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Deployment", "Environments", "Approvals", "Rollback"],
+                "resources": [{"name": "CD Best Practices", "url": "https://docs.github.com/en/actions/deployment"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Monitoring & Logging",
+      "id": "monitoring-logging-devops",
+      "meta": {
+        "description": "Prometheus, Grafana, ELK Stack - Observability",
+        "duration": "5-6 weeks",
+        "level": "advanced",
+        "topics": ["Prometheus", "Grafana", "ELK", "Metrics", "Logs", "Alerting"],
+        "resources": [
+          {"name": "Prometheus Docs", "url": "https://prometheus.io/docs/"},
+          {"name": "Grafana Docs", "url": "https://grafana.com/docs/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Prometheus Metrics",
+          "id": "prometheus",
+          "meta": {
+            "description": "Time-series database, metrics collection, PromQL",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Prometheus", "Metrics", "PromQL", "Exporters", "Service Discovery"],
+            "resources": [{"name": "Prometheus Tutorial", "url": "https://prometheus.io/docs/prometheus/latest/getting_started/"}]
+          },
+          "children": [
+            {
+              "name": "Alerting with Alertmanager",
+              "id": "alertmanager",
+              "meta": {
+                "description": "Alert rules, routing, notifications",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Alert Rules", "Alertmanager", "Routing", "Notifications"],
+                "resources": [{"name": "Alerting", "url": "https://prometheus.io/docs/alerting/latest/overview/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Grafana Dashboards",
+          "id": "grafana",
+          "meta": {
+            "description": "Visualization, dashboards, data sources",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Dashboards", "Panels", "Data Sources", "Variables"],
+            "resources": [{"name": "Grafana Tutorial", "url": "https://grafana.com/tutorials/"}]
+          }
+        },
+        {
+          "name": "Log Management (ELK)",
+          "id": "elk-stack",
+          "meta": {
+            "description": "Elasticsearch, Logstash, Kibana",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Elasticsearch", "Logstash", "Kibana", "Log Aggregation"],
+            "resources": [{"name": "ELK Stack", "url": "https://www.elastic.co/what-is/elk-stack"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Configuration Management",
+      "id": "configuration-management",
+      "meta": {
+        "description": "Ansible - Automate configuration and deployment",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Ansible", "Playbooks", "Roles", "Inventory", "Automation"],
+        "resources": [{"name": "Ansible Docs", "url": "https://docs.ansible.com/"}]
+      },
+      "children": [
+        {
+          "name": "Ansible Basics",
+          "id": "ansible-basics",
+          "meta": {
+            "description": "Playbooks, tasks, modules, inventory",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Playbooks", "Tasks", "Modules", "Inventory", "Variables"],
+            "resources": [{"name": "Ansible Tutorial", "url": "https://docs.ansible.com/ansible/latest/user_guide/"}]
+          }
+        },
+        {
+          "name": "Ansible Roles",
+          "id": "ansible-roles",
+          "meta": {
+            "description": "Reusable roles, Ansible Galaxy",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Roles", "Ansible Galaxy", "Best Practices"],
+            "resources": [{"name": "Roles", "url": "https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Networking & Security",
+      "id": "networking-security",
+      "meta": {
+        "description": "Network protocols, firewalls, VPN, SSL/TLS",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Networking", "Firewalls", "VPN", "SSL/TLS", "Security"],
+        "resources": [{"name": "Networking Guide", "url": "https://www.cloudflare.com/learning/"}]
+      },
+      "children": [
+        {
+          "name": "Network Security",
+          "id": "network-security",
+          "meta": {
+            "description": "Firewalls, VPN, security best practices",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Firewalls", "VPN", "Security Groups", "Network ACLs"],
+            "resources": [{"name": "Network Security", "url": "https://www.cloudflare.com/learning/security/what-is-network-security/"}]
+          }
+        },
+        {
+          "name": "SSL/TLS & Certificates",
+          "id": "ssl-tls",
+          "meta": {
+            "description": "HTTPS, certificates, Let's Encrypt",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["SSL/TLS", "Certificates", "Let's Encrypt", "HTTPS"],
+            "resources": [{"name": "SSL/TLS", "url": "https://letsencrypt.org/docs/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Service Mesh (Optional)",
+      "id": "service-mesh",
+      "meta": {
+        "description": "Istio - Microservices communication",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Istio", "Service Mesh", "Traffic Management", "Observability"],
+        "resources": [{"name": "Istio Docs", "url": "https://istio.io/latest/docs/"}]
+      }
+    }
+  ]
+}

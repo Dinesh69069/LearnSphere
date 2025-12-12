@@ -3,11 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Roadmap - Learn Sphere</title>
+    <title>Choose Your Learning Path - LearnSphere</title>
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="css/roadmap.css">
 </head>
-<body>
-    <!-- TODO: Implement Roadmap -->
-    <h1 class="text-4xl font-bold text-center mt-10">Roadmap Component - Under Development</h1>
+<body class="bg-light-bg dark:bg-dark-bg min-h-screen">
+    
+    <!-- Navbar Component -->
+    <div id="navbar-container"></div>
+    
+    <!-- Header -->
+    <header class="bg-navy text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="../home/index.html" class="text-sm text-gray-300 hover:text-primary mb-4 inline-block">&larr; Back to Home</a>
+            <h1 class="text-4xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Choose Your Learning Path
+            </h1>
+            <p class="text-gray-300 text-lg">Select a role to explore its complete roadmap</p>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white dark:bg-navy rounded-lg shadow-lg p-6 mb-8">
+            <div class="flex flex-col md:flex-row gap-4">
+                <!-- Search Input -->
+                <div class="flex-1">
+                    <label for="search" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Search Roles</label>
+                    <input 
+                        type="text" 
+                        id="search" 
+                        placeholder="Search for a role..."
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    />
+                </div>Okay then 
+                
+                <!-- Category Filter -->
+                <div class="md:w-64">
+                    <label for="category" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Category</label>
+                    <select 
+                        id="category"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    >
+                        <option value="all">All Categories</option>
+                        <option value="development">Development</option>
+                        <option value="data">Data & AI</option>
+                        <option value="devops">DevOps & Cloud</option>
+                        <option value="security">Security</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="design">Design</option>
+                        <option value="testing">Testing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Roles Grid -->
+        <div id="roles-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <!-- Role cards will be dynamically inserted here -->
+        </div>
+
+        <!-- No Results Message -->
+        <div id="no-results" class="hidden text-center py-12">
+            <svg class="w-24 h-24 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 12h.01M12 12h.01M12 12h.01M12 21a9 9 0 100-18 9 9 0 000 18z"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-gray-700 dark:text-gray-300">No roles found</h3>
+            <p class="text-gray-500 dark:text-gray-400">Try adjusting your search or filter</p>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../shared/js/navbar.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/roles.js"></script>
+    <script src="js/selection.js"></script>
 </body>
 </html>

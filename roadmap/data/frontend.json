@@ -1,0 +1,960 @@
+{
+  "name": "Frontend Developer",
+  "id": "frontend",
+  "meta": {
+    "description": "Complete learning path for modern frontend development - From basics to advanced production-ready skills",
+    "duration": "12-18 months",
+    "level": "beginner",
+    "topics": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Testing", "Performance", "Web Security"],
+    "resources": [
+      {"name": "MDN Web Docs", "url": "https://developer.mozilla.org"},
+      {"name": "Frontend Roadmap", "url": "https://roadmap.sh/frontend"},
+      {"name": "Web.dev Learn", "url": "https://web.dev/learn"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Internet & Web Fundamentals",
+      "id": "internet-fundamentals",
+      "meta": {
+        "description": "Understanding how the internet and web browsers work",
+        "duration": "2-3 weeks",
+        "level": "beginner",
+        "topics": ["HTTP/HTTPS", "DNS", "Domain Names", "Hosting", "Browsers"],
+        "resources": [
+          {"name": "How the Internet Works", "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"}
+        ]
+      },
+      "children": [
+        {
+          "name": "How Internet Works",
+          "id": "how-internet-works",
+          "meta": {
+            "description": "Learn about packets, routers, TCP/IP protocols",
+            "duration": "3-4 days",
+            "level": "beginner",
+            "topics": ["TCP/IP", "Packets", "Routers", "ISP"],
+            "resources": [{"name": "Khan Academy - Internet 101", "url": "https://www.khanacademy.org/computing/computers-and-internet"}]
+          }
+        },
+        {
+          "name": "HTTP & HTTPS",
+          "id": "http-https",
+          "meta": {
+            "description": "Request/Response, HTTP methods, status codes, headers",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["GET/POST", "Status Codes", "Headers", "Cookies", "SSL/TLS"],
+            "resources": [{"name": "HTTP Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP"}]
+          }
+        },
+        {
+          "name": "DNS & Domain Names",
+          "id": "dns-domains",
+          "meta": {
+            "description": "How DNS resolution works, domain registration",
+            "duration": "3-4 days",
+            "level": "beginner",
+            "topics": ["DNS Lookup", "A Records", "CNAME", "Name Servers"],
+            "resources": [{"name": "How DNS Works", "url": "https://howdns.works/"}]
+          }
+        },
+        {
+          "name": "Browsers & Rendering",
+          "id": "browsers",
+          "meta": {
+            "description": "How browsers parse and render web pages",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["DOM", "CSSOM", "Render Tree", "Painting", "Compositing"],
+            "resources": [{"name": "How Browsers Work", "url": "https://web.dev/howbrowserswork/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "HTML - Structure",
+      "id": "html",
+      "meta": {
+        "description": "Master semantic HTML and document structure",
+        "duration": "3-4 weeks",
+        "level": "beginner",
+        "topics": ["Semantic HTML", "Forms", "Accessibility", "SEO Basics"],
+        "resources": [
+          {"name": "MDN HTML", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
+          {"name": "HTML5 Doctor", "url": "http://html5doctor.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "HTML Basics",
+          "id": "html-basics",
+          "meta": {
+            "description": "Tags, attributes, document structure",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Elements", "Attributes", "Nesting", "Comments"],
+            "resources": [{"name": "HTML Basics", "url": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"}]
+          }
+        },
+        {
+          "name": "Semantic HTML",
+          "id": "semantic-html",
+          "meta": {
+            "description": "header, nav, main, article, section, aside, footer",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Semantic Tags", "Document Outline", "Screen Readers"],
+            "resources": [{"name": "Semantic HTML Guide", "url": "https://www.internetingishard.com/html-and-css/semantic-html/"}]
+          }
+        },
+        {
+          "name": "Forms & Validation",
+          "id": "html-forms",
+          "meta": {
+            "description": "Input types, validation, accessibility",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Input Types", "Labels", "Required", "Pattern", "ARIA"],
+            "resources": [{"name": "Web Forms", "url": "https://developer.mozilla.org/en-US/docs/Learn/Forms"}]
+          }
+        },
+        {
+          "name": "Accessibility (a11y)",
+          "id": "html-accessibility",
+          "meta": {
+            "description": "ARIA roles, semantic markup, keyboard navigation",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["ARIA", "Alt Text", "Focus Management", "Screen Readers"],
+            "resources": [{"name": "Web Accessibility", "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "CSS - Styling",
+      "id": "css",
+      "meta": {
+        "description": "From basics to advanced layouts and animations",
+        "duration": "6-8 weeks",
+        "level": "beginner",
+        "topics": ["Selectors", "Flexbox", "Grid", "Responsive Design", "Animations"],
+        "resources": [
+          {"name": "CSS Tricks", "url": "https://css-tricks.com/"},
+          {"name": "MDN CSS", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"}
+        ]
+      },
+      "children": [
+        {
+          "name": "CSS Fundamentals",
+          "id": "css-fundamentals",
+          "meta": {
+            "description": "Selectors, specificity, cascade, box model",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Selectors", "Specificity", "Cascade", "Box Model", "Units"],
+            "resources": [{"name": "CSS Basics", "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps"}]
+          },
+          "children": [
+            {
+              "name": "Selectors & Specificity",
+              "id": "css-selectors",
+              "meta": {
+                "description": "Class, ID, attribute, pseudo selectors",
+                "duration": "3-4 days",
+                "level": "beginner",
+                "topics": ["Class", "ID", "Pseudo-classes", "Combinators"],
+                "resources": [{"name": "CSS Selectors", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"}]
+              }
+            },
+            {
+              "name": "Box Model",
+              "id": "box-model",
+              "meta": {
+                "description": "Content, padding, border, margin, box-sizing",
+                "duration": "2-3 days",
+                "level": "beginner",
+                "topics": ["Padding", "Margin", "Border", "Box-sizing"],
+                "resources": [{"name": "Box Model", "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Layouts",
+          "id": "css-layouts",
+          "meta": {
+            "description": "Flexbox, Grid, positioning strategies",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Flexbox", "CSS Grid", "Positioning", "Float"],
+            "resources": [{"name": "Complete Guide to Flexbox", "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"}]
+          },
+          "children": [
+            {
+              "name": "Flexbox",
+              "id": "flexbox",
+              "meta": {
+                "description": "One-dimensional layouts, alignment, distribution",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Flex Direction", "Justify-content", "Align-items", "Flex-grow"],
+                "resources": [{"name": "Flexbox Froggy", "url": "https://flexboxfroggy.com/"}]
+              }
+            },
+            {
+              "name": "CSS Grid",
+              "id": "css-grid",
+              "meta": {
+                "description": "Two-dimensional layouts, grid template areas",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Grid Template", "Grid Areas", "Auto-placement", "Gap"],
+                "resources": [{"name": "Grid Garden", "url": "https://cssgridgarden.com/"}]
+              }
+            },
+            {
+              "name": "Positioning",
+              "id": "positioning",
+              "meta": {
+                "description": "Static, relative, absolute, fixed, sticky",
+                "duration": "3-4 days",
+                "level": "intermediate",
+                "topics": ["Position", "Z-index", "Stacking Context"],
+                "resources": [{"name": "Positioning", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Responsive Design",
+          "id": "responsive-design",
+          "meta": {
+            "description": "Mobile-first, media queries, fluid layouts",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Media Queries", "Mobile-first", "Breakpoints", "Viewport"],
+            "resources": [{"name": "Responsive Web Design", "url": "https://web.dev/responsive-web-design-basics/"}]
+          },
+          "children": [
+            {
+              "name": "Media Queries",
+              "id": "media-queries",
+              "meta": {
+                "description": "Breakpoints, min-width, max-width",
+                "duration": "4-5 days",
+                "level": "intermediate",
+                "topics": ["Breakpoints", "Screen Sizes", "Print Styles"],
+                "resources": [{"name": "Using Media Queries", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"}]
+              }
+            },
+            {
+              "name": "Mobile-First Approach",
+              "id": "mobile-first",
+              "meta": {
+                "description": "Design for small screens first, progressive enhancement",
+                "duration": "3-4 days",
+                "level": "intermediate",
+                "topics": ["Progressive Enhancement", "Touch Targets", "Performance"],
+                "resources": [{"name": "Mobile First", "url": "https://www.lukew.com/ff/entry.asp?933"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CSS Animations",
+          "id": "css-animations",
+          "meta": {
+            "description": "Transitions, keyframe animations, transforms",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Transitions", "Keyframes", "Transform", "Animation"],
+            "resources": [{"name": "CSS Animation", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "JavaScript - Behavior",
+      "id": "javascript",
+      "meta": {
+        "description": "Modern JavaScript (ES6+) - From fundamentals to advanced concepts",
+        "duration": "8-12 weeks",
+        "level": "intermediate",
+        "topics": ["ES6+", "DOM", "Async/Await", "APIs", "OOP", "Functional Programming"],
+        "resources": [
+          {"name": "JavaScript.info", "url": "https://javascript.info/"},
+          {"name": "You Don't Know JS", "url": "https://github.com/getify/You-Dont-Know-JS"}
+        ]
+      },
+      "children": [
+        {
+          "name": "JavaScript Basics",
+          "id": "js-basics",
+          "meta": {
+            "description": "Variables, data types, operators, control flow",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Variables", "Data Types", "Functions", "Loops", "Conditionals"],
+            "resources": [{"name": "JS Basics", "url": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"}]
+          },
+          "children": [
+            {
+              "name": "Variables & Data Types",
+              "id": "variables-datatypes",
+              "meta": {
+                "description": "let, const, var, strings, numbers, booleans, objects, arrays",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["let/const", "Primitives", "Objects", "Arrays"],
+                "resources": [{"name": "Variables", "url": "https://javascript.info/variables"}]
+              }
+            },
+            {
+              "name": "Functions",
+              "id": "functions",
+              "meta": {
+                "description": "Function declarations, expressions, arrow functions, scope",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Arrow Functions", "Scope", "Closures", "IIFE"],
+                "resources": [{"name": "Functions", "url": "https://javascript.info/function-basics"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "DOM Manipulation",
+          "id": "dom-manipulation",
+          "meta": {
+            "description": "Selecting elements, event handling, modifying DOM",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Query Selectors", "Event Listeners", "DOM Traversal", "classList"],
+            "resources": [{"name": "DOM Manipulation", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction"}]
+          },
+          "children": [
+            {
+              "name": "Selecting Elements",
+              "id": "selecting-elements",
+              "meta": {
+                "description": "getElementById, querySelector, querySelectorAll",
+                "duration": "3-4 days",
+                "level": "intermediate",
+                "topics": ["querySelector", "getElementById", "Traversal"],
+                "resources": [{"name": "Selecting Elements", "url": "https://javascript.info/searching-elements-dom"}]
+              }
+            },
+            {
+              "name": "Event Handling",
+              "id": "event-handling",
+              "meta": {
+                "description": "addEventListener, event delegation, event object",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["addEventListener", "Event Delegation", "Bubbling", "Capturing"],
+                "resources": [{"name": "Events", "url": "https://javascript.info/events"}]
+              }
+            },
+            {
+              "name": "Modifying DOM",
+              "id": "modifying-dom",
+              "meta": {
+                "description": "Creating elements, innerHTML, classList, attributes",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["createElement", "appendChild", "classList", "dataset"],
+                "resources": [{"name": "DOM Manipulation", "url": "https://javascript.info/modifying-document"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Async JavaScript",
+          "id": "async-javascript",
+          "meta": {
+            "description": "Callbacks, promises, async/await, fetch API",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Promises", "Async/Await", "Fetch API", "Error Handling"],
+            "resources": [{"name": "Async JavaScript", "url": "https://javascript.info/async"}]
+          },
+          "children": [
+            {
+              "name": "Promises",
+              "id": "promises",
+              "meta": {
+                "description": "Promise creation, chaining, error handling",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["then/catch", "Promise.all", "Chaining"],
+                "resources": [{"name": "Promises", "url": "https://javascript.info/promise-basics"}]
+              }
+            },
+            {
+              "name": "Async/Await",
+              "id": "async-await",
+              "meta": {
+                "description": "Modern async syntax, try/catch, parallel requests",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Async Functions", "Try/Catch", "Promise.all with async"],
+                "resources": [{"name": "Async/Await", "url": "https://javascript.info/async-await"}]
+              }
+            },
+            {
+              "name": "Fetch API",
+              "id": "fetch-api",
+              "meta": {
+                "description": "Making HTTP requests, handling responses, headers",
+                "duration": "4-5 days",
+                "level": "advanced",
+                "topics": ["GET/POST", "Headers", "JSON", "Error Handling"],
+                "resources": [{"name": "Fetch API", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ES6+ Features",
+          "id": "es6-features",
+          "meta": {
+            "description": "Modern JavaScript features",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Destructuring", "Spread", "Modules", "Template Literals"],
+            "resources": [{"name": "ES6 Features", "url": "http://es6-features.org/"}]
+          },
+          "children": [
+            {
+              "name": "Destructuring & Spread",
+              "id": "destructuring-spread",
+              "meta": {
+                "description": "Array/object destructuring, spread operator, rest parameters",
+                "duration": "4-5 days",
+                "level": "intermediate",
+                "topics": ["Destructuring", "Spread", "Rest Parameters"],
+                "resources": [{"name": "Destructuring", "url": "https://javascript.info/destructuring-assignment"}]
+              }
+            },
+            {
+              "name": "Modules (import/export)",
+              "id": "modules",
+              "meta": {
+                "description": "ES6 modules, named/default exports, dynamic imports",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Import", "Export", "Default Export", "Dynamic Imports"],
+                "resources": [{"name": "Modules", "url": "https://javascript.info/modules-intro"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Version Control (Git)",
+      "id": "git",
+      "meta": {
+        "description": "Version control with Git and GitHub",
+        "duration": "2-3 weeks",
+        "level": "beginner",
+        "topics": ["Git Basics", "Branching", "Pull Requests", "Collaboration"],
+        "resources": [
+          {"name": "Git Documentation", "url": "https://git-scm.com/doc"},
+          {"name": "Learn Git Branching", "url": "https://learngitbranching.js.org/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Git Fundamentals",
+          "id": "git-fundamentals",
+          "meta": {
+            "description": "init, add, commit, push, pull, clone",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Repository", "Commits", "Push/Pull", "Remote"],
+            "resources": [{"name": "Git Basics", "url": "https://git-scm.com/book/en/v2/Getting-Started-Git-Basics"}]
+          }
+        },
+        {
+          "name": "Branching & Merging",
+          "id": "git-branching",
+          "meta": {
+            "description": "Creating branches, merging, resolving conflicts",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Branches", "Merge", "Conflicts", "Rebase"],
+            "resources": [{"name": "Git Branching", "url": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"}]
+          }
+        },
+        {
+          "name": "GitHub Workflow",
+          "id": "github-workflow",
+          "meta": {
+            "description": "Pull requests, code review, collaboration",
+            "duration": "4-5 days",
+            "level": "intermediate",
+            "topics": ["Pull Requests", "Code Review", "Issues", "Forks"],
+            "resources": [{"name": "GitHub Flow", "url": "https://guides.github.com/introduction/flow/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Package Managers",
+      "id": "package-managers",
+      "meta": {
+        "description": "npm, yarn, pnpm - Managing dependencies",
+        "duration": "1-2 weeks",
+        "level": "intermediate",
+        "topics": ["npm", "package.json", "Dependencies", "Scripts"],
+        "resources": [
+          {"name": "npm Documentation", "url": "https://docs.npmjs.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "npm Basics",
+          "id": "npm-basics",
+          "meta": {
+            "description": "Installing packages, package.json, scripts",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["npm install", "package.json", "Scripts", "Dependencies"],
+            "resources": [{"name": "npm Getting Started", "url": "https://docs.npmjs.com/getting-started"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "CSS Frameworks",
+      "id": "css-frameworks",
+      "meta": {
+        "description": "Utility-first CSS with Tailwind",
+        "duration": "2-3 weeks",
+        "level": "intermediate",
+        "topics": ["Tailwind CSS", "Utility Classes", "Responsive Design"],
+        "resources": [
+          {"name": "Tailwind CSS", "url": "https://tailwindcss.com/docs"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Tailwind CSS",
+          "id": "tailwind",
+          "meta": {
+            "description": "Utility-first framework, customization, responsive",
+            "duration": "2-3 weeks",
+            "level": "intermediate",
+            "topics": ["Utility Classes", "Configuration", "JIT Mode", "Plugins"],
+            "resources": [{"name": "Tailwind Documentation", "url": "https://tailwindcss.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "JavaScript Frameworks",
+      "id": "frameworks",
+      "meta": {
+        "description": "React - The most popular frontend framework",
+        "duration": "8-12 weeks",
+        "level": "advanced",
+        "topics": ["React", "Components", "Hooks", "State Management", "Routing"],
+        "resources": [
+          {"name": "React Documentation", "url": "https://react.dev"},
+          {"name": "React Patterns", "url": "https://reactpatterns.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "React Fundamentals",
+          "id": "react-fundamentals",
+          "meta": {
+            "description": "Components, JSX, props, state",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["JSX", "Components", "Props", "State", "Events"],
+            "resources": [{"name": "React Tutorial", "url": "https://react.dev/learn"}]
+          },
+          "children": [
+            {
+              "name": "JSX & Components",
+              "id": "jsx-components",
+              "meta": {
+                "description": "JSX syntax, functional components, props",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["JSX", "Functional Components", "Props"],
+                "resources": [{"name": "Describing the UI", "url": "https://react.dev/learn/describing-the-ui"}]
+              }
+            },
+            {
+              "name": "State & Events",
+              "id": "state-events",
+              "meta": {
+                "description": "useState hook, event handling, controlled inputs",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["useState", "Event Handlers", "Forms", "Controlled Inputs"],
+                "resources": [{"name": "Adding Interactivity", "url": "https://react.dev/learn/adding-interactivity"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "React Hooks",
+          "id": "react-hooks",
+          "meta": {
+            "description": "useState, useEffect, useContext, custom hooks",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["useState", "useEffect", "useContext", "useRef", "Custom Hooks"],
+            "resources": [{"name": "Hooks API Reference", "url": "https://react.dev/reference/react"}]
+          },
+          "children": [
+            {
+              "name": "useEffect & Side Effects",
+              "id": "use-effect",
+              "meta": {
+                "description": "Side effects, cleanup, dependencies array",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Side Effects", "Cleanup", "Dependencies", "Data Fetching"],
+                "resources": [{"name": "useEffect Hook", "url": "https://react.dev/reference/react/useEffect"}]
+              }
+            },
+            {
+              "name": "Custom Hooks",
+              "id": "custom-hooks",
+              "meta": {
+                "description": "Creating reusable logic, hook patterns",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Hook Creation", "Reusability", "Best Practices"],
+                "resources": [{"name": "Reusing Logic", "url": "https://react.dev/learn/reusing-logic-with-custom-hooks"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "State Management",
+          "id": "state-management",
+          "meta": {
+            "description": "Context API, Zustand, Redux Toolkit",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Context API", "Zustand", "Redux Toolkit", "Global State"],
+            "resources": [{"name": "Redux Toolkit", "url": "https://redux-toolkit.js.org/"}]
+          },
+          "children": [
+            {
+              "name": "Context API",
+              "id": "context-api",
+              "meta": {
+                "description": "Creating context, provider, consumer pattern",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["createContext", "Provider", "useContext"],
+                "resources": [{"name": "Context", "url": "https://react.dev/learn/passing-data-deeply-with-context"}]
+              }
+            },
+            {
+              "name": "Redux Toolkit",
+              "id": "redux-toolkit",
+              "meta": {
+                "description": "Modern Redux, slices, async thunks",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Slices", "Actions", "Reducers", "Async Thunks"],
+                "resources": [{"name": "RTK Tutorial", "url": "https://redux-toolkit.js.org/tutorials/quick-start"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "React Router",
+          "id": "react-router",
+          "meta": {
+            "description": "Client-side routing, navigation, nested routes",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Routes", "Navigation", "Parameters", "Nested Routes"],
+            "resources": [{"name": "React Router", "url": "https://reactrouter.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "id": "typescript",
+      "meta": {
+        "description": "Add type safety to JavaScript",
+        "duration": "4-6 weeks",
+        "level": "advanced",
+        "topics": ["Type Annotations", "Interfaces", "Generics", "Type Guards"],
+        "resources": [
+          {"name": "TypeScript Handbook", "url": "https://www.typescriptlang.org/docs/handbook/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "TypeScript Basics",
+          "id": "ts-basics",
+          "meta": {
+            "description": "Type annotations, basic types, functions",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Basic Types", "Type Annotations", "Functions", "Arrays"],
+            "resources": [{"name": "TS for JS Programmers", "url": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"}]
+          }
+        },
+        {
+          "name": "Advanced Types",
+          "id": "advanced-types",
+          "meta": {
+            "description": "Generics, utility types, conditional types",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Generics", "Utility Types", "Mapped Types", "Conditional Types"],
+            "resources": [{"name": "Advanced Types", "url": "https://www.typescriptlang.org/docs/handbook/2/types-from-types.html"}]
+          }
+        },
+        {
+          "name": "TypeScript with React",
+          "id": "ts-react",
+          "meta": {
+            "description": "Typing props, hooks, events in React",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Component Props", "Hook Types", "Event Types"],
+            "resources": [{"name": "React TypeScript", "url": "https://react-typescript-cheatsheet.netlify.app/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "id": "testing",
+      "meta": {
+        "description": "Unit, integration, and E2E testing",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Jest", "React Testing Library", "Vitest", "Cypress"],
+        "resources": [
+          {"name": "Testing Library", "url": "https://testing-library.com/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Unit Testing",
+          "id": "unit-testing",
+          "meta": {
+            "description": "Jest/Vitest, testing functions and components",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Jest", "Vitest", "Matchers", "Mocking"],
+            "resources": [{"name": "Jest Documentation", "url": "https://jestjs.io/"}]
+          }
+        },
+        {
+          "name": "Component Testing",
+          "id": "component-testing",
+          "meta": {
+            "description": "React Testing Library, user interactions",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["RTL", "User Events", "Queries", "Accessibility"],
+            "resources": [{"name": "RTL Tutorial", "url": "https://testing-library.com/docs/react-testing-library/intro/"}]
+          }
+        },
+        {
+          "name": "E2E Testing",
+          "id": "e2e-testing",
+          "meta": {
+            "description": "Cypress or Playwright for end-to-end tests",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Cypress", "Playwright", "User Flows", "Assertions"],
+            "resources": [{"name": "Cypress", "url": "https://www.cypress.io/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Build Tools",
+      "id": "build-tools",
+      "meta": {
+        "description": "Vite, Webpack, bundlers and dev tools",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Vite", "esbuild", "Module Bundlers", "HMR"],
+        "resources": [
+          {"name": "Vite", "url": "https://vitejs.dev/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Vite",
+          "id": "vite",
+          "meta": {
+            "description": "Fast development server, HMR, build optimization",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Dev Server", "HMR", "Build", "Plugins"],
+            "resources": [{"name": "Vite Guide", "url": "https://vitejs.dev/guide/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Performance Optimization",
+      "id": "performance",
+      "meta": {
+        "description": "Web Vitals, code splitting, lazy loading",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Web Vitals", "Code Splitting", "Lazy Loading", "Image Optimization"],
+        "resources": [
+          {"name": "Web.dev Performance", "url": "https://web.dev/performance/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Core Web Vitals",
+          "id": "web-vitals",
+          "meta": {
+            "description": "LCP, FID, CLS - measuring performance",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["LCP", "FID", "CLS", "Lighthouse"],
+            "resources": [{"name": "Web Vitals", "url": "https://web.dev/vitals/"}]
+          }
+        },
+        {
+          "name": "Code Splitting",
+          "id": "code-splitting",
+          "meta": {
+            "description": "Dynamic imports, React.lazy, route-based splitting",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Dynamic Import", "React.lazy", "Suspense"],
+            "resources": [{"name": "Code Splitting", "url": "https://react.dev/reference/react/lazy"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Web Security",
+      "id": "web-security",
+      "meta": {
+        "description": "HTTPS, CORS, CSP, OWASP Top 10",
+        "duration": "2 weeks",
+        "level": "advanced",
+        "topics": ["HTTPS", "CORS", "CSP", "XSS", "CSRF"],
+        "resources": [
+          {"name": "OWASP", "url": "https://owasp.org/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "CORS",
+          "id": "cors",
+          "meta": {
+            "description": "Cross-Origin Resource Sharing, same-origin policy",
+            "duration": "3-4 days",
+            "level": "advanced",
+            "topics": ["Same-origin", "Preflight", "Credentials"],
+            "resources": [{"name": "CORS", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"}]
+          }
+        },
+        {
+          "name": "Common Vulnerabilities",
+          "id": "vulnerabilities",
+          "meta": {
+            "description": "XSS, CSRF, SQL Injection prevention",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["XSS", "CSRF", "Input Validation", "Sanitization"],
+            "resources": [{"name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Progressive Web Apps (PWA)",
+      "id": "pwa",
+      "meta": {
+        "description": "Service workers, offline functionality, app manifest",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Service Workers", "Offline", "Manifest", "Push Notifications"],
+        "resources": [
+          {"name": "PWA Guide", "url": "https://web.dev/progressive-web-apps/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Service Workers",
+          "id": "service-workers",
+          "meta": {
+            "description": "Caching strategies, offline functionality",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Caching", "Offline", "Background Sync"],
+            "resources": [{"name": "Service Workers", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"}]
+          }
+        },
+        {
+          "name": "App Manifest",
+          "id": "app-manifest",
+          "meta": {
+            "description": "Install prompts, splash screens, icons",
+            "duration": "3-4 days",
+            "level": "advanced",
+            "topics": ["Manifest", "Icons", "Install", "Splash Screen"],
+            "resources": [{"name": "Web App Manifest", "url": "https://web.dev/add-manifest/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Server-Side Rendering (SSR)",
+      "id": "ssr",
+      "meta": {
+        "description": "Next.js - React framework with SSR/SSG",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Next.js", "SSR", "SSG", "API Routes", "App Router"],
+        "resources": [
+          {"name": "Next.js", "url": "https://nextjs.org/docs"}
+        ]
+      },
+      "children": [
+        {
+          "name": "Next.js Fundamentals",
+          "id": "nextjs-fundamentals",
+          "meta": {
+            "description": "Pages, routing, data fetching",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["File Routing", "SSR/SSG", "Data Fetching"],
+            "resources": [{"name": "Next.js Tutorial", "url": "https://nextjs.org/learn"}]
+          }
+        },
+        {
+          "name": "App Router",
+          "id": "app-router",
+          "meta": {
+            "description": "Modern Next.js with Server Components",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Server Components", "Layouts", "Loading States"],
+            "resources": [{"name": "App Router", "url": "https://nextjs.org/docs/app"}]
+          }
+        }
+      ]
+    }
+  ]
+}

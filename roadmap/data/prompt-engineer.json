@@ -1,0 +1,526 @@
+{
+  "name": "Prompt Engineer",
+  "id": "prompt-engineer",
+  "meta": {
+    "description": "Complete prompt engineering roadmap - LLMs, prompt design, AI interaction",
+    "duration": "6-8 months",
+    "level": "intermediate",
+    "topics": ["LLMs", "Prompt Design", "AI Models", "Chain of Thought", "Few-Shot Learning"],
+    "resources": [
+      {"name": "Prompt Engineering Guide", "url": "https://www.promptingguide.ai/"},
+      {"name": "OpenAI Cookbook", "url": "https://cookbook.openai.com/"}
+    ]
+  },
+  "children": [
+    {
+      "name": "AI & LLM Fundamentals",
+      "id": "ai-llm-fundamentals",
+      "meta": {
+        "description": "Understanding AI, machine learning, language models",
+        "duration": "3-4 weeks",
+        "level": "beginner",
+        "topics": ["AI Basics", "Machine Learning", "NLP", "Transformers", "LLMs"],
+        "resources": [{"name": "AI Fundamentals", "url": "https://www.deeplearning.ai/"}]
+      },
+      "children": [
+        {
+          "name": "AI & ML Basics",
+          "id": "ai-ml-basics-prompt",
+          "meta": {
+            "description": "Machine learning concepts, supervised/unsupervised learning",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Machine Learning", "Supervised Learning", "Neural Networks"],
+            "resources": [{"name": "ML Crash Course", "url": "https://developers.google.com/machine-learning/crash-course"}]
+          }
+        },
+        {
+          "name": "Natural Language Processing",
+          "id": "nlp-basics-prompt",
+          "meta": {
+            "description": "NLP fundamentals, tokenization, embeddings",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["NLP", "Tokenization", "Embeddings", "Word Vectors"],
+            "resources": [{"name": "NLP Course", "url": "https://huggingface.co/learn/nlp-course"}]
+          }
+        },
+        {
+          "name": "Transformer Architecture",
+          "id": "transformer-architecture",
+          "meta": {
+            "description": "Attention mechanism, self-attention, transformers",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Transformers", "Attention", "Self-Attention", "BERT", "GPT"],
+            "resources": [{"name": "Illustrated Transformer", "url": "https://jalammar.github.io/illustrated-transformer/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "id": "large-language-models",
+      "meta": {
+        "description": "GPT, Claude, LLaMA, model architectures and capabilities",
+        "duration": "4-5 weeks",
+        "level": "intermediate",
+        "topics": ["GPT-4", "Claude", "LLaMA", "Gemini", "Model Capabilities"],
+        "resources": [{"name": "OpenAI Models", "url": "https://platform.openai.com/docs/models"}]
+      },
+      "children": [
+        {
+          "name": "GPT Models",
+          "id": "gpt-models",
+          "meta": {
+            "description": "GPT-3.5, GPT-4, capabilities and limitations",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["GPT-3.5", "GPT-4", "GPT-4 Turbo", "Context Windows"],
+            "resources": [{"name": "GPT Best Practices", "url": "https://platform.openai.com/docs/guides/gpt-best-practices"}]
+          }
+        },
+        {
+          "name": "Claude & Anthropic",
+          "id": "claude-anthropic",
+          "meta": {
+            "description": "Claude models, Constitutional AI, safety",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Claude", "Constitutional AI", "Harmlessness"],
+            "resources": [{"name": "Claude Docs", "url": "https://docs.anthropic.com/"}]
+          }
+        },
+        {
+          "name": "Open Source LLMs",
+          "id": "open-source-llms",
+          "meta": {
+            "description": "LLaMA, Mistral, Falcon, local models",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["LLaMA", "Mistral", "Falcon", "Ollama", "LM Studio"],
+            "resources": [{"name": "Hugging Face Models", "url": "https://huggingface.co/models"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prompt Engineering Fundamentals",
+      "id": "prompt-fundamentals",
+      "meta": {
+        "description": "Basic prompting techniques, instruction design",
+        "duration": "3-4 weeks",
+        "level": "beginner",
+        "topics": ["Prompt Structure", "Instructions", "Context", "Output Format"],
+        "resources": [{"name": "Prompt Engineering", "url": "https://www.promptingguide.ai/introduction"}]
+      },
+      "children": [
+        {
+          "name": "Prompt Structure",
+          "id": "prompt-structure",
+          "meta": {
+            "description": "Components of effective prompts, formatting",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Instructions", "Context", "Input Data", "Output Indicator"],
+            "resources": [{"name": "Prompt Basics", "url": "https://www.promptingguide.ai/introduction/basics"}]
+          }
+        },
+        {
+          "name": "Zero-Shot Prompting",
+          "id": "zero-shot",
+          "meta": {
+            "description": "Direct instruction without examples",
+            "duration": "1 week",
+            "level": "beginner",
+            "topics": ["Zero-Shot", "Direct Instructions", "Task Description"],
+            "resources": [{"name": "Zero-Shot", "url": "https://www.promptingguide.ai/techniques/zeroshot"}]
+          }
+        },
+        {
+          "name": "Few-Shot Learning",
+          "id": "few-shot",
+          "meta": {
+            "description": "In-context learning with examples",
+            "duration": "1-2 weeks",
+            "level": "beginner",
+            "topics": ["Few-Shot", "In-Context Learning", "Examples", "Demonstrations"],
+            "resources": [{"name": "Few-Shot", "url": "https://www.promptingguide.ai/techniques/fewshot"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advanced Prompting Techniques",
+      "id": "advanced-prompting",
+      "meta": {
+        "description": "Chain of thought, ReAct, self-consistency, tree of thoughts",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Chain of Thought", "ReAct", "Self-Consistency", "Tree of Thoughts"],
+        "resources": [{"name": "Advanced Techniques", "url": "https://www.promptingguide.ai/techniques"}]
+      },
+      "children": [
+        {
+          "name": "Chain of Thought (CoT)",
+          "id": "chain-of-thought",
+          "meta": {
+            "description": "Step-by-step reasoning, intermediate steps",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["CoT", "Reasoning", "Step-by-Step", "Let's think step by step"],
+            "resources": [{"name": "Chain of Thought", "url": "https://www.promptingguide.ai/techniques/cot"}]
+          },
+          "children": [
+            {
+              "name": "Zero-Shot CoT",
+              "id": "zero-shot-cot",
+              "meta": {
+                "description": "Chain of thought without examples",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Zero-Shot CoT", "Let's think step by step"],
+                "resources": [{"name": "Zero-Shot CoT", "url": "https://www.promptingguide.ai/techniques/cot#zero-shot-cot"}]
+              }
+            },
+            {
+              "name": "Few-Shot CoT",
+              "id": "few-shot-cot",
+              "meta": {
+                "description": "Chain of thought with reasoning examples",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Few-Shot CoT", "Reasoning Examples"],
+                "resources": [{"name": "Few-Shot CoT", "url": "https://www.promptingguide.ai/techniques/cot"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Self-Consistency",
+          "id": "self-consistency",
+          "meta": {
+            "description": "Multiple reasoning paths, majority voting",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Self-Consistency", "Multiple Paths", "Voting"],
+            "resources": [{"name": "Self-Consistency", "url": "https://www.promptingguide.ai/techniques/consistency"}]
+          }
+        },
+        {
+          "name": "ReAct Prompting",
+          "id": "react-prompting",
+          "meta": {
+            "description": "Reasoning and acting, tool use",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["ReAct", "Reasoning", "Actions", "Observations"],
+            "resources": [{"name": "ReAct", "url": "https://www.promptingguide.ai/techniques/react"}]
+          }
+        },
+        {
+          "name": "Tree of Thoughts",
+          "id": "tree-of-thoughts",
+          "meta": {
+            "description": "Exploring multiple reasoning paths",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Tree of Thoughts", "Branching", "Exploration"],
+            "resources": [{"name": "Tree of Thoughts", "url": "https://www.promptingguide.ai/techniques/tot"}]
+          }
+        },
+        {
+          "name": "Retrieval Augmented Generation (RAG)",
+          "id": "rag",
+          "meta": {
+            "description": "Combining retrieval with generation",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["RAG", "Vector Databases", "Retrieval", "Context Injection"],
+            "resources": [{"name": "RAG Guide", "url": "https://www.pinecone.io/learn/retrieval-augmented-generation/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prompt Optimization",
+      "id": "prompt-optimization",
+      "meta": {
+        "description": "Iterative refinement, testing, evaluation",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["Iteration", "Testing", "Evaluation", "A/B Testing"],
+        "resources": [{"name": "Prompt Optimization", "url": "https://platform.openai.com/docs/guides/prompt-engineering"}]
+      },
+      "children": [
+        {
+          "name": "Iterative Refinement",
+          "id": "iterative-refinement",
+          "meta": {
+            "description": "Testing and improving prompts",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Iteration", "Testing", "Refinement", "Feedback"],
+            "resources": [{"name": "Iterative Prompting", "url": "https://www.promptingguide.ai/"}]
+          }
+        },
+        {
+          "name": "Prompt Evaluation",
+          "id": "prompt-evaluation",
+          "meta": {
+            "description": "Metrics, benchmarks, quality assessment",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Metrics", "Benchmarks", "Evaluation", "Quality"],
+            "resources": [{"name": "Evaluation Guide", "url": "https://docs.anthropic.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "API Integration & Development",
+      "id": "api-integration-prompt",
+      "meta": {
+        "description": "OpenAI API, Claude API, model parameters",
+        "duration": "4-5 weeks",
+        "level": "intermediate",
+        "topics": ["OpenAI API", "Claude API", "Parameters", "SDKs"],
+        "resources": [{"name": "OpenAI API", "url": "https://platform.openai.com/docs/api-reference"}]
+      },
+      "children": [
+        {
+          "name": "OpenAI API",
+          "id": "openai-api-prompt",
+          "meta": {
+            "description": "Chat completions, embeddings, parameters",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Chat API", "Completions", "Temperature", "Top-p", "Tokens"],
+            "resources": [{"name": "API Reference", "url": "https://platform.openai.com/docs/api-reference/chat"}]
+          },
+          "children": [
+            {
+              "name": "API Parameters",
+              "id": "api-parameters",
+              "meta": {
+                "description": "Temperature, top_p, frequency_penalty, presence_penalty",
+                "duration": "1 week",
+                "level": "intermediate",
+                "topics": ["Temperature", "Top-p", "Max Tokens", "Stop Sequences"],
+                "resources": [{"name": "Parameters Guide", "url": "https://platform.openai.com/docs/api-reference/chat/create"}]
+              }
+            },
+            {
+              "name": "Function Calling",
+              "id": "function-calling",
+              "meta": {
+                "description": "Tool use, function definitions, structured outputs",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Functions", "Tools", "Structured Outputs"],
+                "resources": [{"name": "Function Calling", "url": "https://platform.openai.com/docs/guides/function-calling"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Embeddings & Vector Search",
+          "id": "embeddings-vector",
+          "meta": {
+            "description": "Text embeddings, semantic search, vector databases",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Embeddings", "Vector Databases", "Pinecone", "Weaviate"],
+            "resources": [{"name": "Embeddings Guide", "url": "https://platform.openai.com/docs/guides/embeddings"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Domain-Specific Applications",
+      "id": "domain-applications",
+      "meta": {
+        "description": "Prompts for specific use cases and industries",
+        "duration": "4-5 weeks",
+        "level": "intermediate",
+        "topics": ["Content Generation", "Code Generation", "Data Analysis", "Customer Support"],
+        "resources": [{"name": "Use Cases", "url": "https://platform.openai.com/docs/guides/prompt-engineering/examples"}]
+      },
+      "children": [
+        {
+          "name": "Content Creation",
+          "id": "content-creation",
+          "meta": {
+            "description": "Writing, copywriting, creative content",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Writing", "Copywriting", "Marketing", "Storytelling"],
+            "resources": [{"name": "Content Prompts", "url": "https://www.jasper.ai/"}]
+          }
+        },
+        {
+          "name": "Code Generation",
+          "id": "code-generation-prompt",
+          "meta": {
+            "description": "Programming assistance, code explanation",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Code Generation", "Debugging", "Code Review", "Documentation"],
+            "resources": [{"name": "GitHub Copilot", "url": "https://github.com/features/copilot"}]
+          }
+        },
+        {
+          "name": "Data Analysis & Insights",
+          "id": "data-analysis-prompt",
+          "meta": {
+            "description": "Data interpretation, visualization, insights",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Data Analysis", "Insights", "Reporting"],
+            "resources": [{"name": "Data Analysis", "url": "https://platform.openai.com/docs/guides/code-interpreter"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prompt Security & Safety",
+      "id": "prompt-security",
+      "meta": {
+        "description": "Jailbreaking, prompt injection, safety measures",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Security", "Prompt Injection", "Jailbreaking", "Content Filtering"],
+        "resources": [{"name": "AI Safety", "url": "https://www.anthropic.com/index/core-views-on-ai-safety"}]
+      },
+      "children": [
+        {
+          "name": "Prompt Injection Attacks",
+          "id": "prompt-injection",
+          "meta": {
+            "description": "Understanding and preventing prompt injection",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Prompt Injection", "Security", "Defenses"],
+            "resources": [{"name": "Prompt Injection", "url": "https://simonwillison.net/2023/Apr/14/worst-that-can-happen/"}]
+          }
+        },
+        {
+          "name": "Content Moderation",
+          "id": "content-moderation",
+          "meta": {
+            "description": "Filtering harmful content, moderation APIs",
+            "duration": "1 week",
+            "level": "intermediate",
+            "topics": ["Moderation", "Content Filtering", "Safety"],
+            "resources": [{"name": "Moderation API", "url": "https://platform.openai.com/docs/guides/moderation"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "LangChain & Frameworks",
+      "id": "langchain-frameworks",
+      "meta": {
+        "description": "LangChain, LlamaIndex, prompt orchestration",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["LangChain", "LlamaIndex", "Agents", "Chains"],
+        "resources": [{"name": "LangChain Docs", "url": "https://python.langchain.com/docs/get_started/introduction"}]
+      },
+      "children": [
+        {
+          "name": "LangChain Basics",
+          "id": "langchain-basics",
+          "meta": {
+            "description": "Chains, agents, memory, tools",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["LangChain", "Chains", "Agents", "Memory", "Tools"],
+            "resources": [{"name": "LangChain Tutorial", "url": "https://python.langchain.com/docs/get_started/quickstart"}]
+          }
+        },
+        {
+          "name": "LlamaIndex",
+          "id": "llamaindex",
+          "meta": {
+            "description": "Data indexing, retrieval, query engines",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["LlamaIndex", "Indexing", "Query Engines", "Retrieval"],
+            "resources": [{"name": "LlamaIndex", "url": "https://docs.llamaindex.ai/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fine-Tuning & Customization",
+      "id": "fine-tuning",
+      "meta": {
+        "description": "Model fine-tuning, custom models, RLHF",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["Fine-Tuning", "Custom Models", "RLHF", "Training Data"],
+        "resources": [{"name": "Fine-Tuning Guide", "url": "https://platform.openai.com/docs/guides/fine-tuning"}]
+      },
+      "children": [
+        {
+          "name": "OpenAI Fine-Tuning",
+          "id": "openai-fine-tuning",
+          "meta": {
+            "description": "Fine-tuning GPT models on custom data",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Fine-Tuning", "Training Data", "Validation", "Hyperparameters"],
+            "resources": [{"name": "Fine-Tuning API", "url": "https://platform.openai.com/docs/guides/fine-tuning"}]
+          }
+        },
+        {
+          "name": "RLHF Concepts",
+          "id": "rlhf",
+          "meta": {
+            "description": "Reinforcement learning from human feedback",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["RLHF", "Reward Models", "PPO", "Human Feedback"],
+            "resources": [{"name": "RLHF", "url": "https://huggingface.co/blog/rlhf"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Multimodal Prompting",
+      "id": "multimodal-prompting",
+      "meta": {
+        "description": "Vision models, image generation, audio, video",
+        "duration": "3-4 weeks",
+        "level": "advanced",
+        "topics": ["GPT-4V", "DALL-E", "Midjourney", "Image Understanding"],
+        "resources": [{"name": "GPT-4 Vision", "url": "https://platform.openai.com/docs/guides/vision"}]
+      },
+      "children": [
+        {
+          "name": "Vision Models",
+          "id": "vision-models",
+          "meta": {
+            "description": "GPT-4V, image understanding, visual prompting",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["GPT-4V", "Image Analysis", "Visual QA"],
+            "resources": [{"name": "Vision Guide", "url": "https://platform.openai.com/docs/guides/vision"}]
+          }
+        },
+        {
+          "name": "Image Generation",
+          "id": "image-generation",
+          "meta": {
+            "description": "DALL-E, Midjourney, Stable Diffusion prompts",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["DALL-E", "Midjourney", "Stable Diffusion", "Prompt Engineering"],
+            "resources": [{"name": "DALL-E Guide", "url": "https://platform.openai.com/docs/guides/images"}]
+          }
+        }
+      ]
+    }
+  ]
+}

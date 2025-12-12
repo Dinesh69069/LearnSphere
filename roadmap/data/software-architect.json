@@ -1,0 +1,469 @@
+{
+  "name": "Software Architect",
+  "id": "software-architect",
+  "meta": {
+    "description": "Complete software architecture roadmap - design patterns, system design, architecture principles",
+    "duration": "18-24 months",
+    "level": "advanced",
+    "topics": ["Architecture Patterns", "System Design", "Design Principles", "Microservices", "Cloud Architecture"],
+    "resources": [
+      {"name": "Software Architecture Roadmap", "url": "https://roadmap.sh/software-architect"},
+      {"name": "Martin Fowler", "url": "https://martinfowler.com/"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Architecture Fundamentals",
+      "id": "architecture-fundamentals",
+      "meta": {
+        "description": "Architecture basics, levels, responsibilities",
+        "duration": "4-6 weeks",
+        "level": "intermediate",
+        "topics": ["Architecture Basics", "Levels", "Responsibilities"],
+        "resources": [{"name": "Architecture Guide", "url": "https://martinfowler.com/architecture/"}]
+      },
+      "children": [
+        {
+          "name": "Architecture Levels",
+          "id": "architecture-levels",
+          "meta": {
+            "description": "Application, solution, enterprise architecture",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Application Architecture", "Solution Architecture", "Enterprise Architecture"],
+            "resources": [{"name": "Architecture Levels", "url": "https://roadmap.sh/software-architect"}]
+          }
+        },
+        {
+          "name": "Architect Responsibilities",
+          "id": "architect-responsibilities",
+          "meta": {
+            "description": "Technical decisions, design choices, requirements",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Tech Decisions", "Design", "Requirements", "Documentation"],
+            "resources": [{"name": "Architect Role", "url": "https://martinfowler.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Patterns",
+      "id": "design-patterns",
+      "meta": {
+        "description": "Gang of Four patterns, architectural patterns",
+        "duration": "8-10 weeks",
+        "level": "advanced",
+        "topics": ["GoF Patterns", "Creational", "Structural", "Behavioral"],
+        "resources": [{"name": "Design Patterns", "url": "https://refactoring.guru/design-patterns"}]
+      },
+      "children": [
+        {
+          "name": "Creational Patterns",
+          "id": "creational-patterns",
+          "meta": {
+            "description": "Singleton, Factory, Builder, Prototype",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Singleton", "Factory", "Abstract Factory", "Builder"],
+            "resources": [{"name": "Creational Patterns", "url": "https://refactoring.guru/design-patterns/creational-patterns"}]
+          }
+        },
+        {
+          "name": "Structural Patterns",
+          "id": "structural-patterns",
+          "meta": {
+            "description": "Adapter, Decorator, Proxy, Facade",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Adapter", "Decorator", "Proxy", "Facade", "Composite"],
+            "resources": [{"name": "Structural Patterns", "url": "https://refactoring.guru/design-patterns/structural-patterns"}]
+          }
+        },
+        {
+          "name": "Behavioral Patterns",
+          "id": "behavioral-patterns",
+          "meta": {
+            "description": "Strategy, Observer, Command, Template Method",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Strategy", "Observer", "Command", "Template Method"],
+            "resources": [{"name": "Behavioral Patterns", "url": "https://refactoring.guru/design-patterns/behavioral-patterns"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Architectural Patterns",
+      "id": "architectural-patterns",
+      "meta": {
+        "description": "MVC, Microservices, Event-Driven, CQRS",
+        "duration": "10-12 weeks",
+        "level": "advanced",
+        "topics": ["MVC", "Microservices", "Event-Driven", "CQRS", "DDD"],
+        "resources": [{"name": "Architectural Patterns", "url": "https://martinfowler.com/articles/patterns-of-distributed-systems/"}]
+      },
+      "children": [
+        {
+          "name": "MVC / MVP / MVVM",
+          "id": "mvc-patterns",
+          "meta": {
+            "description": "Model-View-Controller and variants",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["MVC", "MVP", "MVVM"],
+            "resources": [{"name": "MVC", "url": "https://martinfowler.com/eaaDev/uiArchs.html"}]
+          }
+        },
+        {
+          "name": "Microservices Architecture",
+          "id": "microservices-arch",
+          "meta": {
+            "description": "Service decomposition, API gateway, service mesh",
+            "duration": "4-5 weeks",
+            "level": "advanced",
+            "topics": ["Microservices", "Service Mesh", "API Gateway", "Service Discovery"],
+            "resources": [{"name": "Microservices", "url": "https://microservices.io/"}]
+          },
+          "children": [
+            {
+              "name": "Service Decomposition",
+              "id": "service-decomposition",
+              "meta": {
+                "description": "Bounded contexts, service boundaries",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Bounded Context", "Service Boundaries", "DDD"],
+                "resources": [{"name": "Decomposition", "url": "https://microservices.io/patterns/decomposition/decompose-by-subdomain.html"}]
+              }
+            },
+            {
+              "name": "Inter-Service Communication",
+              "id": "inter-service-communication",
+              "meta": {
+                "description": "REST, gRPC, message queues",
+                "duration": "2 weeks",
+                "level": "advanced",
+                "topics": ["REST", "gRPC", "Message Queues", "Event Bus"],
+                "resources": [{"name": "Communication Patterns", "url": "https://microservices.io/patterns/communication-style/messaging.html"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Event-Driven Architecture",
+          "id": "event-driven",
+          "meta": {
+            "description": "Event sourcing, CQRS, event bus",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Event Sourcing", "CQRS", "Event Bus", "Saga Pattern"],
+            "resources": [{"name": "Event-Driven", "url": "https://martinfowler.com/articles/201701-event-driven.html"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "System Design Principles",
+      "id": "system-design-principles",
+      "meta": {
+        "description": "SOLID, DRY, KISS, YAGNI principles",
+        "duration": "4-6 weeks",
+        "level": "advanced",
+        "topics": ["SOLID", "DRY", "KISS", "YAGNI"],
+        "resources": [{"name": "Design Principles", "url": "https://en.wikipedia.org/wiki/SOLID"}]
+      },
+      "children": [
+        {
+          "name": "SOLID Principles",
+          "id": "solid-principles",
+          "meta": {
+            "description": "Single Responsibility, Open-Closed, Liskov, Interface Segregation, Dependency Inversion",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["SRP", "OCP", "LSP", "ISP", "DIP"],
+            "resources": [{"name": "SOLID", "url": "https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"}]
+          }
+        },
+        {
+          "name": "Clean Code Principles",
+          "id": "clean-code",
+          "meta": {
+            "description": "DRY, KISS, YAGNI, clean code practices",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["DRY", "KISS", "YAGNI", "Clean Code"],
+            "resources": [{"name": "Clean Code", "url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Domain-Driven Design",
+      "id": "domain-driven-design",
+      "meta": {
+        "description": "DDD concepts, bounded contexts, aggregates",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["DDD", "Bounded Context", "Aggregates", "Entities", "Value Objects"],
+        "resources": [{"name": "Domain-Driven Design", "url": "https://martinfowler.com/tags/domain%20driven%20design.html"}]
+      },
+      "children": [
+        {
+          "name": "Strategic Design",
+          "id": "strategic-design",
+          "meta": {
+            "description": "Bounded contexts, context mapping, ubiquitous language",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Bounded Context", "Context Map", "Ubiquitous Language"],
+            "resources": [{"name": "Strategic DDD", "url": "https://www.domainlanguage.com/"}]
+          }
+        },
+        {
+          "name": "Tactical Design",
+          "id": "tactical-design",
+          "meta": {
+            "description": "Entities, value objects, aggregates, repositories",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Entities", "Value Objects", "Aggregates", "Repositories"],
+            "resources": [{"name": "Tactical DDD", "url": "https://www.domainlanguage.com/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scalability & Performance",
+      "id": "scalability-performance",
+      "meta": {
+        "description": "Horizontal/vertical scaling, caching, load balancing",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Scalability", "Performance", "Caching", "Load Balancing"],
+        "resources": [{"name": "Scalability", "url": "https://github.com/binhnguyennus/awesome-scalability"}]
+      },
+      "children": [
+        {
+          "name": "Scaling Strategies",
+          "id": "scaling-strategies",
+          "meta": {
+            "description": "Horizontal and vertical scaling",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Horizontal Scaling", "Vertical Scaling", "Auto Scaling"],
+            "resources": [{"name": "Scaling", "url": "https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/horizontal-vs-vertical-scaling.html"}]
+          }
+        },
+        {
+          "name": "Caching Strategies",
+          "id": "caching-strategies",
+          "meta": {
+            "description": "Cache patterns, Redis, CDN",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Cache Aside", "Write-Through", "Redis", "CDN"],
+            "resources": [{"name": "Caching", "url": "https://aws.amazon.com/caching/"}]
+          }
+        },
+        {
+          "name": "Load Balancing",
+          "id": "load-balancing",
+          "meta": {
+            "description": "Load balancers, algorithms, health checks",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Load Balancers", "Round Robin", "Least Connections"],
+            "resources": [{"name": "Load Balancing", "url": "https://www.nginx.com/resources/glossary/load-balancing/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Database Architecture",
+      "id": "database-architecture",
+      "meta": {
+        "description": "SQL vs NoSQL, sharding, replication, CAP theorem",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["SQL", "NoSQL", "Sharding", "Replication", "CAP Theorem"],
+        "resources": [{"name": "Database Design", "url": "https://www.postgresql.org/docs/"}]
+      },
+      "children": [
+        {
+          "name": "SQL vs NoSQL",
+          "id": "sql-vs-nosql",
+          "meta": {
+            "description": "Relational vs non-relational databases",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["SQL", "NoSQL", "Document DB", "Key-Value"],
+            "resources": [{"name": "SQL vs NoSQL", "url": "https://www.mongodb.com/nosql-explained/nosql-vs-sql"}]
+          }
+        },
+        {
+          "name": "Database Scaling",
+          "id": "database-scaling",
+          "meta": {
+            "description": "Sharding, partitioning, replication",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Sharding", "Partitioning", "Replication", "Master-Slave"],
+            "resources": [{"name": "DB Scaling", "url": "https://www.mongodb.com/basics/sharding"}]
+          }
+        },
+        {
+          "name": "CAP Theorem & ACID",
+          "id": "cap-acid",
+          "meta": {
+            "description": "Consistency, availability, partition tolerance, ACID",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["CAP", "ACID", "BASE", "Consistency"],
+            "resources": [{"name": "CAP Theorem", "url": "https://en.wikipedia.org/wiki/CAP_theorem"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Security Architecture",
+      "id": "security-architecture",
+      "meta": {
+        "description": "Security best practices, threat modeling, defense in depth",
+        "duration": "4-6 weeks",
+        "level": "advanced",
+        "topics": ["Security", "Threat Modeling", "Authentication", "Authorization"],
+        "resources": [{"name": "Security", "url": "https://owasp.org/"}]
+      },
+      "children": [
+        {
+          "name": "Authentication & Authorization",
+          "id": "auth-security",
+          "meta": {
+            "description": "OAuth, JWT, RBAC, ABAC",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["OAuth", "JWT", "RBAC", "ABAC"],
+            "resources": [{"name": "Auth", "url": "https://auth0.com/docs"}]
+          }
+        },
+        {
+          "name": "Threat Modeling",
+          "id": "threat-modeling",
+          "meta": {
+            "description": "STRIDE, attack trees, security analysis",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["STRIDE", "Attack Trees", "Threat Analysis"],
+            "resources": [{"name": "Threat Modeling", "url": "https://owasp.org/www-community/Threat_Modeling"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud Architecture",
+      "id": "cloud-architecture-patterns",
+      "meta": {
+        "description": "Cloud design patterns, well-architected framework",
+        "duration": "6-8 weeks",
+        "level": "advanced",
+        "topics": ["Cloud Patterns", "AWS Well-Architected", "Multi-Cloud"],
+        "resources": [{"name": "AWS Well-Architected", "url": "https://aws.amazon.com/architecture/well-architected/"}]
+      },
+      "children": [
+        {
+          "name": "Cloud Design Patterns",
+          "id": "cloud-design-patterns",
+          "meta": {
+            "description": "Retry, Circuit Breaker, Bulkhead, Strangler Fig",
+            "duration": "3-4 weeks",
+            "level": "advanced",
+            "topics": ["Retry", "Circuit Breaker", "Bulkhead", "Strangler Fig"],
+            "resources": [{"name": "Cloud Patterns", "url": "https://docs.microsoft.com/azure/architecture/patterns/"}]
+          }
+        },
+        {
+          "name": "Well-Architected Frameworks",
+          "id": "well-architected",
+          "meta": {
+            "description": "AWS/Azure Well-Architected pillars",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Reliability", "Performance", "Security", "Cost Optimization"],
+            "resources": [{"name": "AWS WAF", "url": "https://aws.amazon.com/architecture/well-architected/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "API Design",
+      "id": "api-design-architect",
+      "meta": {
+        "description": "REST, GraphQL, gRPC API design principles",
+        "duration": "4-5 weeks",
+        "level": "advanced",
+        "topics": ["REST", "GraphQL", "gRPC", "API Versioning"],
+        "resources": [{"name": "API Design", "url": "https://restfulapi.net/"}]
+      },
+      "children": [
+        {
+          "name": "RESTful API Design",
+          "id": "rest-api-design",
+          "meta": {
+            "description": "REST principles, resource design, HATEOAS",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["REST", "Resources", "HATEOAS", "HTTP Methods"],
+            "resources": [{"name": "REST API Tutorial", "url": "https://restfulapi.net/"}]
+          }
+        },
+        {
+          "name": "GraphQL & gRPC",
+          "id": "graphql-grpc",
+          "meta": {
+            "description": "GraphQL schema, gRPC services",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["GraphQL", "gRPC", "Protobuf"],
+            "resources": [{"name": "GraphQL", "url": "https://graphql.org/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Soft Skills & Communication",
+      "id": "soft-skills-architect",
+      "meta": {
+        "description": "Leadership, communication, stakeholder management",
+        "duration": "Ongoing",
+        "level": "advanced",
+        "topics": ["Leadership", "Communication", "Documentation", "Presentations"],
+        "resources": [{"name": "Soft Skills", "url": "https://martinfowler.com/"}]
+      },
+      "children": [
+        {
+          "name": "Technical Leadership",
+          "id": "technical-leadership",
+          "meta": {
+            "description": "Leading teams, mentoring, decision making",
+            "duration": "Ongoing",
+            "level": "advanced",
+            "topics": ["Leadership", "Mentoring", "Decision Making"],
+            "resources": [{"name": "Tech Lead", "url": "https://www.amazon.com/Staff-Engineers-Path-Individual-Contributors/dp/1098118731"}]
+          }
+        },
+        {
+          "name": "Architecture Documentation",
+          "id": "architecture-documentation",
+          "meta": {
+            "description": "ADRs, C4 model, diagrams",
+            "duration": "Ongoing",
+            "level": "advanced",
+            "topics": ["ADR", "C4 Model", "UML", "Documentation"],
+            "resources": [{"name": "C4 Model", "url": "https://c4model.com/"}]
+          }
+        }
+      ]
+    }
+  ]
+}

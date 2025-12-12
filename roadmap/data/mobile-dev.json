@@ -1,0 +1,415 @@
+{
+  "name": "Mobile Developer",
+  "id": "mobile-dev",
+  "meta": {
+    "description": "Complete mobile development roadmap - React Native, Flutter, iOS, Android",
+    "duration": "15-18 months",
+    "level": "intermediate",
+    "topics": ["React Native", "Flutter", "Mobile UI/UX", "Native APIs", "App Deployment"],
+    "resources": [
+      {"name": "React Native Docs", "url": "https://reactnative.dev/"},
+      {"name": "Flutter Docs", "url": "https://flutter.dev/learn"}
+    ]
+  },
+  "children": [
+    {
+      "name": "Programming Fundamentals",
+      "id": "mobile-fundamentals",
+      "meta": {
+        "description": "JavaScript/TypeScript or Dart basics",
+        "duration": "4-6 weeks",
+        "level": "beginner",
+        "topics": ["JavaScript", "TypeScript", "Dart", "OOP"],
+        "resources": [{"name": "TypeScript Handbook", "url": "https://www.typescriptlang.org/docs/handbook/intro.html"}]
+      },
+      "children": [
+        {
+          "name": "JavaScript/TypeScript",
+          "id": "js-ts-mobile",
+          "meta": {
+            "description": "Modern JavaScript and TypeScript",
+            "duration": "3 weeks",
+            "level": "beginner",
+            "topics": ["ES6+", "TypeScript", "Async/Await", "Promises"],
+            "resources": [{"name": "JavaScript.info", "url": "https://javascript.info/"}]
+          }
+        },
+        {
+          "name": "Dart (for Flutter)",
+          "id": "dart",
+          "meta": {
+            "description": "Dart language fundamentals",
+            "duration": "2-3 weeks",
+            "level": "beginner",
+            "topics": ["Dart Basics", "OOP", "Async", "Null Safety"],
+            "resources": [{"name": "Dart Language Tour", "url": "https://dart.dev/guides/language/language-tour"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "React Native",
+      "id": "react-native",
+      "meta": {
+        "description": "Cross-platform mobile development with React Native",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["React Native", "Components", "Navigation", "State Management", "Native Modules"],
+        "resources": [{"name": "React Native Tutorial", "url": "https://reactnative.dev/docs/getting-started"}]
+      },
+      "children": [
+        {
+          "name": "React Native Basics",
+          "id": "rn-basics",
+          "meta": {
+            "description": "Components, styling, layouts",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["Components", "StyleSheet", "Flexbox", "TouchableOpacity"],
+            "resources": [{"name": "RN Components", "url": "https://reactnative.dev/docs/components-and-apis"}]
+          },
+          "children": [
+            {
+              "name": "Core Components",
+              "id": "rn-core-components",
+              "meta": {
+                "description": "View, Text, Image, ScrollView, FlatList",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["View", "Text", "Image", "ScrollView", "FlatList"],
+                "resources": [{"name": "Core Components", "url": "https://reactnative.dev/docs/intro-react-native-components"}]
+              }
+            },
+            {
+              "name": "Styling & Layout",
+              "id": "rn-styling",
+              "meta": {
+                "description": "StyleSheet, Flexbox, responsive design",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["StyleSheet", "Flexbox", "Dimensions", "Platform-specific"],
+                "resources": [{"name": "Styling", "url": "https://reactnative.dev/docs/style"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Navigation",
+          "id": "rn-navigation",
+          "meta": {
+            "description": "React Navigation, stack, tab, drawer",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["React Navigation", "Stack Navigator", "Tab Navigator", "Drawer"],
+            "resources": [{"name": "React Navigation", "url": "https://reactnavigation.org/docs/getting-started"}]
+          }
+        },
+        {
+          "name": "State Management",
+          "id": "rn-state",
+          "meta": {
+            "description": "Context API, Redux, Zustand",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Context API", "Redux Toolkit", "Zustand", "AsyncStorage"],
+            "resources": [{"name": "Redux Toolkit", "url": "https://redux-toolkit.js.org/"}]
+          }
+        },
+        {
+          "name": "Native Modules & APIs",
+          "id": "rn-native-modules",
+          "meta": {
+            "description": "Camera, location, permissions, native code",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Native Modules", "Camera", "Location", "Permissions"],
+            "resources": [{"name": "Native Modules", "url": "https://reactnative.dev/docs/native-modules-intro"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Flutter",
+      "id": "flutter",
+      "meta": {
+        "description": "Cross-platform development with Flutter",
+        "duration": "8-10 weeks",
+        "level": "intermediate",
+        "topics": ["Flutter", "Widgets", "State Management", "Navigation", "Native Features"],
+        "resources": [{"name": "Flutter Documentation", "url": "https://docs.flutter.dev/"}]
+      },
+      "children": [
+        {
+          "name": "Flutter Basics",
+          "id": "flutter-basics",
+          "meta": {
+            "description": "Widgets, layouts, material design",
+            "duration": "3-4 weeks",
+            "level": "intermediate",
+            "topics": ["Widgets", "StatelessWidget", "StatefulWidget", "Material Design"],
+            "resources": [{"name": "Flutter Widgets", "url": "https://docs.flutter.dev/development/ui/widgets"}]
+          },
+          "children": [
+            {
+              "name": "Core Widgets",
+              "id": "flutter-widgets",
+              "meta": {
+                "description": "Container, Row, Column, Stack, ListView",
+                "duration": "2 weeks",
+                "level": "intermediate",
+                "topics": ["Container", "Row", "Column", "Stack", "ListView"],
+                "resources": [{"name": "Widget Catalog", "url": "https://docs.flutter.dev/development/ui/widgets"}]
+              }
+            },
+            {
+              "name": "Layout & Styling",
+              "id": "flutter-layout",
+              "meta": {
+                "description": "Layouts, themes, responsive design",
+                "duration": "1-2 weeks",
+                "level": "intermediate",
+                "topics": ["Layout", "Themes", "MediaQuery", "Responsive"],
+                "resources": [{"name": "Layouts", "url": "https://docs.flutter.dev/development/ui/layout"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "State Management",
+          "id": "flutter-state",
+          "meta": {
+            "description": "Provider, Riverpod, BLoC, GetX",
+            "duration": "2-3 weeks",
+            "level": "advanced",
+            "topics": ["Provider", "Riverpod", "BLoC", "GetX"],
+            "resources": [{"name": "State Management", "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/intro"}]
+          },
+          "children": [
+            {
+              "name": "Provider",
+              "id": "provider",
+              "meta": {
+                "description": "Provider package for state management",
+                "duration": "1 week",
+                "level": "advanced",
+                "topics": ["Provider", "ChangeNotifier", "Consumer"],
+                "resources": [{"name": "Provider Package", "url": "https://pub.dev/packages/provider"}]
+              }
+            },
+            {
+              "name": "Riverpod",
+              "id": "riverpod",
+              "meta": {
+                "description": "Modern state management with Riverpod",
+                "duration": "1-2 weeks",
+                "level": "advanced",
+                "topics": ["Riverpod", "Providers", "State Notifiers"],
+                "resources": [{"name": "Riverpod Docs", "url": "https://riverpod.dev/"}]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Navigation & Routing",
+          "id": "flutter-navigation",
+          "meta": {
+            "description": "Navigator 2.0, named routes, deep linking",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Navigator", "Routes", "Deep Linking"],
+            "resources": [{"name": "Navigation", "url": "https://docs.flutter.dev/development/ui/navigation"}]
+          }
+        },
+        {
+          "name": "Platform Integration",
+          "id": "flutter-platform",
+          "meta": {
+            "description": "Platform channels, native code, plugins",
+            "duration": "2 weeks",
+            "level": "advanced",
+            "topics": ["Platform Channels", "Method Channels", "Plugins"],
+            "resources": [{"name": "Platform Integration", "url": "https://docs.flutter.dev/development/platform-integration/platform-channels"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mobile UI/UX",
+      "id": "mobile-ui-ux",
+      "meta": {
+        "description": "Mobile design patterns, accessibility, performance",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["Mobile UI Patterns", "Accessibility", "Animations", "Gestures"],
+        "resources": [{"name": "Material Design", "url": "https://material.io/design"}]
+      },
+      "children": [
+        {
+          "name": "Design Patterns",
+          "id": "mobile-design-patterns",
+          "meta": {
+            "description": "Material Design, iOS Human Interface Guidelines",
+            "duration": "2 weeks",
+            "level": "intermediate",
+            "topics": ["Material Design", "iOS HIG", "Design Systems"],
+            "resources": [{"name": "HIG", "url": "https://developer.apple.com/design/human-interface-guidelines/"}]
+          }
+        },
+        {
+          "name": "Animations & Gestures",
+          "id": "mobile-animations",
+          "meta": {
+            "description": "Animated API, gestures, transitions",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Animations", "Gestures", "Transitions", "Reanimated"],
+            "resources": [{"name": "Reanimated", "url": "https://docs.swmansion.com/react-native-reanimated/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Data & Networking",
+      "id": "mobile-data",
+      "meta": {
+        "description": "REST APIs, GraphQL, local storage, caching",
+        "duration": "3-4 weeks",
+        "level": "intermediate",
+        "topics": ["REST APIs", "GraphQL", "Local Storage", "Caching", "Offline Support"],
+        "resources": [{"name": "Axios", "url": "https://axios-http.com/"}]
+      },
+      "children": [
+        {
+          "name": "API Integration",
+          "id": "mobile-api",
+          "meta": {
+            "description": "Fetch, Axios, error handling",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["Fetch", "Axios", "Error Handling", "Authentication"],
+            "resources": [{"name": "React Native Networking", "url": "https://reactnative.dev/docs/network"}]
+          }
+        },
+        {
+          "name": "Local Storage",
+          "id": "mobile-storage",
+          "meta": {
+            "description": "AsyncStorage, SQLite, Realm",
+            "duration": "1-2 weeks",
+            "level": "intermediate",
+            "topics": ["AsyncStorage", "SQLite", "Realm", "MMKV"],
+            "resources": [{"name": "AsyncStorage", "url": "https://react-native-async-storage.github.io/async-storage/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "id": "mobile-testing",
+      "meta": {
+        "description": "Unit tests, integration tests, E2E testing",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Jest", "React Native Testing Library", "Detox", "E2E Testing"],
+        "resources": [{"name": "Testing Library", "url": "https://callstack.github.io/react-native-testing-library/"}]
+      },
+      "children": [
+        {
+          "name": "Unit & Component Testing",
+          "id": "mobile-unit-testing",
+          "meta": {
+            "description": "Jest, React Native Testing Library",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["Jest", "Testing Library", "Mocking"],
+            "resources": [{"name": "Jest", "url": "https://jestjs.io/"}]
+          }
+        },
+        {
+          "name": "E2E Testing",
+          "id": "mobile-e2e",
+          "meta": {
+            "description": "Detox, Appium, automation",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Detox", "Appium", "Test Automation"],
+            "resources": [{"name": "Detox", "url": "https://wix.github.io/Detox/"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Performance Optimization",
+      "id": "mobile-performance",
+      "meta": {
+        "description": "App performance, memory management, optimization",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["Performance", "Memory Management", "Optimization", "Profiling"],
+        "resources": [{"name": "Performance", "url": "https://reactnative.dev/docs/performance"}]
+      },
+      "children": [
+        {
+          "name": "React Native Performance",
+          "id": "rn-performance",
+          "meta": {
+            "description": "FlatList optimization, memo, useMemo",
+            "duration": "1-2 weeks",
+            "level": "advanced",
+            "topics": ["FlatList", "memo", "useMemo", "useCallback"],
+            "resources": [{"name": "RN Performance", "url": "https://reactnative.dev/docs/performance"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "App Deployment",
+      "id": "mobile-deployment",
+      "meta": {
+        "description": "App Store, Google Play, CI/CD, OTA updates",
+        "duration": "2-3 weeks",
+        "level": "advanced",
+        "topics": ["App Store", "Google Play", "Fastlane", "CodePush", "CI/CD"],
+        "resources": [
+          {"name": "App Distribution", "url": "https://reactnative.dev/docs/running-on-device"},
+          {"name": "Fastlane", "url": "https://fastlane.tools/"}
+        ]
+      },
+      "children": [
+        {
+          "name": "iOS Deployment",
+          "id": "ios-deployment",
+          "meta": {
+            "description": "App Store Connect, TestFlight, provisioning",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["App Store", "TestFlight", "Certificates", "Provisioning"],
+            "resources": [{"name": "App Store Connect", "url": "https://developer.apple.com/app-store-connect/"}]
+          }
+        },
+        {
+          "name": "Android Deployment",
+          "id": "android-deployment",
+          "meta": {
+            "description": "Google Play Console, signing, release",
+            "duration": "1 week",
+            "level": "advanced",
+            "topics": ["Google Play", "App Signing", "AAB", "Release"],
+            "resources": [{"name": "Google Play", "url": "https://developer.android.com/distribute"}]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Push Notifications",
+      "id": "push-notifications",
+      "meta": {
+        "description": "FCM, APNs, notification handling",
+        "duration": "1-2 weeks",
+        "level": "intermediate",
+        "topics": ["Firebase Cloud Messaging", "APNs", "Local Notifications"],
+        "resources": [{"name": "React Native Firebase", "url": "https://rnfirebase.io/"}]
+      }
+    }
+  ]
+}
