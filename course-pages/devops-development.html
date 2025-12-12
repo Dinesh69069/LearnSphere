@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Fundamentals - Learn Sphere</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center"><a href="../index.html" class="text-2xl font-bold text-blue-600">Learn<span class="text-amber-600">Sphere</span></a></div>
+                <div class="flex items-center gap-4"><a href="../index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a><a href="../courses/index.html" class="text-blue-600 font-semibold">Courses</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gray-100 py-4"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><a href="../courses/index.html" class="text-blue-600 hover:underline">← Back to Courses</a></div></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <div class="md:col-span-1"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20251120155351845895/devops_engineering.webp" alt="DevOps Fundamentals" class="w-full h-64 object-cover rounded-lg shadow-md"></div>
+                <div class="md:col-span-2">
+                    <div class="mb-4"><span class="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Beginner → Intermediate</span></div>
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">DevOps Fundamentals</h1>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">Learn CI/CD, automation, and infrastructure as code principles. Master the tools and practices that bridge development and operations to deliver reliable, scalable applications faster.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-sm text-gray-600">Duration</p><p class="text-xl font-bold text-gray-800">9 Weeks</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-sm text-gray-600">Mode</p><p class="text-xl font-bold text-gray-800">In-Person</p></div>
+                    </div>
+                    <button onclick="enrollCourse()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <div class="border-b border-gray-200 flex flex-wrap">
+                <button class="tab-btn active flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition border-b-2 border-blue-600" onclick="showTab('overview')">Overview</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('curriculum')">Curriculum</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('requirements')">Requirements</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('faq')">FAQ</button>
+            </div>
+            <div class="p-8">
+                <div id="overview" class="tab-content">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Overview</h2>
+                    <p class="text-gray-700 mb-8 leading-relaxed">DevOps is a set of practices that combines software development and IT operations. This course teaches you how to automate deployment pipelines, manage infrastructure efficiently, and implement continuous integration and continuous deployment (CI/CD) strategies that reduce time to market and improve application reliability.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">What You'll Learn</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Continuous Integration and Continuous Deployment (CI/CD)</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Docker containerization and container orchestration</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Kubernetes for container management</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Infrastructure as Code (IaC) principles</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Monitoring, logging, and observability</span></li>
+                    </ul>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Skills You'll Master</h3>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">CI/CD</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">Docker</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">Kubernetes</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">Automation</span>
+                    </div>
+                </div>
+                <div id="curriculum" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Curriculum</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 1: DevOps Fundamentals</h4><p class="text-gray-600 text-sm">Introduction to DevOps culture, principles, and lifecycle - 1 Week</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 2: Version Control & Git</h4><p class="text-gray-600 text-sm">Git workflows, branching strategies, and collaboration - 1.5 Weeks</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 3: Docker & Containerization</h4><p class="text-gray-600 text-sm">Docker basics, image creation, container management - 2 Weeks</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 4: CI/CD Pipelines</h4><p class="text-gray-600 text-sm">Jenkins, GitLab CI, GitHub Actions, and automated testing - 2 Weeks</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 5: Kubernetes & IaC</h4><p class="text-gray-600 text-sm">Kubernetes orchestration, Infrastructure as Code, and monitoring - 2.5 Weeks</p></div>
+                    </div>
+                </div>
+                <div id="requirements" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Prerequisites & Requirements</h2>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Prerequisites</h3>
+                    <ul class="space-y-2 mb-8 text-gray-700">
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Basic Linux/Unix command line knowledge</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Understanding of software development lifecycle</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Commitment to 8-10 hours per week</li>
+                    </ul>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">System Requirements</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Linux or macOS terminal access</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Docker installed</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Git for version control</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>At least 8GB RAM for running containers</li>
+                    </ul>
+                </div>
+                <div id="faq" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">Do I need to be a developer to learn DevOps?</h4><p class="text-gray-600">No, but understanding software development basics helps. We teach DevOps from a practical perspective suitable for both developers and operations professionals.</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">What's the difference between DevOps and SRE?</h4><p class="text-gray-600">DevOps is a culture and set of practices. SRE (Site Reliability Engineering) is an implementation of DevOps principles. This course covers both concepts.</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">Will I work with cloud platforms?</h4><p class="text-gray-600">Yes! We cover AWS and cloud deployment practices. You'll understand how to deploy containerized applications to cloud infrastructure.</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">Is this course hands-on?</h4><p class="text-gray-600">Absolutely! It's an in-person course with practical labs where you'll set up real CI/CD pipelines, containerize applications, and deploy them to Kubernetes.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">👨‍🏫</div><h3 class="font-bold text-gray-800 mb-2">Expert Instructors</h3><p class="text-sm text-gray-600">Learn from industry professionals</p></div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">🎓</div><h3 class="font-bold text-gray-800 mb-2">Certification</h3><p class="text-sm text-gray-600">Verified certificate upon completion</p></div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">💻</div><h3 class="font-bold text-gray-800 mb-2">Real Projects</h3><p class="text-sm text-gray-600">Build portfolio-ready applications</p></div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">💬</div><h3 class="font-bold text-gray-800 mb-2">24/7 Support</h3><p class="text-sm text-gray-600">Community and instructor support</p></div>
+        </div>
+        <!-- Similar Courses Section -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Similar Courses You Might Like</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="./cloud-computing-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/img-practice/prod/courses/651/Web/Content/Soln_1720781579.webp" alt="Cloud" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Cloud Computing</h4>
+                        <p class="text-sm text-gray-600">AWS, Azure, GCP - 9 Weeks</p>
+                    </div>
+                </a>
+                <a href="./spring-boot-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251119100432783088/JBDL1.webp" alt="Spring Boot" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Spring Boot Development</h4>
+                        <p class="text-sm text-gray-600">Java Web Framework - 9 Weeks</p>
+                    </div>
+                </a>
+                <a href="./mern-stack-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*SpICWeRs7aILT8TPAFGIjg.png" alt="MEAN" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">MEAN Stack Development</h4>
+                        <p class="text-sm text-gray-600">MongoDB, Express, Angular - 12 Weeks</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-900 text-white py-12 mt-16"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"><div><h3 class="text-2xl font-bold mb-4">Learn<span class="text-amber-600">Sphere</span></h3><p class="text-gray-400">Your gateway to quality education and skill development.</p></div><div><h4 class="font-bold mb-4">Quick Links</h4><ul class="space-y-2 text-gray-400"><li><a href="../index.html" class="hover:text-white transition">Home</a></li><li><a href="../courses/index.html" class="hover:text-white transition">Courses</a></li></ul></div><div><h4 class="font-bold mb-4">Support</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">Help Center</a></li><li><a href="#" class="hover:text-white transition">Contact Us</a></li></ul></div><div><h4 class="font-bold mb-4">Follow Us</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">Twitter</a></li><li><a href="#" class="hover:text-white transition">LinkedIn</a></li></ul></div></div><div class="border-t border-gray-800 pt-8 text-center text-gray-400"><p>&copy; 2025 LearnSphere. All rights reserved.</p></div></div></footer>
+    <script>
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('border-b-2', 'border-blue-600'));
+            document.getElementById(tabName).classList.remove('hidden');
+            event.target.classList.add('border-b-2', 'border-blue-600');
+        }
+        function enrollCourse() {
+            let enrollments = JSON.parse(localStorage.getItem('enrollments') || '[]');
+            enrollments.push({course: "DevOps Fundamentals", enrolledAt: new Date().toLocaleString(), status: 'Active'});
+            localStorage.setItem('enrollments', JSON.stringify(enrollments));
+            alert(`✓ Successfully enrolled in "DevOps Fundamentals"!\n\nYour enrollment is now active. Check your email for course access details.`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing - Learn Sphere</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center"><a href="../index.html" class="text-2xl font-bold text-blue-600">Learn<span class="text-amber-600">Sphere</span></a></div>
+                <div class="flex items-center gap-4"><a href="../index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a><a href="../courses/index.html" class="text-blue-600 font-semibold">Courses</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gray-100 py-4"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><a href="../courses/index.html" class="text-blue-600 hover:underline">← Back to Courses</a></div></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <div class="md:col-span-1"><img src="https://media.geeksforgeeks.org/img-practice/prod/courses/651/Web/Content/Soln_1720781579.webp" alt="Cloud Computing" class="w-full h-64 object-cover rounded-lg shadow-md"></div>
+                <div class="md:col-span-2">
+                    <div class="mb-4"><span class="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Beginner → Intermediate</span></div>
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Cloud Computing</h1>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">Understand cloud services, deployment models, and architecture. Learn to design, deploy, and manage scalable applications on cloud platforms like AWS, Azure, and Google Cloud Platform.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-sm text-gray-600">Duration</p><p class="text-xl font-bold text-gray-800">9 Weeks</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><p class="text-sm text-gray-600">Mode</p><p class="text-xl font-bold text-gray-800">In-Person</p></div>
+                    </div>
+                    <button onclick="enrollCourse()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <div class="border-b border-gray-200 flex flex-wrap">
+                <button class="tab-btn active flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition border-b-2 border-blue-600" onclick="showTab('overview')">Overview</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('curriculum')">Curriculum</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('requirements')">Requirements</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('faq')">FAQ</button>
+            </div>
+            <div class="p-8">
+                <div id="overview" class="tab-content">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Overview</h2>
+                    <p class="text-gray-700 mb-8 leading-relaxed">Cloud Computing has revolutionized how businesses deploy and manage applications. This course provides comprehensive training on cloud services, infrastructure, and deployment strategies. You'll learn to leverage cloud platforms to build scalable, reliable, and cost-effective solutions.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">What You'll Learn</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Cloud computing fundamentals and service models (IaaS, PaaS, SaaS)</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">AWS services and architecture best practices</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Azure services and deployment options</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Google Cloud Platform fundamentals</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✓</span><span class="text-gray-700">Cloud security, scalability, and cost optimization</span></li>
+                    </ul>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Skills You'll Master</h3>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">AWS</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">Azure</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">GCP</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">Cloud</span>
+                    </div>
+                </div>
+                <div id="curriculum" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Curriculum</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 1: Cloud Computing Fundamentals</h4><p class="text-gray-600 text-sm">Introduction to cloud computing, service models, and deployment models - 1 Week</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 2: AWS Deep Dive</h4><p class="text-gray-600 text-sm">EC2, S3, RDS, VPC, and AWS architecture patterns - 3 Weeks</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 3: Azure Services</h4><p class="text-gray-600 text-sm">Azure VMs, App Service, databases, and Azure DevOps - 2 Weeks</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 4: Google Cloud Platform</h4><p class="text-gray-600 text-sm">GCP compute services, Cloud SQL, BigQuery, and Kubernetes Engine - 1.5 Weeks</p></div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3"><h4 class="font-bold text-gray-800">Module 5: Cloud Security & Optimization</h4><p class="text-gray-600 text-sm">Security best practices, cost optimization, and real-world projects - 1.5 Weeks</p></div>
+                    </div>
+                </div>
+                <div id="requirements" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Prerequisites & Requirements</h2>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Prerequisites</h3>
+                    <ul class="space-y-2 mb-8 text-gray-700">
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Basic knowledge of networking and Linux</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Understanding of server architecture basics</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Commitment to 8-10 hours per week</li>
+                    </ul>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">System Requirements</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>AWS, Azure, or GCP free tier account</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Web browser and internet connection</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Terminal access (Linux, macOS, or Windows Subsystem for Linux)</li>
+                        <li class="flex items-center"><span class="text-blue-600 font-bold mr-2">•</span>Text editor or IDE</li>
+                    </ul>
+                </div>
+                <div id="faq" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">Do I need AWS certification to take this course?</h4><p class="text-gray-600">No certifications required. We start from cloud fundamentals and build up to AWS, Azure, and GCP expertise. You'll be prepared for certification exams after the course.</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">Will I incur costs using cloud platforms?</h4><p class="text-gray-600">No! All major cloud providers offer free tier accounts with sufficient resources for learning. We teach cost optimization practices so you stay within free limits.</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">Which cloud platform should I focus on?</h4><p class="text-gray-600">AWS is the market leader, so we dedicate more time to it. However, we cover AWS, Azure, and GCP equally. You'll understand transferable concepts across all platforms.</p></div>
+                        <div class="bg-gray-50 p-4 rounded-lg"><h4 class="font-bold text-gray-800 mb-2">Are there hands-on labs?</h4><p class="text-gray-600">Absolutely! This is an in-person course with extensive hands-on labs where you'll set up real infrastructure, deploy applications, and manage resources on actual cloud platforms.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">👨‍🏫</div><h3 class="font-bold text-gray-800 mb-2">Expert Instructors</h3><p class="text-sm text-gray-600">Learn from industry professionals</p></div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">🎓</div><h3 class="font-bold text-gray-800 mb-2">Certification</h3><p class="text-sm text-gray-600">Verified certificate upon completion</p></div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">💻</div><h3 class="font-bold text-gray-800 mb-2">Real Projects</h3><p class="text-sm text-gray-600">Build portfolio-ready applications</p></div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl mb-2">💬</div><h3 class="font-bold text-gray-800 mb-2">24/7 Support</h3><p class="text-sm text-gray-600">Community and instructor support</p></div>
+        </div>
+        <!-- Similar Courses Section -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Similar Courses You Might Like</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="./devops-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251120155351845895/devops_engineering.webp" alt="DevOps" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">DevOps Fundamentals</h4>
+                        <p class="text-sm text-gray-600">CI/CD, Docker, Kubernetes - 9 Weeks</p>
+                    </div>
+                </a>
+                <a href="./mern-stack-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251120155351707831/full_stack_development.webp" alt="MERN" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">MERN Stack Development</h4>
+                        <p class="text-sm text-gray-600">MongoDB, Express, React, Node.js - 8 Weeks</p>
+                    </div>
+                </a>
+                <a href="./spring-boot-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251119100432783088/JBDL1.webp" alt="Spring Boot" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Spring Boot Development</h4>
+                        <p class="text-sm text-gray-600">Java Web Framework - 9 Weeks</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-900 text-white py-12 mt-16"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"><div><h3 class="text-2xl font-bold mb-4">Learn<span class="text-amber-600">Sphere</span></h3><p class="text-gray-400">Your gateway to quality education and skill development.</p></div><div><h4 class="font-bold mb-4">Quick Links</h4><ul class="space-y-2 text-gray-400"><li><a href="../index.html" class="hover:text-white transition">Home</a></li><li><a href="../courses/index.html" class="hover:text-white transition">Courses</a></li></ul></div><div><h4 class="font-bold mb-4">Support</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">Help Center</a></li><li><a href="#" class="hover:text-white transition">Contact Us</a></li></ul></div><div><h4 class="font-bold mb-4">Follow Us</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">Twitter</a></li><li><a href="#" class="hover:text-white transition">LinkedIn</a></li></ul></div></div><div class="border-t border-gray-800 pt-8 text-center text-gray-400"><p>&copy; 2025 LearnSphere. All rights reserved.</p></div></div></footer>
+    <script>
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('border-b-2', 'border-blue-600'));
+            document.getElementById(tabName).classList.remove('hidden');
+            event.target.classList.add('border-b-2', 'border-blue-600');
+        }
+        function enrollCourse() {
+            let enrollments = JSON.parse(localStorage.getItem('enrollments') || '[]');
+            enrollments.push({course: "Cloud Computing", enrolledAt: new Date().toLocaleString(), status: 'Active'});
+            localStorage.setItem('enrollments', JSON.stringify(enrollments));
+            alert(`✓ Successfully enrolled in "Cloud Computing"!\n\nYour enrollment is now active. Check your email for course access details.`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack Development - Learn Sphere</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-blue-600">Learn<span class="text-amber-600">Sphere</span></a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="../index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="../courses/index.html" class="text-blue-600 font-semibold">Courses</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="../courses/index.html" class="text-blue-600 hover:underline">← Back to Courses</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Course Hero Section -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <!-- Course Image -->
+                <div class="md:col-span-1">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251120155351707831/full_stack_development.webp" alt="MERN Stack Development" class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+
+                <!-- Course Header Info -->
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <span class="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Beginner → Intermediate</span>
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">MERN Stack Development</h1>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">Learn to build full-stack web applications using MongoDB, Express, React, and Node.js. Master the complete MERN stack and create production-ready applications with modern JavaScript technologies.</p>
+
+                    <!-- Quick Info -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Duration</p>
+                            <p class="text-xl font-bold text-gray-800">8 Weeks</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Mode</p>
+                            <p class="text-xl font-bold text-gray-800">Online</p>
+                        </div>
+                    </div>
+
+                    <!-- Enroll Button -->
+                    <button onclick="enrollCourse()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Details Tabs -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200 flex flex-wrap">
+                <button class="tab-btn active flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition border-b-2 border-blue-600" onclick="showTab('overview')">Overview</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('curriculum')">Curriculum</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('requirements')">Requirements</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('faq')">FAQ</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="p-8">
+                <!-- Overview Tab -->
+                <div id="overview" class="tab-content">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Overview</h2>
+                    <p class="text-gray-700 mb-8 leading-relaxed">
+                        This comprehensive MERN Stack Development course will take you from basics to building full-stack production-ready applications. You'll learn MongoDB for data management, Express.js for backend APIs, React for interactive frontends, and Node.js for server-side JavaScript. Through hands-on projects and real-world examples, you'll gain practical experience needed for modern web development roles.
+                    </p>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">What You'll Learn</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Build RESTful APIs with Express.js and Node.js</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Create dynamic user interfaces with React</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Design and manage databases with MongoDB</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Implement authentication and authorization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Deploy applications to cloud platforms</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Skills You'll Master</h3>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">MongoDB</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">Express</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">React</span>
+                        <span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Curriculum Tab -->
+                <div id="curriculum" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Curriculum</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 1: JavaScript Fundamentals & ES6</h4>
+                            <p class="text-gray-600 text-sm">Core JavaScript concepts, ES6 features, async/await - 1 Week</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 2: Node.js & Express.js</h4>
+                            <p class="text-gray-600 text-sm">Server setup, routing, middleware, REST APIs - 2 Weeks</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 3: MongoDB & Database Design</h4>
+                            <p class="text-gray-600 text-sm">NoSQL databases, CRUD operations, schema design - 2 Weeks</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 4: React Fundamentals</h4>
+                            <p class="text-gray-600 text-sm">Components, hooks, state management, routing - 2 Weeks</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 5: Full-Stack Integration & Deployment</h4>
+                            <p class="text-gray-600 text-sm">Connecting frontend-backend, authentication, deployment - 1 Week</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Requirements Tab -->
+                <div id="requirements" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Prerequisites & Requirements</h2>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Prerequisites</h3>
+                    <ul class="space-y-2 mb-8 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Basic understanding of HTML and CSS
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Familiarity with JavaScript basics
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Commitment to 8-10 hours per week
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">System Requirements</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Node.js (v14 or higher)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            VS Code or any code editor
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            MongoDB (local or Atlas cloud)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Git and GitHub account
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- FAQ Tab -->
+                <div id="faq" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">Is this course suitable for beginners?</h4>
+                            <p class="text-gray-600">Yes! This course is designed for beginners with basic HTML/CSS knowledge. We'll cover everything from JavaScript basics to building complete full-stack applications.</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">What projects will I build?</h4>
+                            <p class="text-gray-600">You'll build real-world projects including a blog application, e-commerce platform, task management system, and a complete full-stack web application as your capstone project.</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">Do I get job placement assistance?</h4>
+                            <p class="text-gray-600">Yes, upon completion you'll get interview preparation, portfolio review, and job placement assistance to help you land your first developer role.</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">Can I work at my own pace?</h4>
+                            <p class="text-gray-600">Absolutely! All course materials are self-paced. You have lifetime access and can complete the course at your convenience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Features -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-4xl mb-2">👨‍🏫</div>
+                <h3 class="font-bold text-gray-800 mb-2">Expert Instructors</h3>
+                <p class="text-sm text-gray-600">Learn from industry professionals</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-4xl mb-2">🎓</div>
+                <h3 class="font-bold text-gray-800 mb-2">Certification</h3>
+                <p class="text-sm text-gray-600">Verified certificate upon completion</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-4xl mb-2">💻</div>
+                <h3 class="font-bold text-gray-800 mb-2">Real Projects</h3>
+                <p class="text-sm text-gray-600">Build portfolio-ready applications</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                <div class="text-4xl mb-2">💬</div>
+                <h3 class="font-bold text-gray-800 mb-2">24/7 Support</h3>
+                <p class="text-sm text-gray-600">Community and instructor support</p>
+            </div>
+        </div>
+
+        <!-- Similar Courses Section -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Similar Courses You Might Like</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="./mean-stack-development.html" class="bg-gray-50 rounded-lg p-4 hover:shadow-lg transition">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-32 rounded-lg mb-4"></div>
+                    <h4 class="font-bold text-gray-800 mb-2">MEAN Stack Development</h4>
+                    <p class="text-sm text-gray-600">MongoDB, Express, Angular, Node.js - 12 Weeks</p>
+                </a>
+                <a href="./next-js-development.html" class="bg-gray-50 rounded-lg p-4 hover:shadow-lg transition">
+                    <div class="bg-gradient-to-br from-purple-400 to-purple-600 h-32 rounded-lg mb-4"></div>
+                    <h4 class="font-bold text-gray-800 mb-2">NEXT JS Development</h4>
+                    <p class="text-sm text-gray-600">React, Server-side Rendering - 9 Weeks</p>
+                </a>
+                <a href="./django-full-stack-development.html" class="bg-gray-50 rounded-lg p-4 hover:shadow-lg transition">
+                    <div class="bg-gradient-to-br from-green-400 to-green-600 h-32 rounded-lg mb-4"></div>
+                    <h4 class="font-bold text-gray-800 mb-2">Django Full-Stack Development</h4>
+                    <p class="text-sm text-gray-600">Python, PostgreSQL, Django - 9 Weeks</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Learn<span class="text-amber-600">Sphere</span></h3>
+                    <p class="text-gray-400">Your gateway to quality education and skill development.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="../courses/index.html" class="hover:text-white transition">Courses</a></li>
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 LearnSphere. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('border-b-2', 'border-blue-600'));
+
+            document.getElementById(tabName).classList.remove('hidden');
+            event.target.classList.add('border-b-2', 'border-blue-600');
+        }
+
+        function enrollCourse() {
+            const enrollmentData = {
+                course: "MERN Stack Development",
+                enrolledAt: new Date().toLocaleString(),
+                status: 'Active'
+            };
+
+            let enrollments = JSON.parse(localStorage.getItem('enrollments') || '[]');
+            enrollments.push(enrollmentData);
+            localStorage.setItem('enrollments', JSON.stringify(enrollments));
+
+            alert(`✓ Successfully enrolled in "MERN Stack Development"!\n\nYour enrollment is now active. Check your email for course access details.`);
+        }
+    </script>
+</body>
+</html>

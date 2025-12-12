@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Learn Sphere</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="./index.html" class="text-2xl font-bold text-blue-600">Learn<span class="text-amber-600">Sphere</span></a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="./index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="./courses/index.html" class="text-blue-600 font-semibold">Courses</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="./courses/index.html" class="text-blue-600 hover:underline">← Back to Courses</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Course Hero Section -->
+        <div id="courseHero" class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <!-- Course Image -->
+                <div class="md:col-span-1">
+                    <img id="courseImg" src="" alt="Course thumbnail" class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+
+                <!-- Course Header Info -->
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <span id="courseLevel" class="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Beginner</span>
+                    </div>
+                    <h1 id="courseTitle" class="text-4xl font-bold text-gray-800 mb-4">Course Title</h1>
+                    <p id="courseDescription" class="text-gray-600 text-lg mb-6 leading-relaxed">Course description goes here...</p>
+
+                    <!-- Quick Info -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Duration</p>
+                            <p id="courseDuration" class="text-xl font-bold text-gray-800">8 Weeks</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Mode</p>
+                            <p id="courseMode" class="text-xl font-bold text-gray-800">Online</p>
+                        </div>
+                    </div>
+
+                    <!-- Enroll Button -->
+                    <button onclick="enrollCourse()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Details Tabs -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200 flex flex-wrap">
+                <button class="tab-btn active flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition border-b-2 border-blue-600" onclick="showTab('overview')">Overview</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('curriculum')">Curriculum</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('requirements')">Requirements</button>
+                <button class="tab-btn flex-1 py-4 px-6 font-semibold text-gray-700 hover:bg-gray-50 transition" onclick="showTab('faq')">FAQ</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="p-8">
+                <!-- Overview Tab -->
+                <div id="overview" class="tab-content">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Overview</h2>
+                    <p id="overviewText" class="text-gray-700 mb-8 leading-relaxed">
+                        This comprehensive course will guide you through the fundamentals and advanced concepts. You'll gain practical experience through real-world projects and hands-on assignments.
+                    </p>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">What You'll Learn</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Comprehensive understanding of core concepts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Practical implementation skills through projects</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Industry best practices and standards</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Hands-on experience with real-world tools</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 font-bold mr-3">✓</span>
+                            <span class="text-gray-700">Certificate upon completion</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Skills You'll Master</h3>
+                    <div id="skillsList" class="flex flex-wrap gap-3 mb-8">
+                        <!-- Skills will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Curriculum Tab -->
+                <div id="curriculum" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Course Curriculum</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 1: Fundamentals</h4>
+                            <p class="text-gray-600 text-sm">Introduction and core concepts - 2 Weeks</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 2: Intermediate Concepts</h4>
+                            <p class="text-gray-600 text-sm">Building on the basics with practical applications - 2 Weeks</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 3: Advanced Topics</h4>
+                            <p class="text-gray-600 text-sm">Complex scenarios and real-world projects - 2 Weeks</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-3">
+                            <h4 class="font-bold text-gray-800">Module 4: Capstone Project</h4>
+                            <p class="text-gray-600 text-sm">Comprehensive project showcasing all learned skills - 2 Weeks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Requirements Tab -->
+                <div id="requirements" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Prerequisites & Requirements</h2>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Prerequisites</h3>
+                    <ul class="space-y-2 mb-8 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Basic computer literacy
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Willingness to learn new technologies
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Commitment to 5-10 hours per week
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">System Requirements</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Modern web browser (Chrome, Firefox, Safari, Edge)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Internet connection (minimum 2 Mbps)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Code editor (VS Code recommended)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 font-bold mr-2">•</span>
+                            Terminal/Command line access
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- FAQ Tab -->
+                <div id="faq" class="tab-content hidden">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">How long do I have access to the course?</h4>
+                            <p class="text-gray-600">You have lifetime access to all course materials, including future updates.</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">Is there a certificate upon completion?</h4>
+                            <p class="text-gray-600">Yes, you'll receive a verified certificate that you can share on LinkedIn and other platforms.</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">Can I get a refund?</h4>
+                            <p class="text-gray-600">We offer a 30-day money-back guarantee if you're not satisfied with the course.</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-gray-800 mb-2">Is there support available?</h4>
+                            <p class="text-gray-600">Yes, our instructors and community are available 24/7 to help you with any questions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Similar Courses Section -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">Similar Courses You Might Like</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="./course-pages/mern-stack-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251120155351707831/full_stack_development.webp" alt="MERN Stack" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">MERN Stack Development</h4>
+                        <p class="text-sm text-gray-600">MongoDB, Express, React, Node.js - 8 Weeks</p>
+                    </div>
+                </a>
+                <a href="./course-pages/python-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251120155351707831/full_stack_development.webp" alt="Python" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Python Programming</h4>
+                        <p class="text-sm text-gray-600">Python Fundamentals - 8 Weeks</p>
+                    </div>
+                </a>
+                <a href="./course-pages/machine-learning-development.html" class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251115164301521507/jku1.webp" alt="Machine Learning" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Machine Learning</h4>
+                        <p class="text-sm text-gray-600">ML Concepts & Algorithms - 8 Weeks</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Learn<span class="text-amber-600">Sphere</span></h3>
+                    <p class="text-gray-400">Your gateway to quality education and skill development.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="./courses/index.html" class="hover:text-white transition">Courses</a></li>
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 LearnSphere. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Load course details from localStorage
+        function loadCourseDetails() {
+            const course = JSON.parse(localStorage.getItem('selectedCourse'));
+            
+            if (!course) {
+                alert('No course selected!');
+                window.location.href = './courses/index.html';
+                return;
+            }
+
+            // Populate course details
+            document.getElementById('courseTitle').textContent = course.title;
+            document.getElementById('courseImg').src = course.img;
+            document.getElementById('courseLevel').textContent = course.level;
+            document.getElementById('courseDescription').textContent = course.description;
+            document.getElementById('courseDuration').textContent = course.duration;
+            document.getElementById('courseMode').textContent = course.mode;
+            document.getElementById('overviewText').textContent = course.description;
+
+            // Populate skills
+            const skillsList = document.getElementById('skillsList');
+            skillsList.innerHTML = course.skills.map(skill => 
+                `<span class="bg-blue-100 text-blue-600 text-sm font-medium px-4 py-2 rounded-full">${skill.trim()}</span>`
+            ).join('');
+
+            // Update page title
+            document.title = `${course.title} - Learn Sphere`;
+        }
+
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            // Remove active state from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('border-b-2', 'border-blue-600');
+                btn.style.borderBottom = 'none';
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.remove('hidden');
+
+            // Add active state to clicked button
+            event.target.classList.add('border-b-2', 'border-blue-600');
+        }
+
+        // Enroll function
+        function enrollCourse() {
+            const course = JSON.parse(localStorage.getItem('selectedCourse'));
+            const enrollmentData = {
+                course: course.title,
+                enrolledAt: new Date().toLocaleString(),
+                status: 'Active'
+            };
+
+            // Save enrollment data
+            let enrollments = JSON.parse(localStorage.getItem('enrollments') || '[]');
+            enrollments.push(enrollmentData);
+            localStorage.setItem('enrollments', JSON.stringify(enrollments));
+
+            // Show confirmation
+            alert(`✓ Successfully enrolled in "${course.title}"!\n\nYour enrollment is now active. Check your email for course access details.`);
+            
+            // Optional: Redirect to dashboard or course content
+            // window.location.href = './dashboard/index.html';
+        }
+
+        // Load course details when page loads
+        window.addEventListener('DOMContentLoaded', loadCourseDetails);
+    </script>
+</body>
+</html>
