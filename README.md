@@ -86,15 +86,35 @@ Learn-Sphere/
 
 ## 📦 Installation & Setup
 
+### For Developers (First Time Setup)
+
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Learn-Sphere.git
+   git clone https://github.com/Dinesh69069/LearnSphere.git
    cd Learn-Sphere
    ```
 
-2. **Open in browser**
-   - Simply open `index.html` in your browser
-   - Or use a local server:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+   This will install **exact same versions** from `package-lock.json`:
+   - Tailwind CSS v3.4.17
+   - PostCSS v8.5.6
+   - Autoprefixer v10.4.22
+
+3. **Build Tailwind CSS**
+   ```bash
+   npm run build
+   ```
+
+4. **Start development mode** (auto-rebuild on changes)
+   ```bash
+   npm run watch
+   ```
+
+5. **Open in browser**
+   - Use a local server (required for proper file loading):
    ```bash
    # Using Python
    python -m http.server 8000
@@ -103,13 +123,26 @@ Learn-Sphere/
    npx http-server
    
    # Using VS Code Live Server extension
-   Right-click on index.html → Open with Live Server
+   Right-click on any HTML file → Open with Live Server
    ```
 
-3. **Access the application**
-   - Home: `http://localhost:8000/index.html`
-   - Courses: `http://localhost:8000/pages/courses.html`
-   - Dashboard: `http://localhost:8000/pages/dashboard.html`
+6. **Access your component**
+   - Home: `http://localhost:8000/home/index.html`
+   - About: `http://localhost:8000/about/index.html`
+   - Courses: `http://localhost:8000/courses/index.html`
+   - Dashboard: `http://localhost:8000/dashboard/index.html`
+   - Login: `http://localhost:8000/login/index.html`
+   - SignUp: `http://localhost:8000/signup/index.html`
+   - Blog: `http://localhost:8000/blog/index.html`
+   - Roadmap: `http://localhost:8000/roadmap/index.html`
+   - Notes: `http://localhost:8000/notes/index.html`
+
+### ⚠️ Important for Collaboration
+
+- ✅ **DO commit**: `package.json`, `package-lock.json`, `tailwind.config.js`, `src/input.css`
+- ❌ **DON'T commit**: `node_modules/`, `dist/output.css` (auto-generated)
+- 🔄 **Always run** `npm install` after pulling new changes
+- 🔄 **Always run** `npm run build` before testing your work
 
 ## 👥 Collaboration Guidelines
 
