@@ -135,43 +135,42 @@ function renderCourses(courses) {
 const container = document.getElementById("courses");
 container.innerHTML = courses.map(course => {
 const skills = course.skills
-.map(skill => `<span class="bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full">${skill}</span>`)
+.map(skill => `<span class="bg-blue-100 text-blue-600 text-xs px-2 py-0.5 rounded-full">${skill}</span>`)
 .join("");
 
 
 return `
-<div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition mx-2">
-<div class="bg-blue-600 text-white  rounded-t-2xl flex flex-col items-center ">
-<img src="${course.img}" alt="course thumbnail" class="w-full  object-cover rounded-lg mb-4">
-<h2 class="text-xl font-semibold">${course.title}</h2>
-<p class="text-sm opacity-90 mb-3">${course.level}</p>
+<div class="bg-white rounded-xl shadow-md hover:shadow-lg transition mx-1">
+<div class="bg-blue-600 text-white rounded-t-xl flex flex-col items-center ">
+<img src="${course.img}" alt="course thumbnail" class="w-full h-36 object-cover rounded-lg mb-2">
+<h2 class="text-base font-semibold px-2">${course.title}</h2>
+<p class="text-xs opacity-90 mb-2">${course.level}</p>
 </div>
 
 
-<div class="p-2 space-y-3">
-<p class="text-sm text-gray-600">${course.description}</p>
+<div class="p-3 space-y-2">
+<p class="text-xs text-gray-600 line-clamp-2">${course.description}</p>
 
 
-<div class="flex justify-between text-sm">
+<div class="flex justify-between text-xs">
 <span class="font-medium">Duration:</span>
 <span>${course.duration}</span>
 </div>
 
 
-<div class="flex justify-between text-sm">
+<div class="flex justify-between text-xs">
 <span class="font-medium">Mode:</span>
 <span>${course.mode}</span>
 </div>
 
 
-<div class="flex flex-wrap gap-2">${skills}</div>
+<div class="flex flex-wrap gap-1">${skills}</div>
 
 
-<button 
-class="w-full mt-3 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl font-semibold">
-<a href="${course.link}">
-Enroll Now</a>
-</button>
+<a href="${course.link}" 
+class="block w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white py-1.5 rounded-lg font-semibold text-xs text-center">
+Enroll Now
+</a>
 </div>
 </div>
 `;

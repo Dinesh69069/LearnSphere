@@ -7,15 +7,15 @@
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-50">
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <!-- Navbar Component -->
+    <div id="navbar-container"></div>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 dark:bg-gray-800 py-4 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center"><a href="../index.html" class="text-2xl font-bold text-blue-600">Learn<span class="text-amber-600">Sphere</span></a></div>
-                <div class="flex items-center gap-4"><a href="../index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a><a href="../courses/index.html" class="text-blue-600 font-semibold">Courses</a></div>
-            </div>
+            <a href="../courses/index.html" class="text-primary hover:text-accent transition-colors">← Back to Courses</a>
         </div>
-    </nav>
-    <div class="bg-gray-100 py-4"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><a href="../courses/index.html" class="text-blue-600 hover:underline">← Back to Courses</a></div></div>
+    </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
@@ -129,7 +129,6 @@
             </div>
         </div>
     </div>
-    <footer class="bg-gray-900 text-white py-12 mt-16"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"><div><h3 class="text-2xl font-bold mb-4">Learn<span class="text-amber-600">Sphere</span></h3><p class="text-gray-400">Your gateway to quality education and skill development.</p></div><div><h4 class="font-bold mb-4">Quick Links</h4><ul class="space-y-2 text-gray-400"><li><a href="../index.html" class="hover:text-white transition">Home</a></li><li><a href="../courses/index.html" class="hover:text-white transition">Courses</a></li></ul></div><div><h4 class="font-bold mb-4">Support</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">Help Center</a></li><li><a href="#" class="hover:text-white transition">Contact Us</a></li></ul></div><div><h4 class="font-bold mb-4">Follow Us</h4><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white transition">Twitter</a></li><li><a href="#" class="hover:text-white transition">LinkedIn</a></li></ul></div></div><div class="border-t border-gray-800 pt-8 text-center text-gray-400"><p>&copy; 2025 LearnSphere. All rights reserved.</p></div></div></footer>
     <script>
         function showTab(tabName) {
             document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
@@ -143,6 +142,10 @@
             localStorage.setItem('enrollments', JSON.stringify(enrollments));
             alert(`✓ Successfully enrolled in "C++ Programming"!\n\nYour enrollment is now active. Check your email for course access details.`);
         }
-    </script>
-</body>
+    </script>    
+    <!-- Footer Component -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="../shared/js/navbar.js"></script></body>
 </html>
