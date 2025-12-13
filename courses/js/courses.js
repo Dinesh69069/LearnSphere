@@ -113,7 +113,7 @@ description: "Understand cloud services, deployment models, and architecture.",
 duration: "9 Weeks",
 mode: "In-Person",
 skills: [   "Cloud", "AWS", "Azure", "GCP"],
-ink: "../course-pages/cloud-computing.html"
+ink: "../course-pages/cloud-computing.html",
 },
 {
     img: "https://media.geeksforgeeks.org/wp-content/uploads/20251120155351845895/devops_engineering.webp",
