@@ -1,12 +1,7 @@
-/* ============================================
-   LearnSphere - Login Page JavaScript
-   Form Validation, Theme Toggle, Interactions
-   ============================================ */
+
 
 document.addEventListener('DOMContentLoaded', () => {
-    // ============================================
-    // Theme Toggle Functionality
-    // ============================================
+
     const themeSwitch = document.getElementById('theme-switch');
     const body = document.body;
     
@@ -25,9 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
     });
     
-    // ============================================
-    // Password Toggle Functionality
-    // ============================================
     const togglePassword = document.querySelector('.toggle-password');
     const passwordInput = document.getElementById('password');
     const eyeOpen = togglePassword.querySelector('.eye-open');
@@ -42,9 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         eyeClosed.style.display = type === 'password' ? 'none' : 'block';
     });
     
-    // ============================================
-    // Form Validation
-    // ============================================
     const form = document.getElementById('login-form');
     const email = document.getElementById('email');
     const formCard = document.querySelector('.form-card');

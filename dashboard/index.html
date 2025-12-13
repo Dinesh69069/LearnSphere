@@ -28,5 +28,1479 @@
     
     <!-- Scripts -->
     <script src="../shared/js/navbar.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </div>
+                <span class="logo-text">Learn<span class="highlight">Sphere</span></span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="user-profile">
+            <div class="avatar">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop" alt="User">
+            </div>
+            <div class="user-info">
+                <h3 class="user-name">Alex Johnson</h3>
+                <span class="user-badge">Pro Member</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>My Courses</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                <span>My Course</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="12" y1="18" x2="12" y2="12"></line>
+                    <line x1="9" y1="15" x2="15" y2="15"></line>
+                </svg>
+                <span>Certificates</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Profile</span>
+            </a>
+            <a href="#" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m0 6l-4.2 4.2m13.2-5.2l-6 0m-6 0l-6 0m13.2 5.2l-4.2-4.2m0-6l-4.2-4.2"></path>
+                </svg>
+                <span>Settings</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <button class="logout-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    <polyline points="16 17 21 12 16 7"></polyline>
+                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+                <span>Logout</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1 class="welcome-title" id="pageTitle">Welcome Back, Alex 👋</h1>
+                <p class="welcome-subtitle" id="pageSubtitle">Continue your learning journey</p>
+            </div>
+            <div class="header-right">
+                <button class="icon-btn notification-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="btn-primary browse-btn">
+                    <span>Browse Courses</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div id="dashboardContent" class="page-content active">
+
+        <!-- Dashboard Content -->
+        <div id="dashboardContent" class="page-content active">
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon cyan">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">12</h3>
+                    <p class="stat-title">Total Courses</p>
+                    <span class="stat-description">3 in progress</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon violet">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">32</h3>
+                    <p class="stat-title">Active Days</p>
+                    <span class="stat-description">Learning streak</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon cyan">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">47.5</h3>
+                    <p class="stat-title">Learning Hours</p>
+                    <span class="stat-description">This month</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon violet">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">4.8</h3>
+                    <p class="stat-title">Average Rating</p>
+                    <span class="stat-description">From completed courses</span>
+                </div>
+            </div>
+        </div>
+            <div class="stat-card">
+                <div class="stat-icon cyan">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">12</h3>
+                    <p class="stat-title">Enrolled Courses</p>
+                    <span class="stat-description">3 in progress</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon violet">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">68%</h3>
+                    <p class="stat-title">Overall Progress</p>
+                    <span class="stat-description">+12% this month</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon cyan">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">47.5</h3>
+                    <p class="stat-title">Learning Time</p>
+                    <span class="stat-description">Hours this month</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon violet">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="12" y1="18" x2="12" y2="12"></line>
+                        <line x1="9" y1="15" x2="15" y2="15"></line>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-value">5</h3>
+                    <p class="stat-title">Certificates Earned</p>
+                    <span class="stat-description">2 more pending</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue Learning Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Continue Learning</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" alt="Course">
+                        <button class="play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="course-info">
+                        <h3 class="course-title">Advanced JavaScript Concepts</h3>
+                        <p class="course-instructor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Sarah Mitchell
+                        </p>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>75% Complete</span>
+                                <span>12/16 Lessons</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Course">
+                        <button class="play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="course-info">
+                        <h3 class="course-title">UI/UX Design Fundamentals</h3>
+                        <p class="course-instructor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            David Chen
+                        </p>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>45% Complete</span>
+                                <span>9/20 Lessons</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="Course">
+                        <button class="play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="course-info">
+                        <h3 class="course-title">Python for Data Science</h3>
+                        <p class="course-instructor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Emily Rodriguez
+                        </p>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>30% Complete</span>
+                                <span>6/24 Lessons</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Recent Activity</h2>
+            </div>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon completed">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Completed Lesson</h4>
+                        <p class="activity-course">Advanced JavaScript Concepts - Async/Await Patterns</p>
+                    </div>
+                    <span class="activity-time">2 hours ago</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon certificate">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Certificate Earned</h4>
+                        <p class="activity-course">React.js Masterclass - Completed with 95% score</p>
+                    </div>
+                    <span class="activity-time">1 day ago</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon enrolled">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Enrolled in Course</h4>
+                        <p class="activity-course">Python for Data Science - Beginner to Advanced</p>
+                    </div>
+                    <span class="activity-time">2 days ago</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon completed">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="activity-content">
+                        <h4 class="activity-title">Completed Quiz</h4>
+                        <p class="activity-course">UI/UX Design Fundamentals - Design Principles Quiz</p>
+                    </div>
+                    <span class="activity-time">3 days ago</span>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <!-- My Courses Content -->
+        <div id="myCoursesContent" class="page-content">
+            <div class="courses-filter">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Courses</button>
+                    <button class="filter-tab" data-filter="in-progress">In Progress</button>
+                    <button class="filter-tab" data-filter="completed">Completed</button>
+                    <button class="filter-tab" data-filter="wishlist">Wishlist</button>
+                </div>
+                <div class="search-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Search courses...">
+                </div>
+            </div>
+
+            <div class="courses-grid-full">
+                <div class="course-card-full" data-status="in-progress">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" alt="Course">
+                        <span class="course-badge in-progress">In Progress</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-header">
+                            <h3 class="course-title">Advanced JavaScript Concepts</h3>
+                            <div class="course-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <p class="course-instructor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Sarah Mitchell
+                        </p>
+                        <div class="course-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 8.5 hours</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> 16 lessons</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>75% Complete</span>
+                                <span>12/16 Lessons</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <button class="btn-continue">Continue Learning</button>
+                    </div>
+                </div>
+
+                <div class="course-card-full" data-status="in-progress">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Course">
+                        <span class="course-badge in-progress">In Progress</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-header">
+                            <h3 class="course-title">UI/UX Design Fundamentals</h3>
+                            <div class="course-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <p class="course-instructor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            David Chen
+                        </p>
+                        <div class="course-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 12 hours</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> 20 lessons</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>45% Complete</span>
+                                <span>9/20 Lessons</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <button class="btn-continue">Continue Learning</button>
+                    </div>
+                </div>
+
+                <div class="course-card-full" data-status="in-progress">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop" alt="Course">
+                        <span class="course-badge in-progress">In Progress</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-header">
+                            <h3 class="course-title">Python for Data Science</h3>
+                            <div class="course-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <p class="course-instructor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Emily Rodriguez
+                        </p>
+                        <div class="course-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 15 hours</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> 24 lessons</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>30% Complete</span>
+                                <span>6/24 Lessons</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <button class="btn-continue">Continue Learning</button>
+                    </div>
+                </div>
+
+                <div class="course-card-full" data-status="completed">
+                    <div class="course-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop" alt="Course">
+                        <span class="course-badge completed">Completed</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-header">
+                            <h3 class="course-title">React.js Masterclass</h3>
+                            <div class="course-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <p class="course-instructor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Michael Lee
+                        </p>
+                        <div class="course-meta">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 10 hours</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> 18 lessons</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-info">
+                                <span>100% Complete</span>
+                                <span class="score-badge">Score: 95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill completed" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <button class="btn-certificate">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- My Course Content (Single Course View) -->
+        <div id="myCourseContent" class="page-content">
+            <div class="course-view-container">
+                <!-- Course Header -->
+                <div class="course-view-header">
+                    <div class="course-breadcrumb">
+                        <a href="#" class="breadcrumb-link">My Courses</a>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                        <span>Advanced JavaScript Concepts</span>
+                    </div>
+                    <div class="course-view-title-section">
+                        <div class="course-view-info">
+                            <h1 class="course-view-title">Advanced JavaScript Concepts</h1>
+                            <div class="course-view-meta">
+                                <span class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    Sarah Mitchell
+                                </span>
+                                <span class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    4.8 Rating
+                                </span>
+                                <span class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    8.5 hours
+                                </span>
+                            </div>
+                            <div class="course-view-progress-section">
+                                <div class="progress-info">
+                                    <span class="progress-text">Your Progress: 75% Complete</span>
+                                    <span class="progress-lessons">12/16 Lessons</span>
+                                </div>
+                                <div class="progress-bar large">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-view-actions">
+                            <button class="btn-bookmark">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </button>
+                            <button class="btn-share-course">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="18" cy="5" r="3"></circle>
+                                    <circle cx="6" cy="12" r="3"></circle>
+                                    <circle cx="18" cy="19" r="3"></circle>
+                                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Content Grid -->
+                <div class="course-content-grid">
+                    <!-- Video Player Section -->
+                    <div class="course-video-section">
+                        <div class="video-player-wrapper">
+                            <div class="video-container">
+                                <video poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=675&fit=crop">
+                                    <source src="" type="video/mp4">
+                                </video>
+                                <div class="video-controls">
+                                    <button class="control-btn play-pause-main">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </button>
+                                    <div class="video-timeline">
+                                        <div class="timeline-progress" style="width: 35%"></div>
+                                    </div>
+                                    <span class="video-time">4:25 / 12:45</span>
+                                    <button class="control-btn volume">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="control-btn settings-btn">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                            <path d="M12 1v6m0 6v6"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="control-btn fullscreen">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lesson-info-card">
+                            <div class="lesson-header">
+                                <h2>Lesson 12: Advanced Async Patterns</h2>
+                                <div class="lesson-actions">
+                                    <button class="btn-prev-lesson">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="15 18 9 12 15 6"></polyline>
+                                        </svg>
+                                        Previous
+                                    </button>
+                                    <button class="btn-mark-complete">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                        </svg>
+                                        Mark Complete
+                                    </button>
+                                    <button class="btn-next-lesson">
+                                        Next
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="lesson-tabs">
+                                <button class="lesson-tab active" data-tab="overview">Overview</button>
+                                <button class="lesson-tab" data-tab="notes">Notes</button>
+                                <button class="lesson-tab" data-tab="resources">Resources</button>
+                                <button class="lesson-tab" data-tab="qa">Q&A</button>
+                            </div>
+
+                            <div class="lesson-tab-content active" id="overview">
+                                <h3>Lesson Overview</h3>
+                                <p>In this lesson, you'll learn about advanced asynchronous patterns in JavaScript including async/await, Promise.all(), Promise.race(), and error handling strategies.</p>
+                                
+                                <h4>What You'll Learn:</h4>
+                                <ul>
+                                    <li>Understanding async/await syntax and best practices</li>
+                                    <li>Parallel execution with Promise.all()</li>
+                                    <li>Racing promises with Promise.race()</li>
+                                    <li>Error handling in asynchronous code</li>
+                                    <li>Real-world async patterns and use cases</li>
+                                </ul>
+
+                                <h4>Prerequisites:</h4>
+                                <p>Basic understanding of Promises and asynchronous JavaScript.</p>
+                            </div>
+
+                            <div class="lesson-tab-content" id="notes">
+                                <div class="notes-editor">
+                                    <h3>Your Notes</h3>
+                                    <textarea class="notes-textarea" placeholder="Take notes while watching the lesson..."></textarea>
+                                    <button class="btn-save-notes">Save Notes</button>
+                                </div>
+                            </div>
+
+                            <div class="lesson-tab-content" id="resources">
+                                <h3>Downloadable Resources</h3>
+                                <div class="resources-list">
+                                    <div class="resource-item">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                        </svg>
+                                        <div class="resource-info">
+                                            <h4>Lesson Slides.pdf</h4>
+                                            <span>2.4 MB</span>
+                                        </div>
+                                        <button class="btn-download-resource">Download</button>
+                                    </div>
+                                    <div class="resource-item">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                        <div class="resource-info">
+                                            <h4>Code Examples.zip</h4>
+                                            <span>1.8 MB</span>
+                                        </div>
+                                        <button class="btn-download-resource">Download</button>
+                                    </div>
+                                    <div class="resource-item">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                        </svg>
+                                        <div class="resource-info">
+                                            <h4>MDN Async Guide</h4>
+                                            <span>External Link</span>
+                                        </div>
+                                        <button class="btn-download-resource">Open</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-tab-content" id="qa">
+                                <h3>Questions & Answers</h3>
+                                <div class="qa-list">
+                                    <div class="qa-item">
+                                        <div class="qa-question">
+                                            <div class="qa-user">
+                                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="User">
+                                                <div>
+                                                    <strong>Emma Wilson</strong>
+                                                    <span>2 days ago</span>
+                                                </div>
+                                            </div>
+                                            <p>What's the difference between Promise.all() and Promise.allSettled()?</p>
+                                        </div>
+                                        <div class="qa-answer">
+                                            <div class="qa-user instructor">
+                                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop" alt="Instructor">
+                                                <div>
+                                                    <strong>Sarah Mitchell</strong>
+                                                    <span class="instructor-badge">Instructor</span>
+                                                    <span>1 day ago</span>
+                                                </div>
+                                            </div>
+                                            <p>Great question! Promise.all() fails fast - if any promise rejects, the whole thing fails. Promise.allSettled() waits for all promises to complete (either resolve or reject) and returns all results. Use allSettled() when you want to handle each result individually.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-ask-question">Ask a Question</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Curriculum Sidebar -->
+                    <div class="course-curriculum-sidebar">
+                        <div class="curriculum-header">
+                            <h3>Course Curriculum</h3>
+                            <span class="curriculum-progress">12/16 Completed</span>
+                        </div>
+
+                        <div class="curriculum-list">
+                            <!-- Section 1 -->
+                            <div class="curriculum-section">
+                                <div class="section-header">
+                                    <h4>Section 1: Introduction</h4>
+                                    <span>3/3</span>
+                                </div>
+                                <div class="lessons-list">
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-check">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Welcome to the Course</span>
+                                            <span class="lesson-duration">5:30</span>
+                                        </div>
+                                    </div>
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-check">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Setting Up Your Environment</span>
+                                            <span class="lesson-duration">8:15</span>
+                                        </div>
+                                    </div>
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-check">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">JavaScript Fundamentals Review</span>
+                                            <span class="lesson-duration">12:45</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 2 -->
+                            <div class="curriculum-section">
+                                <div class="section-header">
+                                    <h4>Section 2: Async JavaScript</h4>
+                                    <span>4/5</span>
+                                </div>
+                                <div class="lessons-list">
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-check">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Understanding Callbacks</span>
+                                            <span class="lesson-duration">10:20</span>
+                                        </div>
+                                    </div>
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-check">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Introduction to Promises</span>
+                                            <span class="lesson-duration">15:40</span>
+                                        </div>
+                                    </div>
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-check">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Promise Chaining</span>
+                                            <span class="lesson-duration">12:30</span>
+                                        </div>
+                                    </div>
+                                    <div class="lesson-item active">
+                                        <div class="lesson-play">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Advanced Async Patterns</span>
+                                            <span class="lesson-duration">14:25</span>
+                                        </div>
+                                    </div>
+                                    <div class="lesson-item locked">
+                                        <div class="lesson-lock">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Error Handling Strategies</span>
+                                            <span class="lesson-duration">11:15</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 3 -->
+                            <div class="curriculum-section">
+                                <div class="section-header">
+                                    <h4>Section 3: Advanced Topics</h4>
+                                    <span>5/8</span>
+                                </div>
+                                <div class="lessons-list collapsed">
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-check">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="lesson-details">
+                                            <span class="lesson-title">Generators & Iterators</span>
+                                            <span class="lesson-duration">16:50</span>
+                                        </div>
+                                    </div>
+                                    <!-- More lessons would go here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificates Content -->
+        <div id="certificatesContent" class="page-content">
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-visual">
+                        <div class="certificate-badge">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>React.js Masterclass</h3>
+                        <p class="certificate-instructor">Michael Lee</p>
+                    </div>
+                    <div class="certificate-info">
+                        <div class="certificate-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Issued:</span>
+                                <span class="detail-value">Dec 10, 2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Score:</span>
+                                <span class="detail-value">95%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">ID:</span>
+                                <span class="detail-value">CERT-2025-001</span>
+                            </div>
+                        </div>
+                        <div class="certificate-actions">
+                            <button class="btn-view-cert">View Certificate</button>
+                            <button class="btn-download">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </button>
+                            <button class="btn-share">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="18" cy="5" r="3"></circle>
+                                    <circle cx="6" cy="12" r="3"></circle>
+                                    <circle cx="18" cy="19" r="3"></circle>
+                                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-visual">
+                        <div class="certificate-badge">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Web Development Bootcamp</h3>
+                        <p class="certificate-instructor">Jessica Parker</p>
+                    </div>
+                    <div class="certificate-info">
+                        <div class="certificate-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Issued:</span>
+                                <span class="detail-value">Nov 28, 2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Score:</span>
+                                <span class="detail-value">92%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">ID:</span>
+                                <span class="detail-value">CERT-2025-002</span>
+                            </div>
+                        </div>
+                        <div class="certificate-actions">
+                            <button class="btn-view-cert">View Certificate</button>
+                            <button class="btn-download">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </button>
+                            <button class="btn-share">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="18" cy="5" r="3"></circle>
+                                    <circle cx="6" cy="12" r="3"></circle>
+                                    <circle cx="18" cy="19" r="3"></circle>
+                                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card pending">
+                    <div class="certificate-visual">
+                        <div class="certificate-badge pending">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Advanced JavaScript</h3>
+                        <p class="certificate-instructor">Sarah Mitchell</p>
+                    </div>
+                    <div class="certificate-info">
+                        <div class="certificate-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Status:</span>
+                                <span class="detail-value pending">Pending</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Progress:</span>
+                                <span class="detail-value">75%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Required:</span>
+                                <span class="detail-value">100%</span>
+                            </div>
+                        </div>
+                        <div class="certificate-actions">
+                            <button class="btn-continue-course">Continue Course</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Content -->
+        <div id="profileContent" class="page-content">
+            <div class="profile-container">
+                <div class="profile-header-card">
+                    <div class="profile-cover"></div>
+                    <div class="profile-avatar-section">
+                        <div class="profile-avatar-large">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop" alt="User">
+                            <button class="avatar-edit-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="profile-header-info">
+                            <h2>Alex Johnson</h2>
+                            <p>alex.johnson@email.com</p>
+                            <span class="profile-badge">Pro Member</span>
+                        </div>
+                        <button class="btn-edit-profile">Edit Profile</button>
+                    </div>
+                </div>
+
+                <div class="profile-grid">
+                    <div class="profile-section">
+                        <h3 class="section-title">Personal Information</h3>
+                        <div class="info-card">
+                            <div class="info-row">
+                                <span class="info-label">Full Name</span>
+                                <span class="info-value">Alex Johnson</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Email</span>
+                                <span class="info-value">alex.johnson@email.com</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+1 (555) 123-4567</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">San Francisco, CA</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Member Since</span>
+                                <span class="info-value">January 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h3 class="section-title">Learning Stats</h3>
+                        <div class="stats-card">
+                            <div class="stat-item">
+                                <div class="stat-icon-small cyan">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="stat-value-small">12</div>
+                                    <div class="stat-label-small">Courses Enrolled</div>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon-small violet">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="stat-value-small">5</div>
+                                    <div class="stat-label-small">Certificates</div>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon-small cyan">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="stat-value-small">127</div>
+                                    <div class="stat-label-small">Hours Learned</div>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon-small violet">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="stat-value-small">68%</div>
+                                    <div class="stat-label-small">Avg Progress</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h3 class="section-title">Skills & Interests</h3>
+                        <div class="skills-card">
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">React</div>
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">UI/UX Design</div>
+                            <div class="skill-tag">Data Science</div>
+                            <div class="skill-tag">Web Development</div>
+                            <div class="skill-tag">Machine Learning</div>
+                            <div class="skill-tag">Cloud Computing</div>
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <h3 class="section-title">Achievements</h3>
+                        <div class="achievements-card">
+                            <div class="achievement-badge">
+                                <div class="badge-icon gold">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="badge-info">
+                                    <h4>Top Learner</h4>
+                                    <p>Completed 5+ courses</p>
+                                </div>
+                            </div>
+                            <div class="achievement-badge">
+                                <div class="badge-icon silver">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="badge-info">
+                                    <h4>Fast Learner</h4>
+                                    <p>Completed course in record time</p>
+                                </div>
+                            </div>
+                            <div class="achievement-badge">
+                                <div class="badge-icon bronze">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="badge-info">
+                                    <h4>Consistency Champion</h4>
+                                    <p>30-day learning streak</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Content -->
+        <div id="settingsContent" class="page-content">
+            <div class="settings-container">
+                <div class="settings-section">
+                    <h3 class="settings-title">Account Settings</h3>
+                    <div class="settings-card">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Email Notifications</h4>
+                                <p>Receive email updates about your courses and progress</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Course Reminders</h4>
+                                <p>Get reminded about incomplete lessons</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Marketing Emails</h4>
+                                <p>Receive information about new courses and offers</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3 class="settings-title">Privacy Settings</h3>
+                    <div class="settings-card">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Profile Visibility</h4>
+                                <p>Make your profile visible to other learners</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Show Progress</h4>
+                                <p>Display your learning progress publicly</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Share Certificates</h4>
+                                <p>Allow sharing of your earned certificates</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3 class="settings-title">Learning Preferences</h3>
+                    <div class="settings-card">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Auto-play Videos</h4>
+                                <p>Automatically play next lesson video</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Download Quality</h4>
+                                <p>Set default video download quality</p>
+                            </div>
+                            <select class="setting-select">
+                                <option>720p (HD)</option>
+                                <option selected>1080p (Full HD)</option>
+                                <option>480p (SD)</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Playback Speed</h4>
+                                <p>Default video playback speed</p>
+                            </div>
+                            <select class="setting-select">
+                                <option>0.5x</option>
+                                <option>0.75x</option>
+                                <option selected>1x</option>
+                                <option>1.25x</option>
+                                <option>1.5x</option>
+                                <option>2x</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3 class="settings-title">Security</h3>
+                    <div class="settings-card">
+                        <div class="setting-item-btn">
+                            <div class="setting-info">
+                                <h4>Change Password</h4>
+                                <p>Update your account password</p>
+                            </div>
+                            <button class="btn-setting">Change</button>
+                        </div>
+                        <div class="setting-item-btn">
+                            <div class="setting-info">
+                                <h4>Two-Factor Authentication</h4>
+                                <p>Add an extra layer of security</p>
+                            </div>
+                            <button class="btn-setting">Enable</button>
+                        </div>
+                        <div class="setting-item-btn">
+                            <div class="setting-info">
+                                <h4>Active Sessions</h4>
+                                <p>Manage your logged-in devices</p>
+                            </div>
+                            <button class="btn-setting">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3 class="settings-title">Danger Zone</h3>
+                    <div class="settings-card danger">
+                        <div class="setting-item-btn">
+                            <div class="setting-info">
+                                <h4>Delete Account</h4>
+                                <p>Permanently delete your account and all data</p>
+                            </div>
+                            <button class="btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Player Section (Optional Layout) -->
+        <section class="video-section" style="display: none;">
+            <div class="video-player">
+                <div class="video-container">
+                    <video poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=675&fit=crop">
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="video-controls">
+                        <button class="control-btn play-pause">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                        <div class="video-timeline">
+                            <div class="timeline-progress"></div>
+                        </div>
+                        <span class="video-time">0:00 / 12:45</span>
+                        <button class="control-btn volume">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            </svg>
+                        </button>
+                        <button class="control-btn settings">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6"></path>
+                            </svg>
+                        </button>
+                        <button class="control-btn fullscreen">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h2 class="video-title">Lesson 12: Advanced Async Patterns in JavaScript</h2>
+                    <p class="video-meta">Advanced JavaScript Concepts • Sarah Mitchell</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
 </body>
 </html>
