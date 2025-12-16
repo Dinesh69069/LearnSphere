@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSphere</title>
+  <meta http-equiv="refresh" content="0; url=home/index.html">
+  <link rel="canonical" href="home/index.html">
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    .fallback { text-align: center; color: #1f2933; }
+    .fallback a { color: #0ea5e9; text-decoration: none; }
+    .fallback a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="fallback">
+    <p>Redirecting to home...</p>
+    <p>If you are not redirected, <a href="home/index.html">click here</a>.</p>
+  </div>
+  <script>
+    // Ensure redirect works even if meta refresh is blocked
+    window.location.replace('home/index.html');
+  </script>
+</body>
+</html>
